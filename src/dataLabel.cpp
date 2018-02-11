@@ -23,7 +23,6 @@ ios::DataLabel::DataLabel(QWidget * _parent) :
 	data->layout->addWidget(data->name);
 	data->layout->addWidget(data->value);
 	data->layout->addWidget(data->unit);
-	data->layout->setContentsMargins(0, 0, 0, 0);
 	data->layout->setMargin(0);
 
 	setLayout(data->layout);

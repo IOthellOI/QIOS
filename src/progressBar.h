@@ -3,40 +3,38 @@
 /// Copyright (c) 2018 IOThellOI
 /// All rights reserved.
 /// 
-/// @brief   DataSlider
+/// @brief   ProgressBar
 /// @version 1.0
 /// @author  Yang Wang
-/// @date    Feb 10,2018
+/// @date    Feb 11,2018
 /// @web     http://iothelloi.sxl.cn/
 /// @git     https://github.com/iothelloi/
 //////////////////////////////////////////////////
 #pragma once
-#ifndef DATASLIDER_H
-#define DATASLIDER_H
+#ifndef PROGRESSBAR_H
+#define PROGRESSBAR_H
 
 #include "baseWidget.h"
 
 namespace ios
 {
-	class DataSlider : public BaseWidget
+	class ProgressBar : public BaseWidget
 	{
 		Q_OBJECT
 	public:
-		explicit DataSlider(QWidget * _parent = nullptr);
-		virtual ~DataSlider();
+		explicit ProgressBar(QWidget * _parent = nullptr);
+		virtual ~ProgressBar();
 
 	public:
 		virtual void setText(const QString & _text) const;
-		virtual void setValue(int _value) const;
+		virtual void setValue(double _value) const;
 		virtual void setUnit(const QString & _unit) const;
 
-	public slots:
-		void slotSilde(int _value);
-
 	private:
-		struct DataSliderData;
-		DataSliderData * data;
+		struct ProgressBarData;
+		ProgressBarData * data;
 	};
 }
 
-#endif // !DATASLIDER_H
+#endif // !PROGRESSBAR_H
+

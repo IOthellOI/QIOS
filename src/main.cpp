@@ -11,6 +11,8 @@
 #include "indicationLabel.h"
 #include "dataSlider.h"
 #include "dataLabel.h"
+#include "progressBar.h"
+#include "entryBar.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -19,14 +21,14 @@ using namespace ios;
 int main(int argc, char * argv[])
 {
 	QApplication a(argc, argv);
-	QWidget w;
-	QHBoxLayout l;
-	
-	DataLabel d;
+	QWidget w; 
+	w.setWindowFlags(Qt::FramelessWindowHint);
+	QHBoxLayout l;	
+	EntryBar d;
+	d.setText("»º”Õ”‡¡ø");
+	d.setValue(20);
+	d.setUnit("kg");
 	l.addWidget(&d);
-	d.setText("ÀŸ∂»");
-	d.setValue(12345.6789);
-	d.setUnit("m/s");
 
 	w.setLayout(&l);
 	w.show();

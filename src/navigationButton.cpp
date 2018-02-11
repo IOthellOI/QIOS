@@ -27,7 +27,6 @@ ios::NavigationButton::NavigationButton(QWidget * _parent) :
 
 	data->layout = new QHBoxLayout;
 	data->layout->addWidget(data->button);
-	data->layout->setContentsMargins(0, 0, 0, 0);
 	data->layout->setMargin(0);
 	setLayout(data->layout);
 

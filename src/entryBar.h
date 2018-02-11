@@ -6,37 +6,34 @@
 /// @brief   DataSlider
 /// @version 1.0
 /// @author  Yang Wang
-/// @date    Feb 10,2018
+/// @date    Feb 11,2018
 /// @web     http://iothelloi.sxl.cn/
 /// @git     https://github.com/iothelloi/
 //////////////////////////////////////////////////
 #pragma once
-#ifndef DATASLIDER_H
-#define DATASLIDER_H
+#ifndef ENTRYBAR_H
+#define ENTRYBAR_H
 
 #include "baseWidget.h"
 
 namespace ios
 {
-	class DataSlider : public BaseWidget
+	class EntryBar : public BaseWidget
 	{
-		Q_OBJECT
 	public:
-		explicit DataSlider(QWidget * _parent = nullptr);
-		virtual ~DataSlider();
+		explicit EntryBar(QWidget * _parent = nullptr);
+		virtual ~EntryBar();
 
 	public:
 		virtual void setText(const QString & _text) const;
-		virtual void setValue(int _value) const;
+		virtual void setValue(double _value) const;
 		virtual void setUnit(const QString & _unit) const;
-
-	public slots:
-		void slotSilde(int _value);
-
+		
 	private:
-		struct DataSliderData;
-		DataSliderData * data;
+		struct EntryBarData;
+		EntryBarData * data;
 	};
 }
 
-#endif // !DATASLIDER_H
+#endif // ENTRYBAR_H
+

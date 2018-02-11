@@ -3,22 +3,15 @@
 #include <typeinfo>
 #include <QString>
 
-struct ios::BaseWidget::BaseWidgetData
-{
-	int ident;
-	QString name;
-};
-
 ios::BaseWidget::BaseWidget(QWidget * _parent) :
-	QWidget(_parent),
-	data(new BaseWidgetData)
+	QWidget(_parent)
 {
-
+	m_ident = -1;
 }
 
 ios::BaseWidget::~BaseWidget()
 {
-	delete data;
+	//empty
 }
 
 void ios::BaseWidget::setText(const QString &) const
@@ -36,12 +29,17 @@ void ios::BaseWidget::setState(int) const
 	//empty
 }
 
-void ios::BaseWidget::setValue(double _value) const
+void ios::BaseWidget::setValue(int _value) const
 {
 	//empty
 }
 
-void ios::BaseWidget::setUnit(const QString & _unit) const
+void ios::BaseWidget::setValue(double) const
+{
+	//empty
+}
+
+void ios::BaseWidget::setUnit(const QString &) const
 {
 	//empty
 }
@@ -66,22 +64,22 @@ void ios::BaseWidget::setGroup(int) const
 	//empty
 }
 
-inline void ios::BaseWidget::setIdent(int _ident) const
+inline void ios::BaseWidget::setIdent(int _ident)
 {
-	data->ident = _ident;
+	m_ident = _ident;
 }
 
 inline int ios::BaseWidget::ident() const
 {
-	return data->ident;
+	return m_ident;
 }
 
-inline void ios::BaseWidget::setName(const QString & _name) const
+inline void ios::BaseWidget::setName(const QString & _name)
 {
-	data->name = _name;
+	setObjectName(_name);
 }
 
 inline const QString & ios::BaseWidget::name() const
 {
-	return data->name;
+	return objectName();
 }

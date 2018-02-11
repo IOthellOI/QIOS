@@ -31,22 +31,22 @@ namespace ios
 		virtual void setText(const QString & _text) const;
 		virtual void setChecked(bool _checked) const;
 		virtual void setState(int _state) const;
+		virtual void setValue(int _value) const;
 		virtual void setValue(double _value) const;
 		virtual void setUnit(const QString & _unit) const;
 		virtual void loadConfig(const QString & _path) const;
 		virtual void setImage(const QImage & _image) const;;
 		virtual void setIcon(const QIcon & _icon) const;
 		virtual void setGroup(int _group) const;
-
+		
 	public:
-		void setIdent(int _ident) const;
+		void setIdent(int _ident);
 		int ident() const;
-		void setName(const QString & _name) const;
+		void setName(const QString & _name);
 		const QString & name()const;
 
 	private:
-		struct BaseWidgetData;
-		BaseWidgetData * data;
+		int m_ident;
 	};
 }
 

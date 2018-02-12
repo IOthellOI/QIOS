@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\baseWidget.cpp" />
+    <ClCompile Include="src\componentFactory.cpp" />
     <ClCompile Include="src\dataLabel.cpp" />
     <ClCompile Include="src\dataSlider.cpp" />
     <ClCompile Include="src\entryBar.cpp" />
@@ -91,6 +92,7 @@
     <ClCompile Include="src\clickButton.cpp" />
     <ClCompile Include="src\mutexButton.cpp" />
     <ClCompile Include="src\navigationButton.cpp" />
+    <ClCompile Include="src\navigationPage.cpp" />
     <ClCompile Include="src\progressBar.cpp" />
     <ClCompile Include="src\textLabel.cpp" />
     <ClCompile Include="src\toggleButton.cpp" />
@@ -230,7 +232,9 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\componentFactory.h" />
     <ClInclude Include="src\entryBar.h" />
+    <ClInclude Include="src\navigationPage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

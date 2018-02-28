@@ -13,6 +13,7 @@
 #include "dataLabel.h"
 #include "progressBar.h"
 #include "entryBar.h"
+#include "mainWindow.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -21,17 +22,7 @@ using namespace ios;
 int main(int argc, char * argv[])
 {
 	QApplication a(argc, argv);
-	QWidget w; 
-	w.setWindowFlags(Qt::FramelessWindowHint);
-
-	QHBoxLayout l;	
-	EntryBar d;
-	d.setText("»º”Õ”‡¡ø");
-	d.setValue(20);
-	d.setUnit("kg");
-	l.addWidget(&d);
-
-	w.setLayout(&l);
-	w.show();
+	ios::MainWindow window;
+	window.show();
 	return a.exec();
 }

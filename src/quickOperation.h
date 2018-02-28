@@ -3,35 +3,36 @@
 /// Copyright (c) 2018 IOThellOI
 /// All rights reserved.
 /// 
-/// @brief   NavigationPage
+/// @brief   QuickOperation
 /// @version 1.0
 /// @author  Yang Wang
-/// @date    Feb 12,2018
+/// @date    Feb 28,2018
 /// @web     http://iothelloi.sxl.cn/
 /// @git     https://github.com/iothelloi/
 //////////////////////////////////////////////////
 #pragma once
-#ifndef NAVIGATIONPAGE_H
-#define NAVIGATIONPAGE_H
+#ifndef QUICKOPERATION_H
+#define QUICKOPERATION_H
 
 #include "baseWidget.h"
 
 namespace ios
 {
-	class NavigationPage : public BaseWidget
+	class QuickOperation : public BaseWidget
 	{
+		Q_OBJECT
 	public:
-		explicit NavigationPage(QWidget * _parent = nullptr);
-		virtual ~NavigationPage();
+		explicit QuickOperation(QWidget * _parent = nullptr);
+		virtual ~QuickOperation();
+		
+	public:
+		virtual void loadConfig(const QString & _path);
 
-	public:
-		virtual void loadConfig(const QString & _path) const;
-
-	public:
-		struct NavigationPageData;
-		NavigationPageData * data;
+	private:
+		struct QuickOperationData;
+		QuickOperationData * data;
 	};
 }
 
-#endif // !NAVIGATIONPAGE_H
+#endif // !QUICKOPERATION_H
 

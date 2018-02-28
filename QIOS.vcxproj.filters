@@ -28,6 +28,9 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp</Extensions>
     </Filter>
+    <Filter Include="Config Files">
+      <UniqueIdentifier>{4cd38b3d-75ef-4f2c-87b6-4f6a40708015}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -61,6 +64,12 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="src\progressBar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\mainWindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\quickOperation.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -134,21 +143,30 @@
     <ClCompile Include="src\entryBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\navigationPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\componentFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\xmlRead.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\mainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_mainWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\navigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quickOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_quickOperation.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\entryBar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\navigationPage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\componentFactory.h">
@@ -157,5 +175,16 @@
     <ClInclude Include="src\xmlRead.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\navigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="bin\data\config\ui\navigation.xml">
+      <Filter>Config Files</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\quickOperation.xml">
+      <Filter>Config Files</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

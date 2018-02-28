@@ -1,6 +1,5 @@
 #include "xmlRead.h"
 
-#include <QDomDocument>
 #include <QFile>
 
 struct ios::XmlRead::XmlReadData
@@ -8,7 +7,6 @@ struct ios::XmlRead::XmlReadData
 	QFile * file;
 	QDomDocument * document;
 	QDomElement * element;
-	QDomNode * node;
 };
 
 ios::XmlRead::XmlRead() : 
@@ -35,8 +33,27 @@ bool ios::XmlRead::loadFile(const QString & _path)
 
 	if (data->file == nullptr)
 	{
-
+		return false;
+	}
+	else
+	{
+		data->file->open(QFile::ReadOnly);
 	}
 
+	data->document = new QDomDocument;
 
+	if (!data->document->setContent(data->file))
+	{
+		return false;
+	}
+
+	data->element = new QDomElement;
+	*data->element = data->document->documentElement();
+	
+	return true;
+}
+
+QDomElement ios::XmlRead::rootElement()
+{
+	return *data->element;
 }

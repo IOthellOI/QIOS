@@ -3,36 +3,35 @@
 /// Copyright (c) 2018 IOThellOI
 /// All rights reserved.
 /// 
-/// @brief   BaseWidget
+/// @brief   StatusMonitor
 /// @version 1.0
 /// @author  Yang Wang
-/// @date    Feb 8,2018
+/// @date    Feb 28,2018
 /// @web     http://iothelloi.sxl.cn/
 /// @git     https://github.com/iothelloi/
 //////////////////////////////////////////////////
 #pragma once
-#ifndef XMLREAD_H
-#define XMLREAD_H
+#ifndef STATUSMONITOR_H
+#define STATUSMONITOR_H
 
-#include <QObject>
-#include <QDomDocument>
+#include "baseWidget.h"
 
 namespace ios
 {
-	class XmlRead : public QObject
+	class StatusMonitor : public BaseWidget
 	{
 	public:
-		explicit XmlRead();
-		virtual ~XmlRead();
-
-	public:
-		bool loadFile(const QString & _path);
-		QDomElement rootElement();
+		Q_OBJECT
+		explicit StatusMonitor(QWidget * _parent = nullptr);
+		virtual ~StatusMonitor();
 
 	private:
-		struct XmlReadData;
-		XmlReadData * data;
+		struct StatusMonitorData;
+		StatusMonitorData * data;
 	};
 }
 
-#endif // !XMLREAD_H
+#endif // !STATUSMONITOR_H
+
+
+

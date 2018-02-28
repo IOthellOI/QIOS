@@ -96,6 +96,7 @@
     <ClCompile Include="src\progressBar.cpp" />
     <ClCompile Include="src\textLabel.cpp" />
     <ClCompile Include="src\toggleButton.cpp" />
+    <ClCompile Include="src\xmlRead.cpp" />
     <ClCompile Include="tmp\moc\moc_baseWidget.cpp" />
     <ClCompile Include="tmp\moc\moc_clickButton.cpp" />
     <ClCompile Include="tmp\moc\moc_dataLabel.cpp" />
@@ -235,6 +236,7 @@
     <ClInclude Include="src\componentFactory.h" />
     <ClInclude Include="src\entryBar.h" />
     <ClInclude Include="src\navigationPage.h" />
+    <ClInclude Include="src\xmlRead.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

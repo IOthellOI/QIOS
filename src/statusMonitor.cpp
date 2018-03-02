@@ -1,4 +1,6 @@
 #include "statusMonitor.h"
+#include "xmlRead.h"
+#include "componentFactory.h"
 
 #include <Qlayout>
 #include <QLabel>
@@ -20,8 +22,8 @@ ios::StatusMonitor::StatusMonitor(QWidget * _parent):
 {
 	//setMaximumWidth(800);
 	//setMinimumWidth(800);
-	setMaximumHeight(300);
-	setMinimumHeight(300);
+	setMaximumHeight(200);
+	setMinimumHeight(200);
 
 	data->leftLayout = new QGridLayout;
 	data->rightLayout = new QVBoxLayout;
@@ -39,9 +41,64 @@ ios::StatusMonitor::StatusMonitor(QWidget * _parent):
 	
 	setLayout(data->mainLayout);
 
+	data->timer = new QTimer;
+	connect(data->timer, SIGNAL(timeout()), this, SLOT(slotUpdateTime()));
+	data->timer->start(1000);
 }
 
 ios::StatusMonitor::~StatusMonitor()
 {
 	delete data;
+}
+
+void ios::StatusMonitor::loadConfig(const QString & _path)
+{
+	XmlRead xmlRead;
+	if (!xmlRead.loadFile(_path))
+	{
+		return;
+	}
+	QDomElement root = xmlRead.rootElement();
+
+	QDomElement element = root.firstChildElement();
+
+	BaseWidget * widget = nullptr;
+	
+	while (!element.isNull())
+	{
+		widget = ComponentFactory::create(element.attribute("type", "IndicationLabel"));
+
+		if (element.hasAttribute("name"))
+		{
+			widget->setObjectName(element.attribute("name"));
+		}
+		if (element.hasAttribute("text"))
+		{
+			widget->setText(element.attribute("text"));
+		}
+		if (element.hasAttribute("width"))
+		{
+			widget->setFixedWidth(element.attribute("width").toInt());
+		}
+		if (element.hasAttribute("height"))
+		{
+			widget->setFixedHeight(element.attribute("height").toInt());
+		}
+
+		int row = element.attribute("row").toInt();
+		int column = element.attribute("column").toInt();
+		int rowSpan = element.attribute("rowSpan").toInt();
+		int columnSpan = element.attribute("columnSpan").toInt();
+		data->leftLayout->addWidget(widget, row, column, rowSpan, columnSpan);
+
+		element = element.nextSiblingElement();
+	}
+}
+
+void ios::StatusMonitor::slotUpdateTime()
+{
+	QString time;
+	QDateTime datetime = QDateTime::currentDateTime();
+	time = datetime.toString("yyyy-mm-dd hh::mm::ss");
+	data->time->setText(time);
 }

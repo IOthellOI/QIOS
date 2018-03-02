@@ -1,4 +1,5 @@
 #include "navigationButton.h"
+#include "navigation.h"
 
 #include <QPushButton>
 #include <QToolButton>
@@ -9,6 +10,7 @@ struct ios::NavigationButton::NavigationButtonData
 {
 	QToolButton * button;
 	QHBoxLayout * layout;
+	QString * bindPage;
 	static QButtonGroup * buttonGroup;
 };
 
@@ -29,6 +31,8 @@ ios::NavigationButton::NavigationButton(QWidget * _parent) :
 	data->layout->addWidget(data->button);
 	data->layout->setMargin(0);
 	setLayout(data->layout);
+
+	data->bindPage = new QString;
 
 	data->buttonGroup->addButton(data->button);
 
@@ -52,11 +56,21 @@ void ios::NavigationButton::setIcon(const QIcon & _icon) const
 	data->button->setIconSize(size);
 }
 
+void ios::NavigationButton::setChecked(bool _checked) const
+{
+	data->button->setChecked(_checked);
+}
+
+void ios::NavigationButton::setBindPage(const QString & _page) const
+{
+	*data->bindPage = _page;
+}
+
 void ios::NavigationButton::slotClicked(bool _clicked)
 {
 	if (_clicked)
 	{
-		emit signalClicked();
+		emit signalClicked(*this->data->bindPage);
 	}
 	else
 	{

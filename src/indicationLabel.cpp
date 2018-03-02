@@ -25,6 +25,8 @@ ios::IndicationLabel::IndicationLabel(QWidget * _parent) :
 	data->layout->setMargin(0);
 
 	setLayout(data->layout);
+
+	setState(0);
 }
 
 

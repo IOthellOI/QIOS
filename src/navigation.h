@@ -20,12 +20,19 @@ namespace ios
 {
 	class Navigation : public BaseWidget
 	{
+		Q_OBJECT
 	public:
 		explicit Navigation(QWidget * _parent = nullptr);
 		virtual ~Navigation();
 
 	public:
 		virtual void loadConfig(const QString & _path) const;
+		
+	signals:
+		void signalPageChanged(const QString & _page);
+
+	public slots:
+		void slotPageChanged(const QString & _page);
 
 	public:
 		struct NavigationData;

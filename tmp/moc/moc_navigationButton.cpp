@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ios__NavigationButton_t {
-    QByteArrayData data[5];
-    char stringdata0[58];
+    QByteArrayData data[6];
+    char stringdata0[64];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,12 +34,13 @@ static const qt_meta_stringdata_ios__NavigationButton_t qt_meta_stringdata_ios__
 QT_MOC_LITERAL(0, 0, 21), // "ios::NavigationButton"
 QT_MOC_LITERAL(1, 22, 13), // "signalClicked"
 QT_MOC_LITERAL(2, 36, 0), // ""
-QT_MOC_LITERAL(3, 37, 11), // "slotClicked"
-QT_MOC_LITERAL(4, 49, 8) // "_clicked"
+QT_MOC_LITERAL(3, 37, 5), // "_page"
+QT_MOC_LITERAL(4, 43, 11), // "slotClicked"
+QT_MOC_LITERAL(5, 55, 8) // "_clicked"
 
     },
     "ios::NavigationButton\0signalClicked\0"
-    "\0slotClicked\0_clicked"
+    "\0_page\0slotClicked\0_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -57,16 +58,16 @@ static const uint qt_meta_data_ios__NavigationButton[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x06 /* Public */,
+       1,    1,   24,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       3,    1,   25,    2, 0x0a /* Public */,
+       4,    1,   27,    2, 0x0a /* Public */,
 
  // signals: parameters
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    3,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Bool,    4,
+    QMetaType::Void, QMetaType::Bool,    5,
 
        0        // eod
 };
@@ -77,14 +78,14 @@ void ios::NavigationButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         NavigationButton *_t = static_cast<NavigationButton *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->signalClicked(); break;
+        case 0: _t->signalClicked((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 1: _t->slotClicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            typedef void (NavigationButton::*_t)();
+            typedef void (NavigationButton::*_t)(const QString & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NavigationButton::signalClicked)) {
                 *result = 0;
                 return;
@@ -130,9 +131,10 @@ int ios::NavigationButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void ios::NavigationButton::signalClicked()
+void ios::NavigationButton::signalClicked(const QString & _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

@@ -28,9 +28,11 @@ namespace ios
 	public:
 		virtual void setText(const QString & _text) const;
 		virtual void setIcon(const QIcon & _icon) const;
+		virtual void setChecked(bool _checked) const;
+		virtual void setBindPage(const QString & _page) const;
 
 	signals:
-		void signalClicked();
+		void signalClicked(const QString & _page);
 
 	public slots:
 		void slotClicked(bool _clicked);

@@ -1,8 +1,10 @@
 #include "navigation.h"
 #include "xmlRead.h"
 #include "componentFactory.h"
+#include "navigationButton.h"
 
 #include <QLayout>
+#include <QVariant>
 
 struct ios::Navigation::NavigationData
 {
@@ -13,8 +15,8 @@ ios::Navigation::Navigation(QWidget * _parent) :
 	BaseWidget(_parent),
 	data(new NavigationData)
 {
-	//setMaximumWidth(350);
-	//setMinimumWidth(350);
+	setMaximumWidth(200);
+	setMinimumWidth(200);
 	data->layout = new QGridLayout;
 	data->layout->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
 	setLayout(data->layout);
@@ -37,35 +39,52 @@ void ios::Navigation::loadConfig(const QString & _path) const
 
 	QDomElement element = root.firstChildElement();
 	
-	BaseWidget * widget = nullptr;
+	NavigationButton * navigationButton = nullptr;
 
 	while (!element.isNull())
 	{
-		widget = ComponentFactory::create(element.attribute("type", "NavigationButton"));
+		navigationButton = new NavigationButton;
 
 		if (element.hasAttribute("name"))
 		{
-			widget->setObjectName(element.attribute("name"));
+			navigationButton->setObjectName(element.attribute("name"));
 		}
 		if (element.hasAttribute("text"))
 		{
-			widget->setText(element.attribute("text"));
+			navigationButton->setText(element.attribute("text"));
 		}
 		if (element.hasAttribute("width"))
 		{
-			widget->setFixedWidth(element.attribute("width").toInt());
+			navigationButton->setFixedWidth(element.attribute("width").toInt());
 		}
 		if (element.hasAttribute("height"))
 		{
-			widget->setFixedHeight(element.attribute("height").toInt());
+			navigationButton->setFixedHeight(element.attribute("height").toInt());
+		}
+		if (element.hasAttribute("checked"))
+		{
+			QVariant value = element.attribute("checked");
+			navigationButton->setChecked(value.toBool());
 		}
 
-		int row = element.attribute("row").toInt();
-		int column = element.attribute("column").toInt();
-		int rowSpan = element.attribute("rowSpan").toInt();
-		int columnSpan = element.attribute("columnSpan").toInt();
-		data->layout->addWidget(widget, row, column, rowSpan, columnSpan);
+		navigationButton->setBindPage(element.attribute("bindPage"));
+
+		data->layout->addWidget(navigationButton,
+			element.attribute("row").toInt(),
+			element.attribute("column").toInt(),
+			element.attribute("rowSpan").toInt(),
+			element.attribute("columnSpan").toInt());
+
+		connect(navigationButton, 
+			SIGNAL(signalClicked(const QString &)),
+			this, 
+			SLOT(slotPageChanged(const QString &)));
 
 		element = element.nextSiblingElement();
 	}
+}
+
+void ios::Navigation::slotPageChanged(const QString & _page)
+{
+	emit signalPageChanged(_page);
 }

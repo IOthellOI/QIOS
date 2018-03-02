@@ -15,13 +15,13 @@ ios::QuickOperation::QuickOperation(QWidget * _parent):
 {
 	//setMaximumWidth(800);
 	//setMinimumWidth(800);
-	setMaximumHeight(300);
-	setMinimumHeight(300);
+	setMaximumHeight(200);
+	setMinimumHeight(200);
 
 	data->layout = new QGridLayout;
 	data->layout->setSpacing(10);
-	data->layout->setMargin(5);
-	data->layout->setAlignment(Qt::AlignLeft | Qt::AlignBottom);
+	data->layout->setMargin(0);
+	data->layout->setAlignment(Qt::AlignCenter);
 
 	setLayout(data->layout);
 }

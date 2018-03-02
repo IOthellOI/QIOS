@@ -72,6 +72,15 @@
     <CustomBuild Include="src\quickOperation.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\statusMonitor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\mainPage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\navigation.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -164,6 +173,24 @@
     <ClCompile Include="tmp\moc\moc_quickOperation.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\statusMonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_statusMonitor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\page.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_mainPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_navigation.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\entryBar.h">
@@ -175,7 +202,7 @@
     <ClInclude Include="src\xmlRead.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\navigation.h">
+    <ClInclude Include="src\page.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -184,6 +211,12 @@
       <Filter>Config Files</Filter>
     </Xml>
     <Xml Include="bin\data\config\ui\quickOperation.xml">
+      <Filter>Config Files</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\statusMonitor.xml">
+      <Filter>Config Files</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\mainPage.xml">
       <Filter>Config Files</Filter>
     </Xml>
   </ItemGroup>

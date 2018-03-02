@@ -64,22 +64,22 @@ void ios::BaseWidget::setGroup(int) const
 	//empty
 }
 
-inline void ios::BaseWidget::setIdent(int _ident)
+void ios::BaseWidget::setIdent(int _ident)
 {
 	m_ident = _ident;
 }
 
-inline int ios::BaseWidget::ident() const
+int ios::BaseWidget::ident() const
 {
 	return m_ident;
 }
 
-inline void ios::BaseWidget::setName(const QString & _name)
+void ios::BaseWidget::setName(const QString & _name)
 {
 	setObjectName(_name);
 }
 
-inline const QString & ios::BaseWidget::name() const
+const QString & ios::BaseWidget::name() const
 {
 	return objectName();
 }

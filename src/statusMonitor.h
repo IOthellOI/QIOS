@@ -20,10 +20,16 @@ namespace ios
 {
 	class StatusMonitor : public BaseWidget
 	{
-	public:
 		Q_OBJECT
+	public:
 		explicit StatusMonitor(QWidget * _parent = nullptr);
 		virtual ~StatusMonitor();
+
+	public:
+		virtual void loadConfig(const QString & _path);
+
+	public slots:
+		void slotUpdateTime();
 
 	private:
 		struct StatusMonitorData;

@@ -9,6 +9,7 @@
 #include "progressBar.h"
 #include "textLabel.h"
 #include "toggleButton.h"
+#include "dataButton.h"
 
 ios::BaseWidget * ios::ComponentFactory::create(const QString & _type)
 {
@@ -51,6 +52,10 @@ ios::BaseWidget * ios::ComponentFactory::create(const QString & _type)
 	else if (_type.toUpper() == "TOGGLEBUTTON")
 	{
 		return new ToggleButton;
+	}
+	else if (_type.toUpper() == "DATABUTTON")
+	{
+		return new DataButton;
 	}
 	else
 	{

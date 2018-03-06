@@ -31,6 +31,9 @@
     <Filter Include="Config Files">
       <UniqueIdentifier>{4cd38b3d-75ef-4f2c-87b6-4f6a40708015}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Config Files\Pagination">
+      <UniqueIdentifier>{af23e3ea-3cc5-457f-b003-b036c7ca51f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -79,6 +82,12 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="src\navigation.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\inputPage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\dataButton.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -191,6 +200,21 @@
     <ClCompile Include="tmp\moc\moc_navigation.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\inputPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_inputPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dataButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_dataButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernelData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\entryBar.h">
@@ -203,6 +227,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kernelData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -218,6 +245,15 @@
     </Xml>
     <Xml Include="bin\data\config\ui\mainPage.xml">
       <Filter>Config Files</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\flightSetting.xml">
+      <Filter>Config Files\Pagination</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\environmentSetting.xml">
+      <Filter>Config Files\Pagination</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\generalParameter.xml">
+      <Filter>Config Files\Pagination</Filter>
     </Xml>
   </ItemGroup>
 </Project>

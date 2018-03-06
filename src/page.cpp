@@ -83,6 +83,14 @@ void ios::Page::loadConfig(const QString & _path) const
 			{
 				widget->setText(element.attribute("text"));
 			}
+			if (element.hasAttribute("group"))
+			{
+				widget->setGroup(element.attribute("group").toInt());
+			}
+			if (element.hasAttribute("unit"))
+			{
+				widget->setUnit(element.attribute("unit"));
+			}
 
 			layout->addWidget(widget,
 				element.attribute("row").toInt(),

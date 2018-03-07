@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systems title="" alignment="0" >
+    <widget name="" text="复位"           row="0" column="0" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="开始"           row="0" column="1" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="冻结/解冻"      row="0" column="2" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="飞机配置保存"   row="0" column="3" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="发动机快启"     row="0" column="4" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="燃油冻结"       row="0" column="5" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="弹射器准备"     row="0" column="6" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="飞机系航母"     row="1" column="0" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="(平显)快速对准" row="1" column="1" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="航母迅捷操作"   row="1" column="2" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="模拟器上电"     row="1" column="3" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="座舱设备下电"   row="1" column="4" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="模拟器关机"     row="1" column="5" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+    <widget name="" text="退出"           row="1" column="6" rowSpan="1" columnSpan="1" width="100" height="50" ></widget>
+</systems>

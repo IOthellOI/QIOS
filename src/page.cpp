@@ -91,6 +91,10 @@ void ios::Page::loadConfig(const QString & _path) const
 			{
 				widget->setUnit(element.attribute("unit"));
 			}
+			if (element.hasAttribute("value"))
+			{
+				widget->setValue(element.attribute("value").toDouble());
+			}
 
 			layout->addWidget(widget,
 				element.attribute("row").toInt(),

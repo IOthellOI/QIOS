@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page title="飞机设置">
+  <component title="飞机设置" row="0" column="0" rowSpan="1" columnSpan="1" >
+    <element name="" text="飞机状态" type="ClickButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="飞行模式" type="ClickButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="质量状态" type="ClickButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="空机质量" type="DataButton"  row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="载重"     type="DataButton"  row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="燃油重量" type="DataButton"  row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="载重模式" type="ClickButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="重心"     type="DataButton"  row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="起落架"   type="ClickButton" row="0" column="4" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="襟缝翼"   type="ClickButton" row="0" column="5" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+  </component>
+  <component title="机场设置" row="0" column="1" rowSpan="1" columnSpan="1" >
+    <element name="" text="机场(跑道)" type="ClickButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="跑道类型"   type="ClickButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="机场高度"   type="DataButton"  row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="机场大气压" type="DataButton"  row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="气压高度"   type="DataButton"  row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="坐标X0"     type="DataButton"  row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="坐标Y0"     type="DataButton"  row="1" column="4" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+  </component>
+  <component title="飞行参数" row="1" column="0" rowSpan="1" columnSpan="2" >
+    <element name="" text="俯仰角"       type="DataButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="滚转角"       type="DataButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="偏航角"       type="DataButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="方向舵偏置"   type="DataButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="升降舵偏置"   type="DataButton" row="0" column="4" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="副翼偏置"     type="DataButton" row="0" column="5" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="俯仰角速率"   type="DataButton" row="0" column="6" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="滚转角速率"   type="DataButton" row="0" column="7" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="偏航角速率"   type="DataButton" row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="配平位置"     type="DataButton" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="迎角"         type="DataButton" row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="侧滑角"       type="DataButton" row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="水平安定面Fi" type="DataButton" row="1" column="4" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="真空速"       type="DataButton" row="1" column="5" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="油门位置"     type="DataButton" row="1" column="6" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="舰船备用"     type="DataButton" row="1" column="7" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+  </component>
+  <component title="其他" row="2" column="0" rowSpan="1" columnSpan="2" >
+    <element name="" text=""           type=""            row="0" column="0" rowSpan="1" columnSpan="1" width="600" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="下载"       type="ClickButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="确认"       type="ClickButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+    <element name="" text="保存设置"   type="ClickButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="65" bind_labels="GLOBAL_LABEL_ID_1##GLOBAL_LABEL_ID_2"/>
+  </component>
+</page>

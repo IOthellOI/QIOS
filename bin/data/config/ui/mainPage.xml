@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mainPage>
+  <page name="flightSetting" path="./data/config/ui/pagination/flightSetting.xml"> </page>
+  <page name="environmentSetting" path="./data/config/ui/pagination/environmentSetting.xml"> </page>
+  <page name="generalParameter" path="./data/config/ui/pagination/generalParameter.xml"> </page>
+  <page name="environmentSetting" path="./data/config/ui/pagination/environmentSetting.xml"> </page>
+  <page name="environmentSetting" path="./data/config/ui/pagination/environmentSetting.xml"> </page>
+</mainPage>

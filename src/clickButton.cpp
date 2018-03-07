@@ -24,6 +24,8 @@ ios::ClickButton::ClickButton(QWidget * _parent) :
 	data->layout->setMargin(0);
 	setLayout(data->layout);
 
+	setStyleSheet("border-image: url();");
+
 	connect(data->button, SIGNAL(clicked(bool)), this, SLOT(slotClicked(bool)));
 }
 

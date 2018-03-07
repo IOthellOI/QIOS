@@ -12,7 +12,7 @@ struct ios::Page::PageData
 	QGroupBox * box;
 };
 
-ios::Page::Page(QWidget * _parent):
+ios::Page::Page(QWidget * _parent) :
 	BaseWidget(_parent),
 	data(new PageData)
 {
@@ -22,6 +22,8 @@ ios::Page::Page(QWidget * _parent):
 
 	QVBoxLayout * layout = new QVBoxLayout;
 	layout->addWidget(data->box);
+
+	setStyleSheet("border-image: url(:/img/backGroud/page.png);");
 
 	setLayout(layout);
 }

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page title="平台监控">
+  <component title="座舱接口" row="0" column="0" rowSpan="1" columnSpan="2" >
+    <element name="" text="01数据" type="dataLabel" value="888" unit="N/A" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="02数据" type="dataLabel" value="888" unit="N/A" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="03数据" type="dataLabel" value="888" unit="N/A" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="04数据" type="dataLabel" value="888" unit="N/A" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="05数据" type="dataLabel" value="888" unit="N/A" row="0" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="06数据" type="dataLabel" value="888" unit="N/A" row="0" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="07数据" type="dataLabel" value="888" unit="N/A" row="0" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="08数据" type="dataLabel" value="888" unit="N/A" row="0" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="09数据" type="dataLabel" value="888" unit="N/A" row="0" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="10数据" type="dataLabel" value="888" unit="N/A" row="0" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="11数据" type="dataLabel" value="888" unit="N/A" row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="12数据" type="dataLabel" value="888" unit="N/A" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="13数据" type="dataLabel" value="888" unit="N/A" row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="14数据" type="dataLabel" value="888" unit="N/A" row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="15数据" type="dataLabel" value="888" unit="N/A" row="1" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="16数据" type="dataLabel" value="888" unit="N/A" row="1" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="17数据" type="dataLabel" value="888" unit="N/A" row="1" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="18数据" type="dataLabel" value="888" unit="N/A" row="1" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="19数据" type="dataLabel" value="888" unit="N/A" row="1" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="20数据" type="dataLabel" value="888" unit="N/A" row="1" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="21数据" type="dataLabel" value="888" unit="N/A" row="2" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="22数据" type="dataLabel" value="888" unit="N/A" row="2" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="23数据" type="dataLabel" value="888" unit="N/A" row="2" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="24数据" type="dataLabel" value="888" unit="N/A" row="2" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="25数据" type="dataLabel" value="888" unit="N/A" row="2" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="26数据" type="dataLabel" value="888" unit="N/A" row="2" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="27数据" type="dataLabel" value="888" unit="N/A" row="2" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="28数据" type="dataLabel" value="888" unit="N/A" row="2" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="29数据" type="dataLabel" value="888" unit="N/A" row="2" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="30数据" type="dataLabel" value="888" unit="N/A" row="2" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+ 
+    <element name="" text="31数据" type="dataLabel" value="888" unit="N/A" row="3" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="32数据" type="dataLabel" value="888" unit="N/A" row="3" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="33数据" type="dataLabel" value="888" unit="N/A" row="3" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="34数据" type="dataLabel" value="888" unit="N/A" row="3" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="35数据" type="dataLabel" value="888" unit="N/A" row="3" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="36数据" type="dataLabel" value="888" unit="N/A" row="3" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="37数据" type="dataLabel" value="888" unit="N/A" row="3" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="38数据" type="dataLabel" value="888" unit="N/A" row="3" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="39数据" type="dataLabel" value="888" unit="N/A" row="3" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="40数据" type="dataLabel" value="888" unit="N/A" row="3" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="41数据" type="dataLabel" value="888" unit="N/A" row="4" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="42数据" type="dataLabel" value="888" unit="N/A" row="4" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="43数据" type="dataLabel" value="888" unit="N/A" row="4" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="44数据" type="dataLabel" value="888" unit="N/A" row="4" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="45数据" type="dataLabel" value="888" unit="N/A" row="4" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="46数据" type="dataLabel" value="888" unit="N/A" row="4" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="47数据" type="dataLabel" value="888" unit="N/A" row="4" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="48数据" type="dataLabel" value="888" unit="N/A" row="4" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="49数据" type="dataLabel" value="888" unit="N/A" row="4" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="50数据" type="dataLabel" value="888" unit="N/A" row="4" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="51数据" type="dataLabel" value="888" unit="N/A" row="5" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="52数据" type="dataLabel" value="888" unit="N/A" row="5" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="53数据" type="dataLabel" value="888" unit="N/A" row="5" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="54数据" type="dataLabel" value="888" unit="N/A" row="5" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="55数据" type="dataLabel" value="888" unit="N/A" row="5" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="56数据" type="dataLabel" value="888" unit="N/A" row="5" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="57数据" type="dataLabel" value="888" unit="N/A" row="5" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="58数据" type="dataLabel" value="888" unit="N/A" row="5" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="59数据" type="dataLabel" value="888" unit="N/A" row="5" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="60数据" type="dataLabel" value="888" unit="N/A" row="5" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="61数据" type="dataLabel" value="888" unit="N/A" row="6" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="62数据" type="dataLabel" value="888" unit="N/A" row="6" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="63数据" type="dataLabel" value="888" unit="N/A" row="6" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="64数据" type="dataLabel" value="888" unit="N/A" row="6" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="65数据" type="dataLabel" value="888" unit="N/A" row="6" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="66数据" type="dataLabel" value="888" unit="N/A" row="6" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="67数据" type="dataLabel" value="888" unit="N/A" row="6" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="68数据" type="dataLabel" value="888" unit="N/A" row="6" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="69数据" type="dataLabel" value="888" unit="N/A" row="6" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="70数据" type="dataLabel" value="888" unit="N/A" row="6" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+ 
+    <element name="" text="71数据" type="dataLabel" value="888" unit="N/A" row="7" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="72数据" type="dataLabel" value="888" unit="N/A" row="7" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="73数据" type="dataLabel" value="888" unit="N/A" row="7" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="74数据" type="dataLabel" value="888" unit="N/A" row="7" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="75数据" type="dataLabel" value="888" unit="N/A" row="7" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="76数据" type="dataLabel" value="888" unit="N/A" row="7" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="77数据" type="dataLabel" value="888" unit="N/A" row="7" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="78数据" type="dataLabel" value="888" unit="N/A" row="7" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="79数据" type="dataLabel" value="888" unit="N/A" row="7" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="80数据" type="dataLabel" value="888" unit="N/A" row="7" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="81数据" type="dataLabel" value="888" unit="N/A" row="8" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="82数据" type="dataLabel" value="888" unit="N/A" row="8" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="83数据" type="dataLabel" value="888" unit="N/A" row="8" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="84数据" type="dataLabel" value="888" unit="N/A" row="8" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="85数据" type="dataLabel" value="888" unit="N/A" row="8" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="86数据" type="dataLabel" value="888" unit="N/A" row="8" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="87数据" type="dataLabel" value="888" unit="N/A" row="8" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="88数据" type="dataLabel" value="888" unit="N/A" row="8" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="89数据" type="dataLabel" value="888" unit="N/A" row="8" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="90数据" type="dataLabel" value="888" unit="N/A" row="8" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+
+    <element name="" text="91数据" type="dataLabel" value="888" unit="N/A" row="9" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="92数据" type="dataLabel" value="888" unit="N/A" row="9" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="93数据" type="dataLabel" value="888" unit="N/A" row="9" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="94数据" type="dataLabel" value="888" unit="N/A" row="9" column="3" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="95数据" type="dataLabel" value="888" unit="N/A" row="9" column="4" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="96数据" type="dataLabel" value="888" unit="N/A" row="9" column="5" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="97数据" type="dataLabel" value="888" unit="N/A" row="9" column="6" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="98数据" type="dataLabel" value="888" unit="N/A" row="9" column="7" rowSpan="1" columnSpan="1" width="120" height="65"/>
+    <element name="" text="99数据" type="dataLabel" value="888" unit="N/A" row="9" column="8" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="A0数据" type="dataLabel" value="888" unit="N/A" row="9" column="9" rowSpan="1" columnSpan="1" width="120" height="50"/>
+  </component>
+  <component title="操纵负荷系统" row="1" column="0" rowSpan="1" columnSpan="1" >
+    <element name="" text="启动"       type="toggleButton"                     row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="未启动"     type="indicationLabel"                  row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="力1"        type="dataLabel" value="888" unit="N"   row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="力2"        type="dataLabel" value="888" unit="N"   row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="力3"        type="dataLabel" value="888" unit="N"   row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="位移1"      type="dataLabel" value="888" unit="cm"  row="2" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="位移2"      type="dataLabel" value="888" unit="cm"  row="2" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="位移3"      type="dataLabel" value="888" unit="cm"  row="2" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="配平位置1"  type="dataLabel" value="888" unit="cm"  row="3" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="配平位置2"  type="dataLabel" value="888" unit="cm"  row="3" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="配平位置3"  type="dataLabel" value="888" unit="cm"  row="3" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+  </component>
+  <component title="运动平台" row="1" column="1" rowSpan="1" columnSpan="1" >
+    <element name="" text="启动"       type="toggleButton"                         row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="未启动"     type="indicationLabel"                      row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="系统故障1"  type="dataLabel" value="888" unit=""     row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="系统故障2"  type="dataLabel" value="888" unit=""     row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="系统故障3"  type="dataLabel" value="888" unit=""     row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="角加速度1"  type="dataLabel" value="888" unit="m/s"  row="2" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="角加速度2"  type="dataLabel" value="888" unit="m/s"  row="2" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="角加速度3"  type="dataLabel" value="888" unit="m/s"  row="2" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="角速率1"    type="dataLabel" value="888" unit="m/s2" row="3" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="角速率2"    type="dataLabel" value="888" unit="m/s2" row="3" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="角速率3"    type="dataLabel" value="888" unit="m/s2" row="3" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="起落架收放" type="dataLabel" value="888" unit="m/s2" row="4" column="0" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="地面速度"   type="dataLabel" value="888" unit="m/s2" row="4" column="1" rowSpan="1" columnSpan="1" width="120" height="50"/>
+    <element name="" text="襟缝翼收放" type="dataLabel" value="888" unit="m/s2" row="4" column="2" rowSpan="1" columnSpan="1" width="120" height="50"/>
+  </component>
+</page>

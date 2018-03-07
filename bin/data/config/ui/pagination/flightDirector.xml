@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page title="状态显示">
+  <component title="任意视角" row="0" column="0" rowSpan="1" columnSpan="1" >
+    <element name="" text="俯仰控制" type="dataSlider"                    row="0" column="0" rowSpan="1" columnSpan="1" width="360" height="50" />
+    <element name="" text="俯仰角度" type="dataLabel" value="0" unit="度" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="偏航控制" type="dataSlider"                    row="1" column="0" rowSpan="1" columnSpan="1" width="360" height="50" />
+    <element name="" text="偏航角度" type="dataLabel" value="0" unit="度" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="视点距离" type="dataSlider"                    row="2" column="0" rowSpan="1" columnSpan="1" width="360" height="50" />
+    <element name="" text="视点距离" type="dataLabel" value="0" unit="米" row="2" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+  </component>
+  <component title="指定视角" row="0" column="1" rowSpan="1" columnSpan="1" >
+    <element name="" text="飞机视点"       type="clickButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="航母视点"       type="clickButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="拦阻索位置"     type="clickButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="监视弹射器"     type="clickButton" row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="菲涅尔透镜位置" type="clickButton" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="领航员视点"     type="clickButton" row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="50" />
+  </component>
+  <component title="航母" row="1" column="0" rowSpan="1" columnSpan="1" >
+    <element name="" text="升降梯"       type="clickButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="雷达天线升降" type="clickButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="雷达天线旋转" type="clickButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="航母迅捷操作" type="clickButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="50" />
+  </component>
+  <component title="菲涅尔灯" row="1" column="1" rowSpan="1" columnSpan="1" >
+    <element name="" text="基准灯"     type="toggleButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="禁降复飞灯" type="toggleButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="切断灯"     type="toggleButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="透镜光强"   type="toggleButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="50" />
+  </component>
+  <component title="飞行指引" row="2" column="0" rowSpan="1" columnSpan="2" >
+    <element name="" text="综合纠偏决策" type="dataButton" row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="复飞决策"     type="dataButton" row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="垂直位移"     type="dataButton" row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="纵向偏差"     type="dataButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="下降率"       type="dataButton" row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="横向偏差"     type="dataButton" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="航向偏差"     type="dataButton" row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="接近速度"     type="dataButton" row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="65" />
+  </component>
+</page>

@@ -17,6 +17,7 @@ ios::DataLabel::DataLabel(QWidget * _parent) :
 {
 	data->name = new QLabel;
 	data->value = new QLabel;
+	data->value->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 	data->unit = new QLabel;
 
 	data->layout = new QHBoxLayout;

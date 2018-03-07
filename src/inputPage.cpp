@@ -5,6 +5,8 @@
 #include <QLabel>
 #include <QFont>
 
+#pragma execution_character_set("utf-8")
+
 struct ios::InputPage::InputPageData
 {
 	QGridLayout * layout;
@@ -22,7 +24,8 @@ ios::InputPage::InputPage(QWidget * _parent):
 	data->layout = new QGridLayout;
 	data->layout->setSizeConstraint(QLayout::SetFixedSize);
 
-	data->label = new QLabel;
+	data->label = new QLabel("最小值:0   最大值:99999   当前值:0   单位:米");
+	data->label->setAlignment(Qt::AlignCenter);
 
 	data->edit = new QLineEdit("0");
 

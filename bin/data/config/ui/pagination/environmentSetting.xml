@@ -38,17 +38,23 @@
     <element name="" text="风衰减因子"  type="dataButton"                           row="0" column="2" rowSpan="1" columnSpan="1" width="120" height="65" />
     <element name="" text="微暴风重心X" type="dataButton"                           row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="65" />
     <element name="" text="微暴风重心Z" type="dataButton"                           row="0" column="4" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="静风"        type="mutexButton" checked="true" group="4" row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="常值风"      type="mutexButton"                group="4" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="阵风"        type="mutexButton"                group="4" row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="风切变"      type="mutexButton"                group="4" row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="微暴"        type="mutexButton"                group="4" row="1" column="4" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="紊流"        type="mutexButton"                group="4" row="1" column="5" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="低空紊流"    type="mutexButton" checked="true" group="5" row="2" column="0" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="晴空紊流"    type="mutexButton"                group="5" row="2" column="1" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="雷暴紊流"    type="mutexButton"                group="5" row="2" column="2" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="轻度紊流"    type="mutexButton"                group="6" row="2" column="3" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="中度紊流"    type="mutexButton"                group="6" row="2" column="4" rowSpan="1" columnSpan="1" width="120" height="65" />
-    <element name="" text="重度紊流"    type="mutexButton"                group="6" row="2" column="5" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="静风"        type="mutexButton" checked="true" group="4" row="1" column="0" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="常值风"      type="mutexButton"                group="4" row="1" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="阵风"        type="mutexButton"                group="4" row="1" column="2" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="风切变"      type="mutexButton"                group="4" row="1" column="3" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="微暴"        type="mutexButton"                group="4" row="1" column="4" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="紊流"        type="mutexButton"                group="4" row="1" column="5" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="低空紊流"    type="mutexButton" checked="true" group="5" row="2" column="0" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="晴空紊流"    type="mutexButton"                group="5" row="2" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="雷暴紊流"    type="mutexButton"                group="5" row="2" column="2" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="轻度紊流"    type="mutexButton" checked="true" group="6" row="2" column="3" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="中度紊流"    type="mutexButton"                group="6" row="2" column="4" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="重度紊流"    type="mutexButton"                group="6" row="2" column="5" rowSpan="1" columnSpan="1" width="120" height="50" />
+  </component>
+  <component title="声音控制" row="3" column="0" rowSpan="1" columnSpan="1" >
+    <element name="" text="通道选择"     type="dataButton"   row="0" column="0" rowSpan="1" columnSpan="1" width="120" height="65" />
+    <element name="" text="通道选择确认" type="clickButton"  row="0" column="1" rowSpan="1" columnSpan="1" width="120" height="50" />
+    <element name="" text="音量控制"     type="dataSlider"   row="0" column="2" rowSpan="1" columnSpan="1" width="300" height="50" />
+    <element name="" text="音效开关"     type="toggleButton" row="0" column="3" rowSpan="1" columnSpan="1" width="120" height="50" />
   </component>
 </page>

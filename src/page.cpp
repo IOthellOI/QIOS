@@ -4,6 +4,7 @@
 
 #include <QLayout>
 #include <QGroupBox>
+#include <QVariant>
 
 struct ios::Page::PageData
 {
@@ -94,6 +95,10 @@ void ios::Page::loadConfig(const QString & _path) const
 			if (element.hasAttribute("value"))
 			{
 				widget->setValue(element.attribute("value").toDouble());
+			}
+			if (element.hasAttribute("checked"))
+			{
+				widget->setChecked((QVariant(element.attribute("checked"))).toBool());
 			}
 
 			layout->addWidget(widget,

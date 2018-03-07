@@ -90,6 +90,9 @@
     <CustomBuild Include="src\dataButton.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\powerControl.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -215,6 +218,12 @@
     <ClCompile Include="kernelData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\powerControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_powerControl.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\entryBar.h">
@@ -253,6 +262,18 @@
       <Filter>Config Files\Pagination</Filter>
     </Xml>
     <Xml Include="bin\data\config\ui\pagination\generalParameter.xml">
+      <Filter>Config Files\Pagination</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\powerControl.xml">
+      <Filter>Config Files\Pagination</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\hardwareManagement.xml">
+      <Filter>Config Files\Pagination</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\flightDirector.xml">
+      <Filter>Config Files\Pagination</Filter>
+    </Xml>
+    <Xml Include="bin\data\config\ui\pagination\platformMonitor.xml">
       <Filter>Config Files\Pagination</Filter>
     </Xml>
   </ItemGroup>

@@ -10,6 +10,7 @@
 #include "textLabel.h"
 #include "toggleButton.h"
 #include "dataButton.h"
+#include "powerControl.h"
 
 ios::BaseWidget * ios::ComponentFactory::create(const QString & _type)
 {
@@ -57,6 +58,10 @@ ios::BaseWidget * ios::ComponentFactory::create(const QString & _type)
 	{
 		return new DataButton;
 	}
+	else if (_type.toUpper() == "POWERCONTROL")
+	{
+		return new PowerControl;
+	}	
 	else
 	{
 		return nullptr;

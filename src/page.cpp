@@ -23,8 +23,6 @@ ios::Page::Page(QWidget * _parent) :
 	QVBoxLayout * layout = new QVBoxLayout;
 	layout->addWidget(data->box);
 
-	setStyleSheet("border-image: url(:/img/backGroud/page.png);");
-
 	setLayout(layout);
 }
 

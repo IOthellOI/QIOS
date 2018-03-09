@@ -47,8 +47,8 @@ ios::MainWindow::MainWindow(QWidget * _parent):
 	setLayout(mainLayout);
 
 	setWindowFlags(Qt::FramelessWindowHint);
-	setWindowState(Qt::WindowMaximized);
-
+	setFixedHeight(1080);
+	setFixedWidth(1920);
 	connect(data->navigation,
 		SIGNAL(signalPageChanged(const QString &)),
 		data->mainPage,

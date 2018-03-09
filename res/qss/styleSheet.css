@@ -1,0 +1,19 @@
+ClickButton {
+    border-radius: 4px;
+    border: none;
+    background: rgb(80, 80, 80);
+}
+
+QToolButton {
+    border: none;
+}
+
+    QToolButton:enabled {
+        background: rgb(80, 80, 80);
+    }
+    QToolButton:hover {
+        background: rgb(100, 100, 100);
+    }
+    QToolButton:checked {
+        background: rgb(150, 150, 150);
+    }

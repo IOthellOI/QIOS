@@ -7,5 +7,51 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-SOURCES += main.cpp
+HEADERS += ./kernelData.h \
+    ./src/componentFactory.h \
+    ./src/entryBar.h \
+    ./src/page.h \
+    ./src/xmlRead.h \
+    ./src/baseWidget.h \
+    ./src/clickButton.h \
+    ./src/toggleButton.h \
+    ./src/mutexButton.h \
+    ./src/navigationButton.h \
+    ./src/textLabel.h \
+    ./src/indicationLabel.h \
+    ./src/dataSlider.h \
+    ./src/dataLabel.h \
+    ./src/progressBar.h \
+    ./src/dataButton.h \
+    ./src/mainWindow.h \
+    ./src/mainPage.h \
+    ./src/navigation.h \
+    ./src/quickOperation.h \
+    ./src/statusMonitor.h \
+    ./src/inputPage.h \
+    ./src/powerControl.h
+SOURCES += ./kernelData.cpp \
+    ./src/baseWidget.cpp \
+    ./src/componentFactory.cpp \
+    ./src/dataButton.cpp \
+    ./src/dataLabel.cpp \
+    ./src/dataSlider.cpp \
+    ./src/entryBar.cpp \
+    ./src/indicationLabel.cpp \
+    ./src/inputPage.cpp \
+    ./src/main.cpp \
+    ./src/clickButton.cpp \
+    ./src/mainPage.cpp \
+    ./src/mainWindow.cpp \
+    ./src/mutexButton.cpp \
+    ./src/navigationButton.cpp \
+    ./src/navigation.cpp \
+    ./src/page.cpp \
+    ./src/powerControl.cpp \
+    ./src/progressBar.cpp \
+    ./src/quickOperation.cpp \
+    ./src/statusMonitor.cpp \
+    ./src/textLabel.cpp \
+    ./src/toggleButton.cpp \
+    ./src/xmlRead.cpp
 RESOURCES += QIOS.qrc

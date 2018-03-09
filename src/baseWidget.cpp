@@ -7,6 +7,7 @@ ios::BaseWidget::BaseWidget(QWidget * _parent) :
 	QWidget(_parent)
 {
 	m_ident = -1;
+	setStyleSheet("border-image: url();");
 }
 
 ios::BaseWidget::~BaseWidget()
@@ -29,7 +30,7 @@ void ios::BaseWidget::setState(int) const
 	//empty
 }
 
-void ios::BaseWidget::setValue(int _value) const
+void ios::BaseWidget::setValue(int) const
 {
 	//empty
 }

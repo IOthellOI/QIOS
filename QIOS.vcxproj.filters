@@ -277,4 +277,9 @@
       <Filter>Config Files\Pagination</Filter>
     </Xml>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="res\qss\styleSheet.css">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

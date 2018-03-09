@@ -18,7 +18,8 @@ ios::Navigation::Navigation(QWidget * _parent) :
 	setMaximumWidth(200);
 	setMinimumWidth(200);
 	data->layout = new QGridLayout;
-	data->layout->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+	data->layout->setAlignment(Qt::AlignLeft | Qt::AlignTop);
+	data->layout->setSpacing(0);
 	setLayout(data->layout);
 }
 

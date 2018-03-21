@@ -2,16 +2,30 @@
 #include <QFile>
 
 #include "clickButton.h"
+#include "windowForm.h"
+#include "pageBar.h"
 
 #pragma execution_character_set("utf-8")
-
 
 int main(int argc, char * argv[])
 {
 	QApplication a(argc, argv);
 
-	ClickButton button;
-	button.show();
+	a.setFont(QFont("Microsoft Yahei", 9));
+	a.setWindowIcon(QIcon("./res/ico/main.ico"));
+
+	QFile file("./res/qss/styleSheet.css");
+	if (file.open(QFile::ReadOnly))
+	{
+		QString qss = QLatin1String(file.readAll());
+		//QString paletteColor = qss.mid(20, 7);
+		//qApp->setPalette(QPalette(QColor(paletteColor)));
+		qApp->setStyleSheet(qss);
+		file.close();
+	}
+
+	WindowForm w;
+	w.show();
 
 	return a.exec();
 }

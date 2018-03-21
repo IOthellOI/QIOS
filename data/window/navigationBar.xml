@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root title="" alignment="0" >
+  <oneLevel text="监视">
+    <twoLevel text="计算机设备"/>
+    <twoLevel text="座舱设备"/>
+  </oneLevel>
+  <oneLevel text="任务">
+    <twoLevel text="任务设置"/>
+    <twoLevel text="初始化设置"/>
+    <twoLevel text="环境设置"/>
+    <twoLevel text="联网设置"/>
+  </oneLevel>
+  <oneLevel text="故障">
+    <twoLevel text="常用故障"/>
+    <twoLevel text="故障索引"/>
+    <twoLevel text="故障一览"/>
+  </oneLevel>
+  <oneLevel text="信息">
+    <twoLevel text="训练管理"/>
+    <twoLevel text="用户管理"/>
+  </oneLevel>
+  <oneLevel text="维护">
+    <twoLevel text="运行信息"/>
+    <twoLevel text="系统日志"/>
+    <twoLevel text="维护日志"/>
+  </oneLevel>
+</root>

@@ -28,258 +28,140 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp</Extensions>
     </Filter>
-    <Filter Include="Config Files">
-      <UniqueIdentifier>{4cd38b3d-75ef-4f2c-87b6-4f6a40708015}</UniqueIdentifier>
+    <Filter Include="Header Files\button">
+      <UniqueIdentifier>{660143e8-7ad1-45a4-b981-eb73e84c7a39}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Config Files\Pagination">
-      <UniqueIdentifier>{af23e3ea-3cc5-457f-b003-b036c7ca51f9}</UniqueIdentifier>
+    <Filter Include="Source Files\button">
+      <UniqueIdentifier>{b84961ef-5044-4b02-b1b6-cbb1dab54302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\label">
+      <UniqueIdentifier>{aedf1ab5-abd1-43d1-9293-28abfe38fd9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\label">
+      <UniqueIdentifier>{c0da4b49-d4e4-409a-aa9a-9de8eb4d236b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\window">
+      <UniqueIdentifier>{9b46d208-d8a4-4d79-b2ee-44701a4cc0af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\window">
+      <UniqueIdentifier>{655d7471-a0b5-4ca0-996a-8d3eaaa6c2a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xml">
+      <UniqueIdentifier>{d034fb18-e152-4cd2-a03e-96fff3bd36e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{7b0f5206-be52-4d75-a469-2d4f434c5bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config Files">
+      <UniqueIdentifier>{ce1ebfad-1522-4183-ad64-8bf4fe451b02}</UniqueIdentifier>
+      <Extensions>*.xml</Extensions>
+    </Filter>
+    <Filter Include="Config Files\window">
+      <UniqueIdentifier>{c1ba3c38-c27c-489e-90b2-6f66fb666a96}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\baseWidget.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\button\clickButton.h">
+      <Filter>Header Files\button</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\toggleButton.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\button\navigationButton.h">
+      <Filter>Header Files\button</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\clickButton.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\window\titleBar.h">
+      <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\mutexButton.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\label\textLabel.h">
+      <Filter>Header Files\label</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\navigationButton.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\window\navigationBar.h">
+      <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\textLabel.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\window\statusBar.h">
+      <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\indicationLabel.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\window\pageBar.h">
+      <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\dataSlider.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="windowForm.h">
+      <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\dataLabel.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\progressBar.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\mainWindow.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\quickOperation.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\statusMonitor.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\mainPage.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\navigation.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\inputPage.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\dataButton.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\powerControl.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="src\xml\xmlRead.h">
+      <Filter>Header Files\xml</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\baseWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_baseWidget.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\toggleButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_toggleButton.cpp">
+    <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_clickButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\clickButton.cpp">
+    <ClCompile Include="src\button\clickButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\mutexButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_mutexButton.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\navigationButton.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\button\navigationButton.cpp">
+      <Filter>Source Files\button</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_navigationButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
-      <Filter>Generated Files</Filter>
+    <ClCompile Include="src\label\textLabel.cpp">
+      <Filter>Source Files\label</Filter>
     </ClCompile>
-    <ClCompile Include="src\textLabel.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\window\titleBar.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window\navigationBar.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_titleBar.cpp">
+      <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_textLabel.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\indicationLabel.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\window\statusBar.cpp">
+      <Filter>Source Files\window</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\moc\moc_indicationLabel.cpp">
+    <ClCompile Include="tmp\moc\moc_navigationBar.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\moc\moc_dataSlider.cpp">
+    <ClCompile Include="tmp\moc\moc_statusBar.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\dataSlider.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_dataLabel.cpp">
+    <ClCompile Include="tmp\moc\moc_pageBar.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\dataLabel.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\window\pageBar.cpp">
+      <Filter>Source Files\window</Filter>
     </ClCompile>
-    <ClCompile Include="src\progressBar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_progressBar.cpp">
+    <ClCompile Include="tmp\moc\moc_windowForm.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\entryBar.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="windowForm.cpp">
+      <Filter>Source Files\window</Filter>
     </ClCompile>
-    <ClCompile Include="src\componentFactory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\xml\xmlRead.cpp">
+      <Filter>Source Files\xml</Filter>
     </ClCompile>
-    <ClCompile Include="src\xmlRead.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\mainWindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_mainWindow.cpp">
+    <ClCompile Include="tmp\moc\moc_xmlRead.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\navigation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\quickOperation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_quickOperation.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\statusMonitor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_statusMonitor.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\page.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\mainPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_mainPage.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_navigation.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\inputPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_inputPage.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\dataButton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_dataButton.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kernelData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\powerControl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_powerControl.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\entryBar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\componentFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\xmlRead.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\page.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="kernelData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="bin\data\config\ui\navigation.xml">
-      <Filter>Config Files</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\quickOperation.xml">
-      <Filter>Config Files</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\statusMonitor.xml">
-      <Filter>Config Files</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\mainPage.xml">
-      <Filter>Config Files</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\flightSetting.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\environmentSetting.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\generalParameter.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\powerControl.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\hardwareManagement.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\flightDirector.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
-    <Xml Include="bin\data\config\ui\pagination\platformMonitor.xml">
-      <Filter>Config Files\Pagination</Filter>
-    </Xml>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\qss\styleSheet.css">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="data\window\navigationBar.xml">
+      <Filter>Config Files\window</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

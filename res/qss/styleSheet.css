@@ -1,19 +1,15 @@
-ClickButton {
-    border-radius: 4px;
-    border: none;
-    background: rgb(80, 80, 80);
+TitleBar {
+    background-color: rgb(71,120,199);
 }
 
-QToolButton {
-    border: none;
+NavigationBar {
+    background-color: rgb(47,50,59);
 }
 
-    QToolButton:enabled {
-        background: rgb(80, 80, 80);
-    }
-    QToolButton:hover {
-        background: rgb(100, 100, 100);
-    }
-    QToolButton:checked {
-        background: rgb(150, 150, 150);
-    }
+PageBar {
+    background-color: rgb(230,230,230);
+}
+
+StatusBar {
+    background-color: rgb(71,120,199);
+}

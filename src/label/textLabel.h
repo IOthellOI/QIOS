@@ -3,26 +3,25 @@
 /// Copyright (c) 2018 IOThellOI
 /// All rights reserved.
 /// 
-/// @brief   ClickButton
+/// @brief   TextLabel
 /// @version 1.0
 /// @author  Yang Wang
 /// @date    Mar 20,2018
 //////////////////////////////////////////////////
 #pragma once
-#ifndef CLICKBUTTON_H
-#define CLICKBUTTON_H
+#ifndef TEXTLABEL_H
+#define TEXTLABEL_H
 
-#include <QPushButton>
+#include <QLabel>
 
-class ClickButton : public QPushButton
+class TextLabel : public QLabel
 {
 	Q_OBJECT
 public:
-	explicit ClickButton(QWidget * _parent = nullptr);
-	virtual ~ClickButton();
-	
+	explicit TextLabel(QWidget * _parent = nullptr);
+	virtual ~TextLabel();
+
 protected:
-	virtual void mousePressEvent(QMouseEvent * _event);	
 };
 
-#endif // !CLICKBUTTON_H
+#endif // !TEXTLABEL_H

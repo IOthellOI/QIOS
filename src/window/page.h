@@ -24,12 +24,6 @@ public:
 public:
 	void loadConfig(const QString  & _path);
 
-signals:
-	void signalNavigationChange(const QString & _value);
-
-private slots:
-	void slotNavigationChange(int _id);
-
 private:
 	struct NavigationBarPrivate;
 	NavigationBarPrivate * data;

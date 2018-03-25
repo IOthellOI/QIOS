@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root title="" alignment="0" >
-  <oneLevel text="监视">
+<root navigationData="navigationData">
+  <oneLevel text="监视" icon="./res/ico/main.ico">
     <twoLevel text="计算机设备"/>
     <twoLevel text="座舱设备"/>
   </oneLevel>

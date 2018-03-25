@@ -1,9 +1,9 @@
 #include <QApplication>
 #include <QFile>
+#include <QIcon>
 
-#include "clickButton.h"
+#include "dataPool.h"
 #include "windowForm.h"
-#include "pageBar.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -23,9 +23,11 @@ int main(int argc, char * argv[])
 		qApp->setStyleSheet(qss);
 		file.close();
 	}
+	DataPool d;
+	d.loadConfig("./data/data/dataPool.xml");
 
 	WindowForm w;
 	w.show();
-
+	
 	return a.exec();
 }

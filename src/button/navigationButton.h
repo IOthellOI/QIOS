@@ -21,9 +21,15 @@ public:
 	explicit NavigationButton(QWidget * _parent = nullptr);
 	virtual ~NavigationButton();
 
+public:
+	virtual void setIcon(const QIcon & _icon);
+
 protected:
-	virtual void mousePressEvent(QMouseEvent * _event);
-	
+	bool eventFilter(QObject * _object, QEvent * _event);
+
+private:
+	struct NavigationButtonPrivate;
+	NavigationButtonPrivate * data;
 };
 
 

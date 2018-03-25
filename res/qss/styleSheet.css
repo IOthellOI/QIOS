@@ -1,15 +1,74 @@
-TitleBar {
+QFrame#TitleBar {
     background-color: rgb(71,120,199);
 }
 
-NavigationBar {
+QFrame#NavigationBar {
     background-color: rgb(47,50,59);
 }
 
-PageBar {
-    background-color: rgb(230,230,230);
+QFrame#PaginationBar {
+    background-color: gray;
+    border-top: 15px solid gray;
 }
 
-StatusBar {
+QFrame#PageBar {
+    background-color: rgb(230,230,230);
+    border-right: 15px solid gray;
+    border-top: 15px solid gray;
+    border-bottom: 15px solid gray;
+}
+
+QFrame#StatusBar {
     background-color: rgb(71,120,199);
 }
+
+QToolButton#NavigationButton {
+    width: 120px;
+    height: 120px;
+    border-style: none;
+    text-align: center;
+}
+    QToolButton#NavigationButton:enabled {
+        background-color: rgb(47,50,59);
+        color: white;
+    }
+    QToolButton#NavigationButton:hover {
+        background-color: rgb(180,180,180);
+        color: black;
+    }
+    QToolButton#NavigationButton:pressed {
+        background-color: gray;
+        color: black;
+    }
+    QToolButton#NavigationButton:checked {
+        background-color: gray;
+        color: black;
+    }
+
+QToolButton#PaginationButton {
+    width: 105px;
+    height: 105px;
+    icon-size: 75px 75px;
+    border-style: none;
+    text-align: center;
+}
+
+    QToolButton#PaginationButton:enabled {
+        background-color: grey;
+        color: white;
+    }
+
+    QToolButton#PaginationButton:hover {
+        background-color: white;
+        color: black;
+    }
+
+    QToolButton#PaginationButton:pressed {
+        background-color: rgb(230,230,230);
+        color: black;
+    }
+
+    QToolButton#PaginationButton:checked {
+        background-color: rgb(230,230,230);
+        color: black;
+    }

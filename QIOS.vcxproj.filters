@@ -59,6 +59,21 @@
     <Filter Include="Config Files\window">
       <UniqueIdentifier>{c1ba3c38-c27c-489e-90b2-6f66fb666a96}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\data">
+      <UniqueIdentifier>{50340331-8af3-4990-acbb-69cc31c30f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data">
+      <UniqueIdentifier>{e90246d2-aabc-418a-89f1-35bf45f63740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config Files\data">
+      <UniqueIdentifier>{ab921199-1d36-44c3-8c3c-b32e47a07902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{ac97cf44-ee89-4f6b-8b0a-ca858b868619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{53732668-fd7c-4f31-93ff-32caaeda96ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -90,6 +105,18 @@
     </CustomBuild>
     <CustomBuild Include="src\xml\xmlRead.h">
       <Filter>Header Files\xml</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\window\paginationBar.h">
+      <Filter>Header Files\window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\paginationButton.h">
+      <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\data\internalData.h">
+      <Filter>Header Files\data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\data\dataPool.h">
+      <Filter>Header Files\data</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -153,15 +180,40 @@
     <ClCompile Include="tmp\moc\moc_xmlRead.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\qss\styleSheet.css">
-      <Filter>Resource Files</Filter>
-    </None>
+    <ClCompile Include="tmp\moc\moc_paginationBar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window\paginationBar.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_paginationButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\paginationButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\internalData.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_internalData.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_dataPool.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\dataPool.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
       <Filter>Config Files\window</Filter>
+    </Xml>
+    <Xml Include="data\data\dataPool.xml">
+      <Filter>Config Files\data</Filter>
+    </Xml>
+    <Xml Include="data\data\internalData.xml">
+      <Filter>Config Files\data</Filter>
     </Xml>
   </ItemGroup>
 </Project>

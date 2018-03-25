@@ -3,25 +3,25 @@
 
 #include <QFile>
 
-struct xml::XmlRead::XmlReadPrivate
+struct XmlRead::XmlReadPrivate
 {
 	QFile * file;
 	QDomDocument * document;
 	QDomElement * element;
 };
 
-xml::XmlRead::XmlRead() : 
+XmlRead::XmlRead() : 
 	data(new XmlReadPrivate)
 {
 	//empty
 }
 
-xml::XmlRead::~XmlRead()
+XmlRead::~XmlRead()
 {
 	delete data;
 }
 
-void xml::XmlRead::loadFile(const QString & _path)
+void XmlRead::loadFile(const QString & _path)
 {
 	assert(!_path.isEmpty());
 
@@ -43,7 +43,7 @@ void xml::XmlRead::loadFile(const QString & _path)
 	*data->element = data->document->documentElement();
 }
 
-QDomElement xml::XmlRead::rootElement()
+QDomElement XmlRead::rootElement()
 {
 	return *data->element;
 }

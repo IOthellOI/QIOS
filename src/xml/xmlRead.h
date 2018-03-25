@@ -15,23 +15,20 @@
 #include <QObject>
 #include <QDomDocument>
 
-namespace xml
+class XmlRead : public QObject
 {
-	class XmlRead : public QObject
-	{
-		Q_OBJECT
-	public:
-		explicit XmlRead();
-		virtual ~XmlRead();
+	Q_OBJECT
+public:
+	explicit XmlRead();
+	virtual ~XmlRead();
 
-	public:
-		void loadFile(const QString & _path);
-		QDomElement rootElement();
+public:
+	void loadFile(const QString & _path);
+	QDomElement rootElement();
 
-	private:
-		struct XmlReadPrivate;
-		XmlReadPrivate * data;
-	};
-}
+private:
+	struct XmlReadPrivate;
+	XmlReadPrivate * data;
+};
 
 #endif // !XMLREAD_H

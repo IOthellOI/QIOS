@@ -3,19 +3,21 @@ QFrame#TitleBar {
 }
 
 QFrame#NavigationBar {
+    max-width: 100px;
     background-color: rgb(47,50,59);
 }
 
 QFrame#PaginationBar {
-    background-color: gray;
-    border-top: 15px solid gray;
+    max-width: 100px;
+    background-color: rgb(88, 88, 88);
+    border-top: 15px solid rgb(88, 88, 88);
 }
 
 QFrame#PageBar {
     background-color: rgb(230,230,230);
-    border-right: 15px solid gray;
-    border-top: 15px solid gray;
-    border-bottom: 15px solid gray;
+    border-right: 15px solid rgb(88, 88, 88);
+    border-top: 15px solid rgb(88, 88, 88);
+    border-bottom: 15px solid rgb(88, 88, 88);
 }
 
 QFrame#StatusBar {
@@ -23,9 +25,9 @@ QFrame#StatusBar {
 }
 
 QToolButton#NavigationButton {
-    width: 120px;
+    width: 100px;
     height: 120px;
-    border-style: none;
+    border-style: solid;
     text-align: center;
 }
     QToolButton#NavigationButton:enabled {
@@ -33,28 +35,28 @@ QToolButton#NavigationButton {
         color: white;
     }
     QToolButton#NavigationButton:hover {
-        background-color: rgb(180,180,180);
+        background-color: rgb(80,80,80);
         color: black;
     }
     QToolButton#NavigationButton:pressed {
-        background-color: gray;
+        background-color: rgb(88, 88, 88);
         color: black;
     }
     QToolButton#NavigationButton:checked {
-        background-color: gray;
+        background-color: rgb(88, 88, 88);
         color: black;
     }
 
 QToolButton#PaginationButton {
-    width: 105px;
-    height: 105px;
+    width: 80px;
+    height: 100px;
     icon-size: 75px 75px;
     border-style: none;
     text-align: center;
 }
 
     QToolButton#PaginationButton:enabled {
-        background-color: grey;
+        background-color: rgb(88, 88, 88);
         color: white;
     }
 

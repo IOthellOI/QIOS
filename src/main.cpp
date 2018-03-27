@@ -27,7 +27,7 @@ int main(int argc, char * argv[])
 	d.loadConfig("./data/data/dataPool.xml");
 
 	WindowForm w;
-	w.show();
+	w.showFullScreen();
 	
 	return a.exec();
 }

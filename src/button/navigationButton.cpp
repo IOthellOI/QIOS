@@ -74,7 +74,14 @@ QImage toGray(QImage image)
 	ret.setColorCount(256);
 	for (int i = 0; i < 256; i++)
 	{
-		ret.setColor(i, qRgb(i, i, i));
+		if (i == 0)
+		{
+			ret.setColor(i, qRgba(i, i, i, 0));
+		}
+		else
+		{
+			ret.setColor(i, qRgb(i, i, i));
+		}
 	}
 	switch (image.format())
 	{

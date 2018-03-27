@@ -11,8 +11,7 @@ WindowForm::WindowForm(QWidget * _parent) :
 	QWidget(_parent)
 {
 	setObjectName("WindowForm");
-	setFixedHeight(1080);
-	setFixedWidth(1920); 
+
 	setWindowFlags(Qt::FramelessWindowHint);
 
 	TitleBar * titleBar = new TitleBar;

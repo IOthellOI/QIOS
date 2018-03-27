@@ -68,11 +68,11 @@
     <Filter Include="Config Files\data">
       <UniqueIdentifier>{ab921199-1d36-44c3-8c3c-b32e47a07902}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\base">
-      <UniqueIdentifier>{ac97cf44-ee89-4f6b-8b0a-ca858b868619}</UniqueIdentifier>
+    <Filter Include="Header Files\ini">
+      <UniqueIdentifier>{0aa9b216-952b-4e41-a41d-ec2e5496dd32}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\base">
-      <UniqueIdentifier>{53732668-fd7c-4f31-93ff-32caaeda96ca}</UniqueIdentifier>
+    <Filter Include="Source Files\ini">
+      <UniqueIdentifier>{5985af11-2ca4-446b-afbc-a28ff74d5002}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +117,9 @@
     </CustomBuild>
     <CustomBuild Include="src\data\dataPool.h">
       <Filter>Header Files\data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ini\iniRead.h">
+      <Filter>Header Files\ini</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +207,15 @@
     <ClCompile Include="src\data\dataPool.cpp">
       <Filter>Source Files\data</Filter>
     </ClCompile>
+    <ClCompile Include="src\ini\iniRead.cpp">
+      <Filter>Source Files\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_iniRead.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label\pictureLabel.cpp">
+      <Filter>Source Files\label</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -215,5 +227,10 @@
     <Xml Include="data\data\internalData.xml">
       <Filter>Config Files\data</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\label\pictureLabel.h">
+      <Filter>Header Files\label</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

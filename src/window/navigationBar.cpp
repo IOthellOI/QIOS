@@ -18,8 +18,6 @@ NavigationBar::NavigationBar(QFrame * _parent) :
 	data(new NavigationBarPrivate)
 {
 	setObjectName("NavigationBar");
-	setMinimumWidth(120);
-	setMaximumWidth(120);
 
 	data->layout = new QVBoxLayout;
 	data->layout->setMargin(0);

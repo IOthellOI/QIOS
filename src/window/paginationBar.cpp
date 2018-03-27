@@ -20,8 +20,6 @@ PaginationBar::PaginationBar(QFrame * _parent) :
 	data(new PaginationBarPrivate)
 {
 	setObjectName("PaginationBar");
-	setMinimumWidth(120);
-	setMaximumWidth(120);
 
 	data->layout = new QStackedLayout;
 	data->vector = new QVector<QButtonGroup *>;

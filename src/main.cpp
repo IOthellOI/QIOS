@@ -4,6 +4,7 @@
 
 #include "dataPool.h"
 #include "windowForm.h"
+#include "iniRead.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -26,8 +27,11 @@ int main(int argc, char * argv[])
 	DataPool d;
 	d.loadConfig("./data/data/dataPool.xml");
 
+	IniRead i;
+	i.loadIni("./data/config.ini");
+
 	WindowForm w;
-	w.showFullScreen();
+	w.show();
 	
 	return a.exec();
 }

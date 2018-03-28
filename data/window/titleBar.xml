@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <layout alignment="left">
+    <emptyWidget width="30" height="30"/>
+    <pictureLabel icon="./res/ico/person.png" width="30" height="30"/>
+  </layout>
+</root>

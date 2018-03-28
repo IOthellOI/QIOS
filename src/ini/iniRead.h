@@ -13,6 +13,7 @@
 #define INIREAD_H
 
 #include <QObject>
+#include <QSize>
 
 class IniRead : public QObject
 {
@@ -21,8 +22,12 @@ public:
 	explicit IniRead(QObject * _prent = nullptr);
 	virtual ~IniRead();
 
+public:
+	void loadIni(const QString & _path);
+	static QSize windowFormSize();
+
 	struct IniReadPrivate;
-	IniReadPrivate * data;
+	static IniReadPrivate * data;
 };
 
 #endif // !INIREAD_H

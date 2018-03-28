@@ -49,9 +49,7 @@ void NavigationBar::loadConfig(const QString & _path)
 
 	QDomElement root = xmlRead.rootElement();
 
-	auto b = DataPool::internalDataMap()->value(root.attribute("navigationData"));
-
-	auto a = connect(this,
+	connect(this,
 		SIGNAL(signalNavigationChange(const QString &)),
 		DataPool::internalDataMap()->value(root.attribute("navigationData")),
 		SLOT(slotDataUpdate(const QString &)));

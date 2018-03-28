@@ -20,6 +20,13 @@ class TitleBar : public QFrame
 public:
 	explicit TitleBar(QFrame * _parent = nullptr);
 	virtual ~TitleBar();
+
+public:
+	void loadConfig(const QString & _path);
+
+private:
+	struct TitleBarPrivate;
+	TitleBarPrivate * data;
 };
 
 #endif // !TITLEBAR_H

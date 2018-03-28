@@ -74,6 +74,12 @@
     <Filter Include="Source Files\ini">
       <UniqueIdentifier>{5985af11-2ca4-446b-afbc-a28ff74d5002}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\factory">
+      <UniqueIdentifier>{b7a89d27-e5a6-4f39-ada2-1b655b663799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\factory">
+      <UniqueIdentifier>{ea422033-b595-4279-aaae-8b7b13fb4a59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -100,9 +106,6 @@
     <CustomBuild Include="src\window\pageBar.h">
       <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="windowForm.h">
-      <Filter>Header Files\window</Filter>
-    </CustomBuild>
     <CustomBuild Include="src\xml\xmlRead.h">
       <Filter>Header Files\xml</Filter>
     </CustomBuild>
@@ -120,6 +123,9 @@
     </CustomBuild>
     <CustomBuild Include="src\ini\iniRead.h">
       <Filter>Header Files\ini</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\window\windowForm.h">
+      <Filter>Header Files\window</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -171,12 +177,6 @@
     <ClCompile Include="src\window\pageBar.cpp">
       <Filter>Source Files\window</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\moc\moc_windowForm.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="windowForm.cpp">
-      <Filter>Source Files\window</Filter>
-    </ClCompile>
     <ClCompile Include="src\xml\xmlRead.cpp">
       <Filter>Source Files\xml</Filter>
     </ClCompile>
@@ -216,6 +216,15 @@
     <ClCompile Include="src\label\pictureLabel.cpp">
       <Filter>Source Files\label</Filter>
     </ClCompile>
+    <ClCompile Include="tmp\moc\moc_windowForm.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window\windowForm.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\factory\widgetFactory.cpp">
+      <Filter>Source Files\factory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -227,10 +236,16 @@
     <Xml Include="data\data\internalData.xml">
       <Filter>Config Files\data</Filter>
     </Xml>
+    <Xml Include="data\window\titleBar.xml">
+      <Filter>Config Files\window</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\label\pictureLabel.h">
       <Filter>Header Files\label</Filter>
+    </ClInclude>
+    <ClInclude Include="src\factory\widgetFactory.h">
+      <Filter>Header Files\factory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

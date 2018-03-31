@@ -127,6 +127,9 @@
     <CustomBuild Include="src\window\windowForm.h">
       <Filter>Header Files\window</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\window\loginForm.h">
+      <Filter>Header Files\window</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
@@ -224,6 +227,12 @@
     </ClCompile>
     <ClCompile Include="src\factory\widgetFactory.cpp">
       <Filter>Source Files\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window\loginForm.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_loginForm.cpp">
+      <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

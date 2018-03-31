@@ -7,51 +7,37 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-HEADERS += ./kernelData.h \
-    ./src/componentFactory.h \
-    ./src/entryBar.h \
-    ./src/page.h \
-    ./src/xmlRead.h \
-    ./src/baseWidget.h \
-    ./src/clickButton.h \
-    ./src/toggleButton.h \
-    ./src/mutexButton.h \
-    ./src/navigationButton.h \
-    ./src/textLabel.h \
-    ./src/indicationLabel.h \
-    ./src/dataSlider.h \
-    ./src/dataLabel.h \
-    ./src/progressBar.h \
-    ./src/dataButton.h \
-    ./src/mainWindow.h \
-    ./src/mainPage.h \
-    ./src/navigation.h \
-    ./src/quickOperation.h \
-    ./src/statusMonitor.h \
-    ./src/inputPage.h \
-    ./src/powerControl.h
-SOURCES += ./kernelData.cpp \
-    ./src/baseWidget.cpp \
-    ./src/componentFactory.cpp \
-    ./src/dataButton.cpp \
-    ./src/dataLabel.cpp \
-    ./src/dataSlider.cpp \
-    ./src/entryBar.cpp \
-    ./src/indicationLabel.cpp \
-    ./src/inputPage.cpp \
-    ./src/main.cpp \
-    ./src/clickButton.cpp \
-    ./src/mainPage.cpp \
-    ./src/mainWindow.cpp \
-    ./src/mutexButton.cpp \
-    ./src/navigationButton.cpp \
-    ./src/navigation.cpp \
-    ./src/page.cpp \
-    ./src/powerControl.cpp \
-    ./src/progressBar.cpp \
-    ./src/quickOperation.cpp \
-    ./src/statusMonitor.cpp \
-    ./src/textLabel.cpp \
-    ./src/toggleButton.cpp \
-    ./src/xmlRead.cpp
+HEADERS += ./src/button/clickButton.h \
+    ./src/button/navigationButton.h \
+    ./src/button/paginationButton.h \
+    ./src/label/pictureLabel.h \
+    ./src/label/textLabel.h \
+    ./src/window/navigationBar.h \
+    ./src/window/titleBar.h \
+    ./src/window/statusBar.h \
+    ./src/window/pageBar.h \
+    ./src/window/paginationBar.h \
+    ./src/window/windowForm.h \
+    ./src/xml/xmlRead.h \
+    ./src/data/internalData.h \
+    ./src/data/dataPool.h \
+    ./src/ini/iniRead.h \
+    ./src/factory/widgetFactory.h
+SOURCES += ./src/main.cpp \
+    ./src/button/clickButton.cpp \
+    ./src/button/navigationButton.cpp \
+    ./src/button/paginationButton.cpp \
+    ./src/label/pictureLabel.cpp \
+    ./src/label/textLabel.cpp \
+    ./src/window/navigationBar.cpp \
+    ./src/window/pageBar.cpp \
+    ./src/window/paginationBar.cpp \
+    ./src/window/statusBar.cpp \
+    ./src/window/titleBar.cpp \
+    ./src/window/windowForm.cpp \
+    ./src/xml/xmlRead.cpp \
+    ./src/data/dataPool.cpp \
+    ./src/data/internalData.cpp \
+    ./src/ini/iniRead.cpp \
+    ./src/factory/widgetFactory.cpp
 RESOURCES += QIOS.qrc

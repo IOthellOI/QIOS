@@ -80,6 +80,12 @@
     <Filter Include="Source Files\factory">
       <UniqueIdentifier>{ea422033-b595-4279-aaae-8b7b13fb4a59}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\edit">
+      <UniqueIdentifier>{c713c9b9-5d0b-414e-92ca-7c4d80eb70a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\edit">
+      <UniqueIdentifier>{8e716a9c-263d-4451-b7f8-1bb2b5690607}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -129,6 +135,9 @@
     </CustomBuild>
     <CustomBuild Include="src\window\loginForm.h">
       <Filter>Header Files\window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\edit\UserEidt.h">
+      <Filter>Header Files\edit</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +241,12 @@
       <Filter>Source Files\window</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_loginForm.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\edit\UserEidt.cpp">
+      <Filter>Source Files\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_UserEidt.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>

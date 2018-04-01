@@ -21,8 +21,6 @@ public:
 	explicit ClickButton(QWidget * _parent = nullptr);
 	virtual ~ClickButton();
 	
-protected:
-	virtual void mousePressEvent(QMouseEvent * _event);	
 };
 
 #endif // !CLICKBUTTON_H

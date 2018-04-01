@@ -23,6 +23,7 @@ TitleBar::TitleBar(QFrame * _parent) :
 	data->layout->setSpacing(0);
 
 	setLayout(data->layout);
+
 }
 
 TitleBar::~TitleBar()

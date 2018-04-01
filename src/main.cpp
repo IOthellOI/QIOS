@@ -5,6 +5,7 @@
 #include "dataPool.h"
 #include "windowForm.h"
 #include "iniRead.h"
+#include "userEdit.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -28,8 +29,8 @@ int main(int argc, char * argv[])
 	IniRead i;
 	i.loadIni("./data/config.ini");
 
-	WindowForm w;
-	w.show();
+	//WindowForm w;
+	//w.show();
 	
 	return a.exec();
 }

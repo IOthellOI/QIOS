@@ -136,8 +136,14 @@
     <CustomBuild Include="src\window\loginForm.h">
       <Filter>Header Files\window</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\edit\UserEidt.h">
+    <CustomBuild Include="src\edit\userEdit.h">
       <Filter>Header Files\edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\edit\passwordEdit.h">
+      <Filter>Header Files\edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\radioButton.h">
+      <Filter>Header Files\button</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -243,10 +249,22 @@
     <ClCompile Include="tmp\moc\moc_loginForm.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\edit\UserEidt.cpp">
+    <ClCompile Include="src\edit\userEdit.cpp">
       <Filter>Source Files\edit</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\moc\moc_UserEidt.cpp">
+    <ClCompile Include="tmp\moc\moc_userEdit.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_passwordEdit.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\edit\passwordEdit.cpp">
+      <Filter>Source Files\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\radioButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_radioButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>

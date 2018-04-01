@@ -30,18 +30,22 @@ QToolButton#NavigationButton {
     border-style: solid;
     text-align: center;
 }
+
     QToolButton#NavigationButton:enabled {
         background-color: rgb(47,50,59);
         color: white;
     }
+
     QToolButton#NavigationButton:hover {
         background-color: rgb(80,80,80);
         color: black;
     }
+
     QToolButton#NavigationButton:pressed {
         background-color: rgb(88, 88, 88);
         color: black;
     }
+
     QToolButton#NavigationButton:checked {
         background-color: rgb(88, 88, 88);
         color: black;
@@ -74,3 +78,12 @@ QToolButton#PaginationButton {
         background-color: rgb(230,230,230);
         color: black;
     }
+
+QLabel#UserEdit {
+    background-color: rgb(110, 122, 247);
+    image: url(./res/ico/person.png);
+}
+
+QLineEdit#UserEdit {
+    font-size: 24px;
+}

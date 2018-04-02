@@ -15,7 +15,7 @@ public:
 public:
 	void setIcon(const QPicture &_picture);
 	void setText(const QString & _text);
-	const QString & text();
+	QString text();
 
 private:
 	struct PasswordEditData;

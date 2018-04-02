@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'windowForm.h'
+** Meta object code from reading C++ file 'passwordEdit.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.10.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../src/window/windowForm.h"
+#include "../../src/edit/passwordEdit.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'windowForm.h' doesn't include <QObject>."
+#error "The header file 'passwordEdit.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.10.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -20,25 +20,25 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_WindowForm_t {
+struct qt_meta_stringdata_PasswordEdit_t {
     QByteArrayData data[1];
-    char stringdata0[11];
+    char stringdata0[13];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_WindowForm_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_PasswordEdit_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_WindowForm_t qt_meta_stringdata_WindowForm = {
+static const qt_meta_stringdata_PasswordEdit_t qt_meta_stringdata_PasswordEdit = {
     {
-QT_MOC_LITERAL(0, 0, 10) // "WindowForm"
+QT_MOC_LITERAL(0, 0, 12) // "PasswordEdit"
 
     },
-    "WindowForm"
+    "PasswordEdit"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_WindowForm[] = {
+static const uint qt_meta_data_PasswordEdit[] = {
 
  // content:
        7,       // revision
@@ -54,7 +54,7 @@ static const uint qt_meta_data_WindowForm[] = {
        0        // eod
 };
 
-void WindowForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void PasswordEdit::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -62,26 +62,26 @@ void WindowForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     Q_UNUSED(_a);
 }
 
-const QMetaObject WindowForm::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_WindowForm.data,
-      qt_meta_data_WindowForm,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject PasswordEdit::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_PasswordEdit.data,
+      qt_meta_data_PasswordEdit,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *WindowForm::metaObject() const
+const QMetaObject *PasswordEdit::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *WindowForm::qt_metacast(const char *_clname)
+void *PasswordEdit::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_WindowForm.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_PasswordEdit.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int WindowForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int PasswordEdit::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     return _id;

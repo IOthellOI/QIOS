@@ -46,7 +46,7 @@ void PasswordEdit::setText(const QString & _text)
 	data->edit->setPlaceholderText(_text);
 }
 
-const QString & PasswordEdit::text()
+QString PasswordEdit::text()
 {
 	return data->edit->text();
 }

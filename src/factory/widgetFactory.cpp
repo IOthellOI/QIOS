@@ -15,7 +15,7 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	}
 	else if (element.nodeName().toUpper() == "EMPTYWIDGET")
 	{
-		return creatPictrueLabel(element);
+		return creatEmptyWidget(element);
 	}
 	else
 	{

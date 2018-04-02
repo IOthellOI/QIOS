@@ -130,20 +130,20 @@
     <CustomBuild Include="src\ini\iniRead.h">
       <Filter>Header Files\ini</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\window\windowForm.h">
-      <Filter>Header Files\window</Filter>
-    </CustomBuild>
     <CustomBuild Include="src\window\loginForm.h">
       <Filter>Header Files\window</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\edit\userEdit.h">
-      <Filter>Header Files\edit</Filter>
     </CustomBuild>
     <CustomBuild Include="src\edit\passwordEdit.h">
       <Filter>Header Files\edit</Filter>
     </CustomBuild>
     <CustomBuild Include="src\button\radioButton.h">
       <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\window\mainForm.h">
+      <Filter>Header Files\window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\edit\loginEdit.h">
+      <Filter>Header Files\edit</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -234,12 +234,6 @@
     <ClCompile Include="src\label\pictureLabel.cpp">
       <Filter>Source Files\label</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\moc\moc_windowForm.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\window\windowForm.cpp">
-      <Filter>Source Files\window</Filter>
-    </ClCompile>
     <ClCompile Include="src\factory\widgetFactory.cpp">
       <Filter>Source Files\factory</Filter>
     </ClCompile>
@@ -247,12 +241,6 @@
       <Filter>Source Files\window</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_loginForm.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\edit\userEdit.cpp">
-      <Filter>Source Files\edit</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_userEdit.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_passwordEdit.cpp">
@@ -266,6 +254,21 @@
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_radioButton.cpp">
       <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\loginButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window\mainForm.cpp">
+      <Filter>Source Files\window</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_mainForm.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_loginEdit.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\edit\loginEdit.cpp">
+      <Filter>Source Files\edit</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +284,9 @@
     <Xml Include="data\window\titleBar.xml">
       <Filter>Config Files\window</Filter>
     </Xml>
+    <Xml Include="data\window\loginForm.xml">
+      <Filter>Config Files\window</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\label\pictureLabel.h">
@@ -289,5 +295,13 @@
     <ClInclude Include="src\factory\widgetFactory.h">
       <Filter>Header Files\factory</Filter>
     </ClInclude>
+    <ClInclude Include="src\button\loginButton.h">
+      <Filter>Header Files\button</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\qss\styleSheet.css">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

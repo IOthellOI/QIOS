@@ -1,4 +1,4 @@
-#include "windowForm.h"
+#include "mainForm.h"
 #include "titleBar.h"
 #include "navigationBar.h"
 #include "paginationBar.h"
@@ -8,10 +8,10 @@
 
 #include <QLayout>
 
-WindowForm::WindowForm(QWidget * _parent) :
+MainForm::MainForm(QWidget * _parent) :
 	QWidget(_parent)
 {
-	setObjectName("WindowForm");
+	setObjectName("MainForm");
 
 	setWindowFlags(Qt::FramelessWindowHint);
 
@@ -33,12 +33,12 @@ WindowForm::WindowForm(QWidget * _parent) :
 	layout->addWidget(pageBar, 1, 2, 1, 1);
 	layout->addWidget(statusBar, 2, 0, 1, 3);
 
-	setMinimumSize(IniRead::windowFormSize());
-	setMaximumSize(IniRead::windowFormSize());
+	setMinimumSize(IniRead::mainFormSize());
+	setMaximumSize(IniRead::mainFormSize());
 
 	setLayout(layout);
 }
 
-WindowForm::~WindowForm()
+MainForm::~MainForm()
 {
 }

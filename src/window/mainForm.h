@@ -3,24 +3,24 @@
 /// Copyright (c) 2018 IOThellOI
 /// All rights reserved.
 /// 
-/// @brief   WindowForm
+/// @brief   MainForm
 /// @version 1.0
 /// @author  Yang Wang
 /// @date    Mar 20,2018
 //////////////////////////////////////////////////
-#ifndef WINDOWFORM_H
-#define WINDOWFORM_H
+#ifndef MAINFORM_H
+#define MAINFORM_H
 #pragma once
 
 #include <QWidget>
 
-class WindowForm : public  QWidget
+class MainForm : public  QWidget
 {
 	Q_OBJECT
 public:
-	explicit WindowForm(QWidget * _parent = nullptr);
-	virtual ~WindowForm();
+	explicit MainForm(QWidget * _parent = nullptr);
+	virtual ~MainForm();
 };
 
-#endif // !WINDOWFORM_H
+#endif // !MAINFORM_H
 

@@ -3,9 +3,9 @@
 #include <QIcon>
 
 #include "dataPool.h"
-#include "windowForm.h"
+#include "mainForm.h"
 #include "iniRead.h"
-#include "userEdit.h"
+#include "loginForm.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -14,7 +14,6 @@ int main(int argc, char * argv[])
 	QApplication a(argc, argv);
 
 	a.setFont(QFont("Microsoft Yahei", 9));
-	a.setWindowIcon(QIcon("./res/ico/main.ico"));
 
 	QFile file("./res/qss/styleSheet.css");
 	if (file.open(QFile::ReadOnly))
@@ -24,13 +23,14 @@ int main(int argc, char * argv[])
 		file.close();
 	}
 	DataPool d;
-	d.loadConfig("./data/data/dataPool.xml");
 
 	IniRead i;
-	i.loadIni("./data/config.ini");
 
 	//WindowForm w;
 	//w.show();
+		
+	LoginForm w;
+	w.show();
 	
 	return a.exec();
 }

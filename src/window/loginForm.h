@@ -20,6 +20,9 @@ public:
 	explicit LoginForm(QWidget * _parent = nullptr);
 	virtual ~LoginForm();
 
+public:
+	void loadConfig(const QString  & _path);
+
 	struct LoginFormPrivate;
 	LoginFormPrivate * data;
 };

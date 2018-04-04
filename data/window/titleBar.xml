@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <layout alignment="left">
-    <emptyWidget width="30" height="30"/>
-    <pictureLabel icon="./res/ico/person.png" width="30" height="30"/>
+    <emptyWidget width="30"/>
+    <pictureLabel icon="./res/ico/person.png" width="25" height="25"/>
+    <textLabel text="管理员"/>
+    <emptyWidget width="40"/>
+    <textLabel text="教员："/>
+    <textLabel text="教员1"/>
+    <emptyWidget width="40"/>
+    <textLabel text="学员："/>
+    <textLabel text="学员1"/>
+  </layout>
+  <space/>
+  <layout alignment="left">
+    <textLabel text="2018-01-01    00:00:00"/>
+    <emptyWidget width="100"/>
+  </layout>
+  <space/>
+  <layout alignment="left">
+    <textLabel text="最小化"/>
+    <emptyWidget width="30"/>
+    <textLabel text="关闭"/>
+    <emptyWidget width="30"/>
   </layout>
 </root>

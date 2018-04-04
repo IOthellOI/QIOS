@@ -24,7 +24,7 @@ public:
 
 public:
 	void loadIni(const QString & _path);
-	static QSize mainFormSize();
+	static QSize windowFormSize();
 
 	struct IniReadPrivate;
 	static IniReadPrivate * data;

@@ -3,7 +3,7 @@
 #include <QIcon>
 
 #include "dataPool.h"
-#include "mainForm.h"
+#include "windowForm.h"
 #include "iniRead.h"
 #include "loginForm.h"
 
@@ -13,7 +13,8 @@ int main(int argc, char * argv[])
 {
 	QApplication a(argc, argv);
 
-	a.setFont(QFont("Microsoft Yahei", 9));
+	a.setFont(QFont("Microsoft Yahei", 10));
+	a.setWindowIcon(QIcon("./res/ico/main.ico"));
 
 	QFile file("./res/qss/styleSheet.css");
 	if (file.open(QFile::ReadOnly))
@@ -22,15 +23,9 @@ int main(int argc, char * argv[])
 		qApp->setStyleSheet(qss);
 		file.close();
 	}
-	DataPool d;
 
-	IniRead i;
-
-	//WindowForm w;
-	//w.show();
-		
-	LoginForm w;
-	w.show();
+	LoginForm c;
+	c.show();
 	
 	return a.exec();
 }

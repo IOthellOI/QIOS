@@ -1,10 +1,14 @@
 #include "loginForm.h"
 #include "xmlRead.h"
 #include "widgetFactory.h"
+#include "dataPool.h"
+#include "windowForm.h"
+#include "iniRead.h"
 
 #include <QLayout>
 #include <QFrame>
 #include <cassert>
+#include <QLabel>
 
 struct LoginForm::LoginFormPrivate
 {
@@ -14,20 +18,32 @@ struct LoginForm::LoginFormPrivate
 LoginForm::LoginForm(QWidget * _parent) :
 	QWidget(_parent),
 	data(new LoginFormPrivate)
-{	
+{
+	setObjectName("LoginForm");
+	setWindowFlags(Qt::WindowCloseButtonHint | Qt::WindowMinimizeButtonHint);
+
 	QFrame * frame = new QFrame(this);
 	frame->setObjectName("LoginForm");
-	
-	setWindowFlags(Qt::FramelessWindowHint);
 
 	data->layout = new QVBoxLayout;
+	data->layout->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
+	data->layout->setMargin(0);
 
-	frame->setLayout(data->layout);	
+	QHBoxLayout * mainLayout = new QHBoxLayout;
+
+	mainLayout->addStretch();
+	mainLayout->addLayout(data->layout);
+	mainLayout->addStretch();
+
+
+	frame->setLayout(mainLayout);
+	
+	loadConfig("./data/window/loginForm.xml");
 }
 
 LoginForm::~LoginForm()
 {
-	delete data;
+
 }
 
 void LoginForm::loadConfig(const QString & _path)
@@ -40,6 +56,13 @@ void LoginForm::loadConfig(const QString & _path)
 
 	QDomElement root = xmlRead.rootElement();
 
+	setWindowTitle(root.attribute("title"));
+
+	//QLabel * label = new QLabel(root.attribute("title"));
+	//label->setFont(QFont("HEITI", 18));
+	//label->setAlignment(Qt::AlignCenter);
+	//data->layout->addWidget(label);
+
 	QDomElement element = root.firstChildElement();
 
 	QWidget * widget = nullptr;
@@ -51,5 +74,25 @@ void LoginForm::loadConfig(const QString & _path)
 		data->layout->addWidget(widget);
 
 		element = element.nextSiblingElement();
+
+		if (widget->objectName() == "LoginButton")
+		{
+			connect(widget, SIGNAL(clicked()), this, SLOT(slotLogin()));
+		}
+	}
+}
+
+void LoginForm::slotLogin()
+{
+	if (true)
+	{
+		DataPool d;
+
+		IniRead i;
+
+		WindowForm * w = new WindowForm;
+		w->show();
+
+		close();
 	}
 }

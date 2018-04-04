@@ -1,11 +1,18 @@
 #include "widgetFactory.h"
 #include "pictureLabel.h"
+#include "loginEdit.h"
+#include "loginButton.h"
+#include "textLabel.h"
 
 #include <QPixmap>
 #include <QImage>
+#include <QPicture>
 
 static QWidget * creatPictrueLabel(const QDomElement & element);
 static QWidget * creatEmptyWidget(const QDomElement & element);
+static QWidget * creatLoginEdit(const QDomElement & element);
+static QWidget * creatLoginButton(const QDomElement & element);
+static QWidget * creatTextLabel(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -16,6 +23,18 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "EMPTYWIDGET")
 	{
 		return creatEmptyWidget(element);
+	}
+	else if (element.nodeName().toUpper() == "LOGINEDIT")
+	{
+		return creatLoginEdit(element);
+	}
+	else if (element.nodeName().toUpper() == "LOGINBUTTON")
+	{
+		return creatLoginButton(element);
+	}
+	else if (element.nodeName().toUpper() == "TEXTLABEL")
+	{
+		return creatTextLabel(element);
 	}
 	else
 	{
@@ -46,7 +65,45 @@ static QWidget * creatEmptyWidget(const QDomElement & element)
 	}
 	if (element.hasAttribute("height"))
 	{
-		widget->setFixedWidth(element.attribute("height").toInt());
+		widget->setMinimumHeight(element.attribute("height").toInt());
 	}
 	return widget;
+}
+
+static QWidget * creatLoginEdit(const QDomElement & element)
+{
+	LoginEdit * edit = new LoginEdit;
+	if (element.hasAttribute("icon"))
+	{
+		edit->setIcon(QPixmap(element.attribute("icon")));
+	}
+	if (element.hasAttribute("text"))
+	{
+		edit->setText(element.attribute("text"));
+	}
+	if (element.hasAttribute("type"))
+	{
+		edit->setMode(element.attribute("type"));
+	}
+	return edit;
+}
+
+static QWidget * creatLoginButton(const QDomElement & element)
+{
+	LoginButton * button = new LoginButton;
+	if (element.hasAttribute("text"))
+	{
+		button->setText(element.attribute("text"));
+	}
+	return button;
+}
+
+static QWidget * creatTextLabel(const QDomElement & element)
+{
+	TextLabel * label = new TextLabel;
+	if (element.hasAttribute("text"))
+	{
+		label->setText(element.attribute("text"));
+	}
+	return label;
 }

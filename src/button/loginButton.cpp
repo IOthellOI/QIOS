@@ -1,7 +1,6 @@
 #include "loginButton.h"
 
-LoginButton::LoginButton(QWidget * _parent) :
-	QPushButton(_parent)
+LoginButton::LoginButton(QWidget * _parent)
 {
 	setObjectName("LoginButton");
 }

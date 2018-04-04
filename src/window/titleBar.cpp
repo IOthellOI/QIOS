@@ -15,12 +15,11 @@ TitleBar::TitleBar(QFrame * _parent) :
 	data(new TitleBarPrivate)
 {
 	setObjectName("TitleBar");
-	setMaximumHeight(50);
-	setMinimumHeight(50);
 	
 	data->layout = new QHBoxLayout;
 	data->layout->setMargin(0);
 	data->layout->setSpacing(0);
+
 
 	setLayout(data->layout);
 
@@ -49,29 +48,41 @@ void TitleBar::loadConfig(const QString & _path)
 
 	while (!element.isNull())
 	{
-		layout = new QHBoxLayout;
-
-		if (element.attribute("alignment") == "left")
+		if (element.tagName() == "layout")
 		{
-			layout->setAlignment(Qt::AlignLeft | Qt::AlignHCenter);
+			layout = new QHBoxLayout;
+
+			if (element.attribute("alignment") == "left")
+			{
+				layout->setAlignment(Qt::AlignLeft | Qt::AlignHCenter);
+			}
+			else if (element.attribute("alignment") == "right")
+			{
+				layout->setAlignment(Qt::AlignRight | Qt::AlignHCenter);
+			}
+			else if (element.attribute("alignment") == "center")
+			{
+				layout->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
+			}
+			data->layout->addLayout(layout);
+
+			QDomElement node = element.firstChildElement();
+
+			while (!node.isNull())
+			{
+				widget = WidgetFactory::creat(node);
+
+				layout->addWidget(widget);
+
+				node = node.nextSiblingElement();
+			}
+
+			element = element.nextSiblingElement();
 		}
-		else if (element.attribute("alignment") == "right")
+		else
 		{
-			layout->setAlignment(Qt::AlignRight | Qt::AlignHCenter);
+			data->layout->addStretch();
+			element = element.nextSiblingElement();
 		}
-		data->layout->addLayout(layout);
-
-		QDomElement node = element.firstChildElement();
-
-		while (!node.isNull())
-		{
-			widget = WidgetFactory::creat(node);
-
-			layout->addWidget(widget);
-
-			node = node.nextSiblingElement();
-		}
-
-		element = element.nextSiblingElement();
 	}
 }

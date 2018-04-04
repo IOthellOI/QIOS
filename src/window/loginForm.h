@@ -21,8 +21,12 @@ public:
 	virtual ~LoginForm();
 
 public:
-	void loadConfig(const QString  & _path);
+	void loadConfig(const QString & _path);
 
+private slots:
+	void slotLogin();
+
+private:
 	struct LoginFormPrivate;
 	LoginFormPrivate * data;
 };

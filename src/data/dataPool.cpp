@@ -15,7 +15,6 @@ DataPool::DataPool(QObject * _parent) :
 	QObject(_parent)
 {
 	data->internalMap = new QMap<QString, InternalData *>;
-
 	loadConfig("./data/data/dataPool.xml");
 }
 

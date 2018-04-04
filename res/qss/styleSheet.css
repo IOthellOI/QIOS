@@ -1,4 +1,6 @@
 QFrame#TitleBar {
+    max-height: 40px;
+    min-height: 40px;
     background-color: rgb(71,120,199);
 }
 
@@ -79,36 +81,56 @@ QToolButton#PaginationButton {
         color: black;
     }
 
-QLabel#UserEdit {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(110, 122, 247);
-    image: url(./res/ico/person.png);
-}
-
-QLineEdit#UserEdit {
-    width: 250px;
-    height: 50px;
-    font-size: 24px;
-}
-
-QLabel#PasswordEdit {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(110, 122, 247);
-    image: url(./res/ico/plane.png);
-}
-
-QLineEdit#PasswordEdit {
-    width: 250px;
-    height: 50px;
-    font-size: 24px;
+QWidget#LoginForm {
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 400px;
+    max-height: 300px;
 }
 
 QFrame#LoginForm {
-    min-width: 400px;
-    min-height: 500px;
-    max-width: 400px;
-    max-height: 500px;
-    background-color: rgb(183, 240, 103);
+    background-color: rgb(255,255,255);
+}
+
+QLabel#LoginEdit {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-bottom: 1px solid rgb(110, 122, 247);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+}
+
+QLineEdit#LoginEdit {
+    min-width: 180px;
+    min-height: 40px;
+    max-width: 180px;
+    max-height: 40px;
+    border-bottom: 1px solid rgb(110, 122, 247);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    font-size: 18px;
+}
+
+QPushButton#LoginButton {
+    width: 218px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+    QPushButton#LoginButton:enabled {
+        background-color: rgb(61, 245, 92);
+    }
+
+    QPushButton#LoginButton:hover {
+        background-color: rgb(90, 255, 135);
+    }
+
+QLabel#TextLabel {
+    color: white;
+    font-size: 16px;
 }

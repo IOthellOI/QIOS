@@ -4,22 +4,22 @@
     <twoLevel text="计算机设备"/>
     <twoLevel text="座舱设备"/>
   </oneLevel>
-  <oneLevel text="任务">
+  <oneLevel text="任务" icon="./res/ico/main.png">
     <twoLevel text="任务设置"/>
     <twoLevel text="初始化设置"/>
     <twoLevel text="环境设置"/>
     <twoLevel text="联网设置"/>
   </oneLevel>
-  <oneLevel text="故障">
+  <oneLevel text="故障" icon="./res/ico/main.png">
     <twoLevel text="常用故障"/>
     <twoLevel text="故障索引"/>
     <twoLevel text="故障一览"/>
   </oneLevel>
-  <oneLevel text="信息">
+  <oneLevel text="信息" icon="./res/ico/main.png">
     <twoLevel text="训练管理"/>
     <twoLevel text="用户管理"/>
   </oneLevel>
-  <oneLevel text="维护">
+  <oneLevel text="维护" icon="./res/ico/main.png">
     <twoLevel text="运行信息"/>
     <twoLevel text="系统日志"/>
     <twoLevel text="维护日志"/>

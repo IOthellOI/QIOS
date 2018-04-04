@@ -34,7 +34,7 @@ void IniRead::loadIni(const QString & _path)
 	}
 }
 
-QSize IniRead::mainFormSize()
+QSize IniRead::windowFormSize()
 {
 	return QSize(data->iniRead->value("/windowFormSize/width").toInt(),
 		data->iniRead->value("/windowFormSize/height").toInt());

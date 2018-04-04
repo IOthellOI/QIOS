@@ -4,7 +4,6 @@
 
 #include <QWidget>
 
-
 class LoginEdit : public QWidget
 {
 	Q_OBJECT
@@ -13,13 +12,14 @@ public:
 	virtual ~LoginEdit();
 
 public:
-	void setIcon(const QPicture &_picture);
+	void setIcon(const QPixmap &_picture);
 	void setText(const QString & _text);
 	QString text();
+	void setMode(const QString & _mode);
 
 private:
-	struct LoginEditData;
-	LoginEditData * data;
+	struct UserEditData;
+	UserEditData * data;
 };
 
 #endif // !LOGINEDIT_H

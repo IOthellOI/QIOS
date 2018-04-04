@@ -4,7 +4,7 @@
 #include <QLineEdit>
 #include <QLayout>
 
-struct LoginEdit::LoginEditData
+struct LoginEdit::UserEditData
 {
 	QLabel * label;
 	QLineEdit * edit;
@@ -12,7 +12,7 @@ struct LoginEdit::LoginEditData
 
 LoginEdit::LoginEdit(QWidget * _parent) :
 	QWidget(_parent),
-	data(new LoginEditData)
+	data(new UserEditData)
 {
 	QHBoxLayout * layout = new QHBoxLayout(this);
 	layout->setMargin(0);
@@ -21,14 +21,11 @@ LoginEdit::LoginEdit(QWidget * _parent) :
 
 	data->label = new QLabel;
 	data->label->setObjectName("LoginEdit");
-	data->label->setFixedSize(50, 50);
 	layout->addWidget(data->label);
 
 	data->edit = new QLineEdit;
 	data->edit->setObjectName("LoginEdit");
-	data->edit->setFixedSize(250, 50);
-	layout->addWidget(data->edit);
-	 
+	layout->addWidget(data->edit);	 
 }
 
 LoginEdit::~LoginEdit()
@@ -36,9 +33,11 @@ LoginEdit::~LoginEdit()
 	delete data;
 }
 
-void LoginEdit::setIcon(const QPicture & _picture)
+void LoginEdit::setIcon(const QPixmap & _picture)
 {
-	data->label->setPicture(_picture);
+	QPixmap temp = _picture.scaled(data->label->size(), Qt::KeepAspectRatio);
+	data->label->setScaledContents(true);
+	data->label->setPixmap(temp);
 }
 
 void LoginEdit::setText(const QString & _text)
@@ -49,4 +48,12 @@ void LoginEdit::setText(const QString & _text)
 QString LoginEdit::text()
 {
 	return data->edit->text();
+}
+
+void LoginEdit::setMode(const QString & _mode)
+{
+	if (_mode == "password")
+	{
+		data->edit->setEchoMode(QLineEdit::Password);
+	}
 }

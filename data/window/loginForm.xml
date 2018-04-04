@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <userEdit />
-    <passwordEdit />
-    <loginButton />
-    <loginButton />
+<root title="登录页面">
+  <loginEdit icon="./res/ico/user.png" text="请输入用户名"/>
+  <loginEdit icon="./res/ico/key.png" text="请输入密码" type="password"/>
+  <emptyWidget height="10"/>
+  <loginButton text="登  录" />
 </root>

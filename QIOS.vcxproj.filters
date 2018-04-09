@@ -145,6 +145,12 @@
     <CustomBuild Include="src\button\loginButton.h">
       <Filter>Header Files\button</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\button\titleButton.h">
+      <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\controlButton.h">
+      <Filter>Header Files\button</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
@@ -267,6 +273,21 @@
     <ClCompile Include="tmp\moc\moc_loginButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\button\titleButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_titleButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_controlButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\controlButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label\faultDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -284,6 +305,9 @@
     <Xml Include="data\window\loginForm.xml">
       <Filter>Config Files\window</Filter>
     </Xml>
+    <Xml Include="data\window\statusBar.xml">
+      <Filter>Config Files\window</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\label\pictureLabel.h">
@@ -291,6 +315,9 @@
     </ClInclude>
     <ClInclude Include="src\factory\widgetFactory.h">
       <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\label\faultDisplay.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

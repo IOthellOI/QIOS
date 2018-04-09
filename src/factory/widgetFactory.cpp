@@ -3,6 +3,8 @@
 #include "loginEdit.h"
 #include "loginButton.h"
 #include "textLabel.h"
+#include "titleButton.h"
+#include "controlButton.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -13,6 +15,8 @@ static QWidget * creatEmptyWidget(const QDomElement & element);
 static QWidget * creatLoginEdit(const QDomElement & element);
 static QWidget * creatLoginButton(const QDomElement & element);
 static QWidget * creatTextLabel(const QDomElement & element);
+static QWidget * creatTitleButton(const QDomElement & element);
+static QWidget * creatControlButton(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -35,6 +39,14 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "TEXTLABEL")
 	{
 		return creatTextLabel(element);
+	}
+	else if (element.nodeName().toUpper() == "TITLEBUTTON")
+	{
+		return creatTitleButton(element);
+	}
+	else if (element.nodeName().toUpper() == "CONTROLBUTTON")
+	{
+		return creatControlButton(element);
 	}
 	else
 	{
@@ -106,4 +118,28 @@ static QWidget * creatTextLabel(const QDomElement & element)
 		label->setText(element.attribute("text"));
 	}
 	return label;
+}
+
+static QWidget * creatTitleButton(const QDomElement & element)
+{
+	TitleButton * button = new TitleButton;
+	if (element.hasAttribute("text"))
+	{
+		button->setText(element.attribute("text"));
+	}
+	return button;
+}
+
+static QWidget * creatControlButton(const QDomElement & element)
+{
+	ControlButton * button = new ControlButton;
+	if (element.hasAttribute("text"))
+	{
+		button->setText(element.attribute("text"));
+	}
+	if (element.hasAttribute("icon"))
+	{
+		button->setIcon(QIcon(element.attribute("icon")));
+	}
+	return button;
 }

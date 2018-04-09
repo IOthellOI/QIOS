@@ -1,12 +1,12 @@
 QFrame#TitleBar {
     max-height: 40px;
     min-height: 40px;
-    background-color: rgb(71,120,199);
+    background-color: rgb(71, 120, 199);
 }
 
 QFrame#NavigationBar {
     max-width: 100px;
-    background-color: rgb(47,50,59);
+    background-color: rgb(47, 50, 59);
 }
 
 QFrame#PaginationBar {
@@ -16,14 +16,14 @@ QFrame#PaginationBar {
 }
 
 QFrame#PageBar {
-    background-color: rgb(230,230,230);
+    background-color: rgb(230, 230, 230);
     border-right: 15px solid rgb(88, 88, 88);
     border-top: 15px solid rgb(88, 88, 88);
     border-bottom: 15px solid rgb(88, 88, 88);
 }
 
 QFrame#StatusBar {
-    background-color: rgb(71,120,199);
+    background-color: rgb(71, 120, 199);
 }
 
 QToolButton#NavigationButton {
@@ -31,26 +31,23 @@ QToolButton#NavigationButton {
     height: 120px;
     border-style: solid;
     text-align: center;
+    color: white;
 }
 
     QToolButton#NavigationButton:enabled {
-        background-color: rgb(47,50,59);
-        color: white;
+        background-color: rgb(47, 50, 59);
     }
 
     QToolButton#NavigationButton:hover {
-        background-color: rgb(80,80,80);
-        color: black;
+        background-color: rgb(80, 80, 80);
     }
 
     QToolButton#NavigationButton:pressed {
         background-color: rgb(88, 88, 88);
-        color: black;
     }
 
     QToolButton#NavigationButton:checked {
         background-color: rgb(88, 88, 88);
-        color: black;
     }
 
 QToolButton#PaginationButton {
@@ -67,17 +64,17 @@ QToolButton#PaginationButton {
     }
 
     QToolButton#PaginationButton:hover {
-        background-color: white;
+        background-color: rgb(160, 160, 160);
         color: black;
     }
 
     QToolButton#PaginationButton:pressed {
-        background-color: rgb(230,230,230);
+        background-color: rgb(230 ,230, 230);
         color: black;
     }
 
     QToolButton#PaginationButton:checked {
-        background-color: rgb(230,230,230);
+        background-color: rgb(230, 230, 230);
         color: black;
     }
 
@@ -89,7 +86,7 @@ QWidget#LoginForm {
 }
 
 QFrame#LoginForm {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 QLabel#LoginEdit {
@@ -123,14 +120,72 @@ QPushButton#LoginButton {
 }
 
     QPushButton#LoginButton:enabled {
-        background-color: rgb(61, 245, 92);
+        background-color: rgb(98, 232, 110);
     }
 
     QPushButton#LoginButton:hover {
         background-color: rgb(90, 255, 135);
     }
 
+    QPushButton#LoginButton:pressed {
+        background-color: rgb(90, 232, 90);
+    }
+
 QLabel#TextLabel {
     color: white;
+    font-family: Microsoft Yahei;
     font-size: 16px;
+}
+
+QPushButton#TitleButton {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Microsoft Yahei;
+    color: white;
+    border-style: none;
+}
+
+    QPushButton#TitleButton:enabled {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    QPushButton#TitleButton:hover {
+        background-color: rgba(0, 0, 0, 120);
+    }
+
+    QPushButton#TitleButton:pressed {
+        background-color: rgba(0, 0, 0, 200);
+    }
+
+
+QPushButton#ControlButton {
+    width: 50px;
+    height: 50px;
+    icon-size: 32px 32px;
+    border-radius: 20px;
+}
+
+    QPushButton#ControlButton:enabled {
+        background-color: rgb(31, 48, 186);
+    }
+
+    QPushButton#ControlButton:hover {
+        background-color: rgb(10, 199, 30);
+    }
+
+    QPushButton#ControlButton:pressed {
+        background-color: rgb(45, 207, 45);
+    }
+
+    QPushButton#ControlButton:checked {
+        background-color: rgb(45, 207, 45);
+    }
+
+QLabel#ControlButton {
+    width: 50px;
+    height: 10px;
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+    color: white;
 }

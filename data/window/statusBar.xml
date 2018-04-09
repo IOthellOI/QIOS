@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <layout alignment="left">
+    <emptyWidget width="30"/>
+    <controlButton text="初始化" icon="./res/ico/init.png"/>
+    <emptyWidget width="30"/>
+    <controlButton text="准备" icon="./res/ico/ready.png"/>
+    <emptyWidget width="30"/>
+    <controlButton text="运行" icon="./res/ico/run.png"/>
+    <emptyWidget width="30"/>
+    <controlButton text="暂停" icon="./res/ico/pause.png"/>
+    <emptyWidget width="30"/>
+    <controlButton text="复位" icon="./res/ico/reset.png"/>
+  </layout>
+  <space/>
+</root>

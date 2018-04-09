@@ -14,13 +14,11 @@
   <space/>
   <layout alignment="left">
     <textLabel text="2018-01-01    00:00:00"/>
-    <emptyWidget width="100"/>
+    <emptyWidget width="300"/>
   </layout>
   <space/>
   <layout alignment="left">
-    <textLabel text="最小化"/>
-    <emptyWidget width="30"/>
-    <textLabel text="关闭"/>
-    <emptyWidget width="30"/>
+    <titleButton text="最小化"/>
+    <titleButton text="关闭"/>
   </layout>
 </root>

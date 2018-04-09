@@ -16,13 +16,9 @@ TitleBar::TitleBar(QFrame * _parent) :
 {
 	setObjectName("TitleBar");
 	
-	data->layout = new QHBoxLayout;
+	data->layout = new QHBoxLayout(this);
 	data->layout->setMargin(0);
 	data->layout->setSpacing(0);
-
-
-	setLayout(data->layout);
-
 }
 
 TitleBar::~TitleBar()

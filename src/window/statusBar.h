@@ -20,6 +20,13 @@ class StatusBar : public QFrame
 public:
 	explicit StatusBar(QFrame * _parent = nullptr);
 	virtual ~StatusBar();
+
+public:
+	void loadConfig(const QString  & _path);
+
+private:
+	struct StatusBarPrivate;
+	StatusBarPrivate * data;
 };
 
 

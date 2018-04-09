@@ -12,14 +12,16 @@
 #ifndef CLICKBUTTON_H
 #define CLICKBUTTON_H
 
-#include <QPushButton>
+#include <QWidget>
 
-class ClickButton : public QPushButton
+class ClickButton : public QWidget
 {
 	Q_OBJECT
 public:
 	explicit ClickButton(QWidget * _parent = nullptr);
 	virtual ~ClickButton();
+
+public:
 	
 };
 

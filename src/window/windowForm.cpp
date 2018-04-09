@@ -23,6 +23,7 @@ WindowForm::WindowForm(QWidget * _parent) :
 	paginationBar->loadConfig("./data/window/navigationBar.xml");
 	PageBar * pageBar = new PageBar;
 	StatusBar * statusBar = new StatusBar;
+	statusBar->loadConfig("./data/window/statusBar.xml");
 
 	QGridLayout * layout = new QGridLayout;
 	layout->setMargin(0);

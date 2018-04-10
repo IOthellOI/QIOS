@@ -189,3 +189,7 @@ QLabel#ControlButton {
     font-family: Microsoft Yahei;
     color: white;
 }
+
+QListWidget#FaultDisplay {
+    background-color: black;
+}

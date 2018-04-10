@@ -20,6 +20,13 @@ class PageBar : public QFrame
 public:
 	explicit PageBar(QFrame * _parent = nullptr);
 	virtual ~PageBar();
+
+public:
+	void loadConfig(const QString  & _path);
+
+public:
+	struct PageBarPrivate;
+	PageBarPrivate * data;
 };
 
 #endif // !PAGEBAR_H

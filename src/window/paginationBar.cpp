@@ -78,7 +78,6 @@ void PaginationBar::loadConfig(const QString & _path)
 		data->layout->addWidget(widget);
 		element = element.nextSiblingElement();
 	}
-
 }
 
 void PaginationBar::slotNavigationChange(const QString & _value)

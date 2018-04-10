@@ -11,6 +11,12 @@
     <controlButton text="暂停" icon="./res/ico/pause.png"/>
     <emptyWidget width="30"/>
     <controlButton text="复位" icon="./res/ico/reset.png"/>
+    <emptyWidget width="30"/>
   </layout>
-  <space/>
+  <layout alignment="center">
+    <faultDisplay />
+  </layout>
+  <layout alignment="center">
+    <faultDisplay />
+  </layout>
 </root>

@@ -86,6 +86,15 @@
     <Filter Include="Source Files\edit">
       <UniqueIdentifier>{8e716a9c-263d-4451-b7f8-1bb2b5690607}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Config Files\page">
+      <UniqueIdentifier>{d585e7c5-29b6-4c6a-b9e2-1bcab9660225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\page">
+      <UniqueIdentifier>{909bd7c2-a33b-41ec-928f-6234f5754e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\page">
+      <UniqueIdentifier>{f241a894-f99c-406c-bc16-2a506c831d81}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -286,7 +295,10 @@
       <Filter>Source Files\button</Filter>
     </ClCompile>
     <ClCompile Include="src\label\faultDisplay.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\page\page.cpp">
+      <Filter>Source Files\page</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +320,12 @@
     <Xml Include="data\window\statusBar.xml">
       <Filter>Config Files\window</Filter>
     </Xml>
+    <Xml Include="data\window\pageBar.xml">
+      <Filter>Config Files\window</Filter>
+    </Xml>
+    <Xml Include="data\page\computerDevice.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\label\pictureLabel.h">
@@ -317,7 +335,10 @@
       <Filter>Header Files\factory</Filter>
     </ClInclude>
     <ClInclude Include="src\label\faultDisplay.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\page\page.h">
+      <Filter>Header Files\page</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

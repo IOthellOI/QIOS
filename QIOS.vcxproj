@@ -101,6 +101,7 @@
     <ClCompile Include="src\label\pictureLabel.cpp" />
     <ClCompile Include="src\label\textLabel.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\page\page.cpp" />
     <ClCompile Include="src\window\loginForm.cpp" />
     <ClCompile Include="src\window\navigationBar.cpp" />
     <ClCompile Include="src\window\pageBar.cpp" />
@@ -231,8 +232,10 @@
   <ItemGroup>
     <Xml Include="data\data\dataPool.xml" />
     <Xml Include="data\data\internalData.xml" />
+    <Xml Include="data\page\computerDevice.xml" />
     <Xml Include="data\window\loginForm.xml" />
     <Xml Include="data\window\navigationBar.xml" />
+    <Xml Include="data\window\pageBar.xml" />
     <Xml Include="data\window\statusBar.xml" />
     <Xml Include="data\window\titleBar.xml">
       <SubType>Designer</SubType>
@@ -299,6 +302,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\page\page.h" />
     <CustomBuild Include="src\edit\loginEdit.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>

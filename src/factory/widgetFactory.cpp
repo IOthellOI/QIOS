@@ -5,6 +5,7 @@
 #include "textLabel.h"
 #include "titleButton.h"
 #include "controlButton.h"
+#include "faultDisplay.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -17,6 +18,7 @@ static QWidget * creatLoginButton(const QDomElement & element);
 static QWidget * creatTextLabel(const QDomElement & element);
 static QWidget * creatTitleButton(const QDomElement & element);
 static QWidget * creatControlButton(const QDomElement & element);
+static QWidget * creatFaultDisplay(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -47,6 +49,10 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "CONTROLBUTTON")
 	{
 		return creatControlButton(element);
+	}
+	else if (element.nodeName().toUpper() == "FAULTDISPLAY")
+	{
+		return creatFaultDisplay(element);
 	}
 	else
 	{
@@ -142,4 +148,10 @@ static QWidget * creatControlButton(const QDomElement & element)
 		button->setIcon(QIcon(element.attribute("icon")));
 	}
 	return button;
+}
+
+static QWidget * creatFaultDisplay(const QDomElement & element)
+{
+	FaultDisplay * display = new FaultDisplay;
+	return display;
 }

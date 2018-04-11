@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <page name="computerDevice" path="./data/page/computerDevice.xml"/>
+  <page name="soundDevice" path="./data/page/soundDevice.xml"/>
 </root>

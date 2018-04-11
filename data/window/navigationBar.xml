@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root navigationData="navigationData">
+<root navigationData="navigationData" pageData="pageData">
   <oneLevel text="监视" icon="./res/ico/monitor.png" paginationData="monitorPageData">
-    <twoLevel text="计算机设备"/>
-    <twoLevel text="声显设备"/>
+    <twoLevel text="计算机设备" bindPage="computerDevice"/>
+    <twoLevel text="声显设备" bindPage="soundDevice"/>
     <twoLevel text="座舱设备"/>
   </oneLevel>
   <oneLevel text="任务" icon="./res/ico/mission.png" paginationData="missionPageData">

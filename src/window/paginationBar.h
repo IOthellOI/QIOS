@@ -24,8 +24,12 @@ public:
 public:
 	void loadConfig(const QString  & _path);
 
+signals:
+	void signalPaginationChange(const QString & _page);
+
 private slots:
 	void slotNavigationChange(const QString & _value);
+	void slotPaginationChange();
 
 private:
 	struct PaginationBarPrivate;

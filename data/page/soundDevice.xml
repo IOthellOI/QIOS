@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <componentBox title="投影仪设备" row="0" column="0" rowSpan="1" columnSpan="1">
+    
+  </componentBox>
+  <componentBox title="声音设备" row="0" column="1" rowSpan="1" columnSpan="1">
+
+  </componentBox>
+</root>

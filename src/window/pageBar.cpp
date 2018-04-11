@@ -1,5 +1,6 @@
 #include "pageBar.h"
 #include "xmlRead.h"
+#include "page.h"
 
 #include <QStackedWidget>
 #include <QLayout>
@@ -16,15 +17,11 @@ PageBar::PageBar(QFrame * _parent) :
 {
 	setObjectName("PageBar");
 
-	data->group = new QStackedWidget(this);
+	data->group = new QStackedWidget;
 
 	QHBoxLayout * layout = new QHBoxLayout(this);
 
 	layout->addWidget(data->group);
-
-	QFrame * frame = new QFrame;
-	
-	data->group->addWidget(frame);
 }
 
 PageBar::~PageBar()
@@ -43,4 +40,16 @@ void PageBar::loadConfig(const QString & _path)
 	QDomElement root = xmlRead.rootElement();
 
 	QDomElement element = root.firstChildElement();
+
+	Page * page = nullptr;
+
+	while (!element.isNull())
+	{
+		page = new Page;
+		page->setName(element.attribute("name"));
+		page->loadConfig(element.attribute("path"));
+		data->group->addWidget(page);
+
+		element = element.nextSiblingElement();
+	}
 }

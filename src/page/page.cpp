@@ -1,5 +1,7 @@
 #include "page.h"
 #include "xmlRead.h"
+#include "componentBox.h"
+#include "widgetFactory.h"
 
 #include <QLayout>
 #include <cassert>
@@ -18,6 +20,8 @@ Page::Page(QWidget * _parent):
 	data->layout = new QGridLayout(this);
 	data->layout->setMargin(0);
 	data->layout->setSpacing(9);
+
+	data->name = new QString;
 }
 
 Page::~Page()
@@ -37,8 +41,38 @@ void Page::loadConfig(const QString & _path)
 
 	QDomElement element = root.firstChildElement();
 
+	ComponentBox * box = nullptr;
+
+	QWidget * widget = nullptr;
+
 	while (!element.isNull())
 	{
+		box = new ComponentBox;
+
+		box->setTitle(QString("    ") + element.attribute("title"));
+
+		data->layout->addWidget(box,
+			element.attribute("row").toInt(), element.attribute("column").toInt(),
+			element.attribute("rowSpan").toInt(), element.attribute("columnSpan").toInt());
+
+		QDomElement node = element.firstChildElement();
+
+		while (!node.isNull())
+		{
+			widget = WidgetFactory::creat(node);
+
+			box->addWidget(widget,
+				node.attribute("row").toInt(), node.attribute("column").toInt(), 
+				node.attribute("rowSpan").toInt(), node.attribute("columnSpan").toInt());
+
+			node = node.nextSiblingElement();
+		}
+
 		element = element.nextSiblingElement();
 	}
+}
+
+void Page::setName(const QString & _name)
+{
+	*data->name = _name;
 }

@@ -70,6 +70,14 @@ void PaginationBar::loadConfig(const QString & _path)
 		{
 			button = new PaginationButton;
 			button->setText(node.attribute("text"));
+			button->setBindPage(node.attribute("bindPage"));
+
+			connect(button, SIGNAL(clicked()), this, SLOT(slotPaginationChange()));
+			connect(this,
+				SIGNAL(signalPaginationChange(const QString &)),
+				DataPool::internalDataMap()->value(root.attribute("pageData")),
+				SLOT(slotDataUpdate(const QString &)));
+
 			layout->addWidget(button);
 			group->addButton(button, i);
 			node = node.nextSiblingElement();
@@ -83,4 +91,9 @@ void PaginationBar::loadConfig(const QString & _path)
 void PaginationBar::slotNavigationChange(const QString & _value)
 {
 	data->layout->setCurrentIndex(_value.toInt());
+}
+
+void PaginationBar::slotPaginationChange()
+{
+	emit signalPaginationChange(dynamic_cast<PaginationButton *>(sender())->bindPage());
 }

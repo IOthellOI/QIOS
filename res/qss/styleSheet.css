@@ -32,6 +32,8 @@ QToolButton#NavigationButton {
     border-style: solid;
     text-align: center;
     color: white;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
 }
 
     QToolButton#NavigationButton:enabled {
@@ -52,10 +54,12 @@ QToolButton#NavigationButton {
 
 QToolButton#PaginationButton {
     width: 80px;
-    height: 100px;
+    height: 70px;
     icon-size: 75px 75px;
     border-style: none;
     text-align: center;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
 }
 
     QToolButton#PaginationButton:enabled {
@@ -141,7 +145,7 @@ QPushButton#TitleButton {
     width: 60px;
     height: 40px;
     font-size: 16px;
-    font-family: Microsoft Yahei;
+    font-family: 'Microsoft YaHei UI';
     color: white;
     border-style: none;
 }
@@ -185,11 +189,24 @@ QPushButton#ControlButton {
 QLabel#ControlButton {
     width: 50px;
     height: 10px;
-    font-size: 12px;
-    font-family: Microsoft Yahei;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei UI';
     color: white;
 }
 
 QListWidget#FaultDisplay {
     background-color: black;
+}
+
+QGroupBox#ComponentBox {
+    background-color: white;
+}
+
+QLabel#ComponentBox {
+    background-color: rgb(71, 120, 199);
+    min-height: 35px;
+    max-height: 35px;
+    color: white;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 16px;
 }

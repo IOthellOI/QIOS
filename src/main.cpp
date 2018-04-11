@@ -2,9 +2,6 @@
 #include <QFile>
 #include <QIcon>
 
-#include "dataPool.h"
-#include "windowForm.h"
-#include "iniRead.h"
 #include "loginForm.h"
 
 #pragma execution_character_set("utf-8")
@@ -13,7 +10,6 @@ int main(int argc, char * argv[])
 {
 	QApplication a(argc, argv);
 
-	//a.setFont(QFont("Microsoft Yahei", 10));
 	a.setWindowIcon(QIcon("./res/ico/main.ico"));
 
 	QFile file("./res/qss/styleSheet.css");
@@ -24,8 +20,8 @@ int main(int argc, char * argv[])
 		file.close();
 	}
 
-	LoginForm c;
-	c.show();
+	LoginForm w;
+	w.show();
 	
 	return a.exec();
 }

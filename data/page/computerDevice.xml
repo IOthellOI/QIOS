@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+  <componentBox title="计算机设备" row="0" column="0" rowSpan="1" columnSpan="1">
+    
+  </componentBox>
 </root>

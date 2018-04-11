@@ -12,6 +12,7 @@ public:
 
 public:
 	void loadConfig(const QString  & _path);
+	void setName(const QString & _name);
 
 public:
 	struct PagePrivate;

@@ -95,6 +95,12 @@
     <Filter Include="Source Files\page">
       <UniqueIdentifier>{f241a894-f99c-406c-bc16-2a506c831d81}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\box">
+      <UniqueIdentifier>{b28e8dea-ccf1-421c-9381-2560181a3e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\box">
+      <UniqueIdentifier>{6088c6d2-3d40-4c2c-9777-184d259fb13b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -159,6 +165,9 @@
     </CustomBuild>
     <CustomBuild Include="src\button\controlButton.h">
       <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\box\componentBox.h">
+      <Filter>Header Files\box</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -300,6 +309,12 @@
     <ClCompile Include="src\page\page.cpp">
       <Filter>Source Files\page</Filter>
     </ClCompile>
+    <ClCompile Include="src\box\componentBox.cpp">
+      <Filter>Source Files\box</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_componentBox.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -324,6 +339,9 @@
       <Filter>Config Files\window</Filter>
     </Xml>
     <Xml Include="data\page\computerDevice.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\soundDevice.xml">
       <Filter>Config Files\page</Filter>
     </Xml>
   </ItemGroup>

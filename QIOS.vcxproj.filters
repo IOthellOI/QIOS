@@ -101,6 +101,15 @@
     <Filter Include="Source Files\box">
       <UniqueIdentifier>{6088c6d2-3d40-4c2c-9777-184d259fb13b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\table">
+      <UniqueIdentifier>{7ff990ff-b960-48d4-aec9-0aeb047de5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\table">
+      <UniqueIdentifier>{8984abf7-5f2c-44e3-a1ca-d30d70ddc44d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config Files\table">
+      <UniqueIdentifier>{025eee8c-5556-40f4-8caf-adf1de69413d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -168,6 +177,18 @@
     </CustomBuild>
     <CustomBuild Include="src\box\componentBox.h">
       <Filter>Header Files\box</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\table\computerTable.h">
+      <Filter>Header Files\table</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\label\faultDisplay.h">
+      <Filter>Header Files\label</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\label\pictureLabel.h">
+      <Filter>Header Files\label</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\page\page.h">
+      <Filter>Header Files\page</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -303,9 +324,6 @@
     <ClCompile Include="src\button\controlButton.cpp">
       <Filter>Source Files\button</Filter>
     </ClCompile>
-    <ClCompile Include="src\label\faultDisplay.cpp">
-      <Filter>Source Files\edit</Filter>
-    </ClCompile>
     <ClCompile Include="src\page\page.cpp">
       <Filter>Source Files\page</Filter>
     </ClCompile>
@@ -313,6 +331,24 @@
       <Filter>Source Files\box</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_componentBox.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table\computerTable.cpp">
+      <Filter>Source Files\table</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_computerTable.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_faultDisplay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label\faultDisplay.cpp">
+      <Filter>Source Files\label</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_pictureLabel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_page.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -344,19 +380,52 @@
     <Xml Include="data\page\soundDevice.xml">
       <Filter>Config Files\page</Filter>
     </Xml>
+    <Xml Include="data\page\cockpitDevice.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\commonFault.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\deviceMaintain.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\environmentSetting.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\faultBrowse.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\faultIndex.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\initialSetting.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\missionSetting.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\networkSetting.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\systemLog.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\trainInformation.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\userManagement.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\page\workInformation.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\table\computerTable.xml">
+      <Filter>Config Files\table</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\label\pictureLabel.h">
-      <Filter>Header Files\label</Filter>
-    </ClInclude>
     <ClInclude Include="src\factory\widgetFactory.h">
       <Filter>Header Files\factory</Filter>
-    </ClInclude>
-    <ClInclude Include="src\label\faultDisplay.h">
-      <Filter>Header Files\edit</Filter>
-    </ClInclude>
-    <ClInclude Include="src\page\page.h">
-      <Filter>Header Files\page</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

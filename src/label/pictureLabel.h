@@ -16,6 +16,7 @@
 
 class PictureLabel : public QLabel
 {
+	Q_OBJECT
 public:
 	explicit PictureLabel(QWidget * _parent = nullptr);
 	virtual ~PictureLabel();

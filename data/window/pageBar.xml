@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
+<root pageData="pageData">
   <page name="computerDevice" path="./data/page/computerDevice.xml"/>
   <page name="soundDevice" path="./data/page/soundDevice.xml"/>
+  <page name="cockpitDevice" path="./data/page/cockpitDevice.xml"/>
+  <page name="missionSetting" path="./data/page/missionSetting.xml"/>
+  <page name="initialSetting" path="./data/page/initialSetting.xml"/>
+  <page name="environmentSetting" path="./data/page/environmentSetting.xml"/>
+  <page name="networkSetting" path="./data/page/networkSetting.xml"/>
+  <page name="commonFault" path="./data/page/commonFault.xml"/>
+  <page name="faultIndex" path="./data/page/faultIndex.xml"/>
+  <page name="faultBrowse" path="./data/page/faultBrowse.xml"/>
+  <page name="trainInformation" path="./data/page/trainInformation.xml"/>
+  <page name="workInformation" path="./data/page/workInformation.xml"/>
+  <page name="userManagement" path="./data/page/userManagement.xml"/>
+  <page name="systemLog" path="./data/page/systemLog.xml"/>
+  <page name="deviceMaintain" path="./data/page/deviceMaintain.xml"/>
 </root>

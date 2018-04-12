@@ -27,6 +27,7 @@ ComponentBox::ComponentBox(QWidget * _parent) :
 	data->title->setSizePolicy(policy);
 
 	data->layout = new QGridLayout;
+	data->layout->setMargin(10);
 	layout->addLayout(data->layout);
 
 	layout->setAlignment(Qt::AlignTop);

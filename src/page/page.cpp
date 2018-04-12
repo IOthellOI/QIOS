@@ -76,3 +76,8 @@ void Page::setName(const QString & _name)
 {
 	*data->name = _name;
 }
+
+QString Page::name()
+{
+	return *data->name;
+}

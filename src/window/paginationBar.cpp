@@ -91,6 +91,7 @@ void PaginationBar::loadConfig(const QString & _path)
 void PaginationBar::slotNavigationChange(const QString & _value)
 {
 	data->layout->setCurrentIndex(_value.toInt());
+	emit signalPaginationChange(dynamic_cast<PaginationButton *>(data->vector->at(_value.toInt())->checkedButton())->bindPage());
 }
 
 void PaginationBar::slotPaginationChange()

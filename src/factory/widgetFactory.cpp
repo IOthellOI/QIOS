@@ -6,6 +6,7 @@
 #include "titleButton.h"
 #include "controlButton.h"
 #include "faultDisplay.h"
+#include "computerTable.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -19,6 +20,7 @@ static QWidget * creatTextLabel(const QDomElement & element);
 static QWidget * creatTitleButton(const QDomElement & element);
 static QWidget * creatControlButton(const QDomElement & element);
 static QWidget * creatFaultDisplay(const QDomElement & element);
+static QWidget * creatComputerTable(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -54,13 +56,17 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	{
 		return creatFaultDisplay(element);
 	}
+	else if (element.nodeName().toUpper() == "COMPUTERTABLE")
+	{
+		return creatComputerTable(element);
+	}
 	else
 	{
 		return nullptr;
 	}
 }
 
-static QWidget * creatPictrueLabel(const QDomElement & element)
+QWidget * creatPictrueLabel(const QDomElement & element)
 {
 	PictureLabel * label = new PictureLabel;
 
@@ -74,7 +80,7 @@ static QWidget * creatPictrueLabel(const QDomElement & element)
 	return label;
 }
 
-static QWidget * creatEmptyWidget(const QDomElement & element)
+QWidget * creatEmptyWidget(const QDomElement & element)
 {
 	QWidget * widget = new QWidget;
 	if (element.hasAttribute("width"))
@@ -88,7 +94,7 @@ static QWidget * creatEmptyWidget(const QDomElement & element)
 	return widget;
 }
 
-static QWidget * creatLoginEdit(const QDomElement & element)
+QWidget * creatLoginEdit(const QDomElement & element)
 {
 	LoginEdit * edit = new LoginEdit;
 	if (element.hasAttribute("icon"))
@@ -106,7 +112,7 @@ static QWidget * creatLoginEdit(const QDomElement & element)
 	return edit;
 }
 
-static QWidget * creatLoginButton(const QDomElement & element)
+QWidget * creatLoginButton(const QDomElement & element)
 {
 	LoginButton * button = new LoginButton;
 	if (element.hasAttribute("text"))
@@ -116,7 +122,7 @@ static QWidget * creatLoginButton(const QDomElement & element)
 	return button;
 }
 
-static QWidget * creatTextLabel(const QDomElement & element)
+QWidget * creatTextLabel(const QDomElement & element)
 {
 	TextLabel * label = new TextLabel;
 	if (element.hasAttribute("text"))
@@ -126,7 +132,7 @@ static QWidget * creatTextLabel(const QDomElement & element)
 	return label;
 }
 
-static QWidget * creatTitleButton(const QDomElement & element)
+QWidget * creatTitleButton(const QDomElement & element)
 {
 	TitleButton * button = new TitleButton;
 	if (element.hasAttribute("text"))
@@ -136,7 +142,7 @@ static QWidget * creatTitleButton(const QDomElement & element)
 	return button;
 }
 
-static QWidget * creatControlButton(const QDomElement & element)
+QWidget * creatControlButton(const QDomElement & element)
 {
 	ControlButton * button = new ControlButton;
 	if (element.hasAttribute("text"))
@@ -150,8 +156,15 @@ static QWidget * creatControlButton(const QDomElement & element)
 	return button;
 }
 
-static QWidget * creatFaultDisplay(const QDomElement & element)
+QWidget * creatFaultDisplay(const QDomElement & element)
 {
 	FaultDisplay * display = new FaultDisplay;
 	return display;
+}
+
+QWidget * creatComputerTable(const QDomElement & element)
+{
+	ComputerTable * table = new ComputerTable;
+	table->loadConfig(element.attribute("path"));
+	return table;
 }

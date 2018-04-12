@@ -22,7 +22,10 @@ public:
 	virtual ~PageBar();
 
 public:
-	void loadConfig(const QString  & _path);
+	void loadConfig(const QString & _path);
+
+private slots:
+	void slotPageChange(const QString & _page);
 
 public:
 	struct PageBarPrivate;

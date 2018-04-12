@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <InternalData name="navigationData"      type="int" value="0"/>
-  <InternalData name="pageData"            type="int" value="0"/>
-  <InternalData name="monitorPageData"     type="int" value="0"/>
-  <InternalData name="missionPageData"     type="int" value="0"/>
-  <InternalData name="faultPageData"       type="int" value="0"/>
-  <InternalData name="informationPageData" type="int" value="0"/>
-  <InternalData name="maintainPageData"    type="int" value="0"/>
-</root>
+  <InternalData name="navigationData" type="int"    value="0"/>
+  <InternalData name="pageData"       type="string" value="0"/>
+</root> 

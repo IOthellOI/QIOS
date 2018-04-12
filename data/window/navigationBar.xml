@@ -3,26 +3,26 @@
   <oneLevel text="监视" icon="./res/ico/monitor.png" paginationData="monitorPageData">
     <twoLevel text="计算机设备" bindPage="computerDevice"/>
     <twoLevel text="声显设备" bindPage="soundDevice"/>
-    <twoLevel text="座舱设备"/>
+    <twoLevel text="座舱设备" bindPage="cockpitDevice"/>
   </oneLevel>
   <oneLevel text="任务" icon="./res/ico/mission.png" paginationData="missionPageData">
-    <twoLevel text="任务设置"/>
-    <twoLevel text="初始化设置"/>
-    <twoLevel text="环境设置"/>
-    <twoLevel text="联网设置"/>
+    <twoLevel text="任务设置" bindPage="missionSetting"/>
+    <twoLevel text="初始化设置" bindPage="initialSetting"/>
+    <twoLevel text="环境设置" bindPage="environmentSetting"/>
+    <twoLevel text="联网设置" bindPage="networkSetting"/>
   </oneLevel>
-  <oneLevel text="故障" icon="./res/ico/fault.png" paginationData="faultPageData">
-    <twoLevel text="常用故障"/>
-    <twoLevel text="故障索引"/>
-    <twoLevel text="故障一览"/>
+  <oneLevel text="特情" icon="./res/ico/fault.png" paginationData="faultPageData">
+    <twoLevel text="常用特情" bindPage="commonFault"/>
+    <twoLevel text="特情索引" bindPage="faultIndex"/>
+    <twoLevel text="特情一览" bindPage="faultBrowse"/>
   </oneLevel>
   <oneLevel text="信息" icon="./res/ico/information.png" paginationData="informationPageData">
-    <twoLevel text="训练管理"/>
-    <twoLevel text="用户管理"/>
+    <twoLevel text="训练信息" bindPage="trainInformation"/>
+    <twoLevel text="运行信息" bindPage="workInformation"/>
   </oneLevel>
   <oneLevel text="维护" icon="./res/ico/maintain.png" paginationData="maintainPageData">
-    <twoLevel text="运行信息"/>
-    <twoLevel text="系统日志"/>
-    <twoLevel text="维护日志"/>
+    <twoLevel text="用户管理" bindPage="userManagement"/>
+    <twoLevel text="系统日志" bindPage="systemLog"/>
+    <twoLevel text="设备维护" bindPage="deviceMaintain"/>
   </oneLevel>
 </root>

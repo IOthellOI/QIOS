@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_PageBar_t {
-    QByteArrayData data[1];
-    char stringdata0[8];
+    QByteArrayData data[4];
+    char stringdata0[30];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -31,10 +31,13 @@ struct qt_meta_stringdata_PageBar_t {
     )
 static const qt_meta_stringdata_PageBar_t qt_meta_stringdata_PageBar = {
     {
-QT_MOC_LITERAL(0, 0, 7) // "PageBar"
+QT_MOC_LITERAL(0, 0, 7), // "PageBar"
+QT_MOC_LITERAL(1, 8, 14), // "slotPageChange"
+QT_MOC_LITERAL(2, 23, 0), // ""
+QT_MOC_LITERAL(3, 24, 5) // "_page"
 
     },
-    "PageBar"
+    "PageBar\0slotPageChange\0\0_page"
 };
 #undef QT_MOC_LITERAL
 
@@ -44,22 +47,32 @@ static const uint qt_meta_data_PageBar[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: name, argc, parameters, tag, flags
+       1,    1,   19,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void, QMetaType::QString,    3,
+
        0        // eod
 };
 
 void PageBar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
-    Q_UNUSED(_a);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        PageBar *_t = static_cast<PageBar *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->slotPageChange((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        default: ;
+        }
+    }
 }
 
 const QMetaObject PageBar::staticMetaObject = {
@@ -84,6 +97,17 @@ void *PageBar::qt_metacast(const char *_clname)
 int PageBar::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QFrame::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 1;
+    }
     return _id;
 }
 QT_WARNING_POP

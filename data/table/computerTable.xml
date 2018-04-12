@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <definition value="标识"/>
+    <definition value="名称"/>
+    <definition value="以太网状态"/>
+    <definition value="实时网状态"/>
+    <definition value="计算机控制"/>
+    <definition value="程序状态"/>
+    <definition value="程序控制"/>
+  </header>
+  <item>
+    <computer identifier="AESA" name="雷达仿真计算机"/>
+    <computer identifier="AUD" name="环境仿真计算机"/>
+    <computer identifier="CE" name="作战仿真计算机"/>
+    <computer identifier="DR" name="数据记录计算机"/>
+    <computer identifier="EC" name="电子战通导计算机"/>
+    <computer identifier="FLY" name="飞行仿真计算机"/>
+    <computer identifier="IMP" name="综合任务处理机仿真计算机"/>
+    <computer identifier="IOS" name="座舱接口计算机"/>
+    <computer identifier="NP" name="互联代理计算机"/>
+    <computer identifier="OFTI" name="光电惯导仿真计算机"/>
+    <computer identifier="SH" name="外挂武器仿真节点计算机"/>
+    <computer identifier="SM" name="系统主控节点计算机"/>
+    <computer identifier="TE" name="态势显示计算机"/>
+    <computer identifier="TW" name="目标武器仿真计算机"/>
+    <computer identifier="VIS" name="视景通讯计算机"/>
+  </item>
+</root>

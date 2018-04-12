@@ -6,6 +6,7 @@
 
 class BaseDisplay : public QListWidget
 {
+	Q_OBJECT
 public:
 	explicit BaseDisplay(QWidget * _parent = nullptr);
 	virtual ~BaseDisplay();
@@ -13,6 +14,7 @@ public:
 
 class FaultDisplay : public BaseDisplay
 {
+	Q_OBJECT
 public:
 	explicit FaultDisplay(QWidget * _parent = nullptr);
 	~FaultDisplay();

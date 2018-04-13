@@ -110,6 +110,12 @@
     <Filter Include="Config Files\table">
       <UniqueIdentifier>{025eee8c-5556-40f4-8caf-adf1de69413d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\group">
+      <UniqueIdentifier>{eac88177-6feb-4b5b-95f6-38c46d1e4fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\group">
+      <UniqueIdentifier>{f93135fd-f511-4726-93b0-cff7c363f2e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -189,6 +195,12 @@
     </CustomBuild>
     <CustomBuild Include="src\page\page.h">
       <Filter>Header Files\page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\group\projectorControl.h">
+      <Filter>Header Files\group</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\switchButton.h">
+      <Filter>Header Files\button</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -349,6 +361,18 @@
       <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_page.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\group\projectorControl.cpp">
+      <Filter>Source Files\group</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_projectorControl.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\switchButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_switchButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>

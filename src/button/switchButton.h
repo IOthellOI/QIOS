@@ -25,7 +25,6 @@ protected:
 	void drawBackground(QPainter * _painter);
 	void drawSlider(QPainter * _painter);
 	void drawText(QPainter * _painter);
-	void drawImage(QPainter * _painter);
 
 private:
 	struct SwitchButtonPrivate;

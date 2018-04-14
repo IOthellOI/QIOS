@@ -53,6 +53,10 @@ SwitchButton::~SwitchButton()
 {
 }
 
+void SwitchButton::updateValue()
+{
+}
+
 void SwitchButton::mousePressEvent(QMouseEvent *)
 {
 	data->checked = !data->checked;
@@ -115,14 +119,36 @@ void SwitchButton::drawBackground(QPainter * _painter)
 	_painter->restore();
 }
 
-void SwitchButton::drawSlider(QPainter * painter)
+void SwitchButton::drawSlider(QPainter * _painter)
 {
+	_painter->save();
+	_painter->setPen(Qt::NoPen);
+	if (!data->checked) {
+		_painter->setBrush(data->sliderColorOff);
+	}
+	else {
+		_painter->setBrush(data->sliderColorOn);
+	}
+	int sliderWidth = width() / 2 - data->space * 2;
+	int sliderHeight = height() - data->space * 2;
+	QRect sliderRect(data->startX + data->space, data->space, sliderWidth, sliderHeight);
+	_painter->drawRoundedRect(sliderRect, data->rectRadius, data->rectRadius);
+
+	_painter->restore();
 }
 
-void SwitchButton::drawText(QPainter * painter)
+void SwitchButton::drawText(QPainter * _painter)
 {
-}
+	_painter->save();
 
-void SwitchButton::drawImage(QPainter * painter)
-{
+	if (!data->checked) {
+		_painter->setPen(data->textColorOff);
+		_painter->drawText(width() / 2, 0, width() / 2 - data->space, height(), Qt::AlignCenter, data->textOff);
+	}
+	else {
+		_painter->setPen(data->textColorOn);
+		_painter->drawText(0, 0, width() / 2 + data->space * 2, height(), Qt::AlignCenter, data->textOn);
+	}
+
+	_painter->restore();
 }

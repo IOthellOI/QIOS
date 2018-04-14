@@ -33,8 +33,8 @@ SwitchButton::SwitchButton(QWidget * _parent) :
 	data->sliderColorOn = QColor(100, 184, 255);
 	data->textColorOff = QColor(255, 255, 255);
 	data->textColorOn = QColor(10, 10, 10);
-	data->textOff = "关闭";
-	data->textOn = "开启";
+	data->textOff = u8"关闭";
+	data->textOn = u8"开启";
 
 	data->space = 2;
 	data->rectRadius = 5;
@@ -55,6 +55,25 @@ SwitchButton::~SwitchButton()
 
 void SwitchButton::updateValue()
 {
+	if (data->checked) {
+		if (data->startX < data->endX) {
+			data->startX = data->startX + data->step;
+		}
+		else {
+			data->startX = data->endX;
+			data->timer->stop();
+		}
+	}
+	else {
+		if (data->startX > data->endX) {
+			data->startX = data->startX - data->step;
+		}
+		else {
+			data->startX = data->endX;
+			data->timer->stop();
+		}
+	}
+	update();
 }
 
 void SwitchButton::mousePressEvent(QMouseEvent *)

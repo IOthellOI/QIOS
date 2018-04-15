@@ -21,6 +21,9 @@ public:
 	explicit TextLabel(QWidget * _parent = nullptr);
 	virtual ~TextLabel();
 
+public:
+	void setColor(const QString & _color);
+
 protected:
 };
 

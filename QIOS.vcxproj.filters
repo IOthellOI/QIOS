@@ -202,6 +202,9 @@
     <CustomBuild Include="src\button\switchButton.h">
       <Filter>Header Files\button</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\table\soundTable.h">
+      <Filter>Header Files\table</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
@@ -375,6 +378,15 @@
     <ClCompile Include="tmp\moc\moc_switchButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\label\separatorLine.cpp">
+      <Filter>Source Files\label</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table\soundTable.cpp">
+      <Filter>Source Files\table</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_soundTable.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -450,6 +462,9 @@
   <ItemGroup>
     <ClInclude Include="src\factory\widgetFactory.h">
       <Filter>Header Files\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\label\separatorLine.h">
+      <Filter>Header Files\label</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

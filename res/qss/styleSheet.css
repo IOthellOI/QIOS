@@ -136,7 +136,6 @@ QPushButton#LoginButton {
     }
 
 QLabel#TextLabel {
-    color: white;
     font-family: Microsoft Yahei;
     font-size: 16px;
 }
@@ -279,4 +278,28 @@ QTableWidget QHeaderView#ComputerTable {
     font-size: 14px;
     min-height: 40px;
     background-color: aqua;
+}
+
+QGroupBox#ProjectorControl {
+    background-color: rgb(71, 120, 199);
+    border: 2px inset rgb(0, 0, 0);
+    margin-top: 1ex;
+    min-width: 120px;
+    min-height: 100px;
+    max-width: 120px;
+    max-height: 100px;
+}
+
+QLabel#ProjectorControl {
+    color: white;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 16px;
+}
+
+
+QWidget#SwitchButton {
+    min-width: 70px;
+    min-height: 30px;
+    max-width: 70px;
+    max-height: 30px;
 }

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <componentBox title="投影仪设备" row="0" column="0" rowSpan="1" columnSpan="1">
+    <projectorControl                                   row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="0" column="2" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="1" column="1" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="1" column="2" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="2" column="0" rowSpan="1" columnSpan="1"/>
+    <textLabel text="球瓣前部" color="black"            row="2" column="1" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="2" column="2" rowSpan="1" columnSpan="1"/>
+    <separatorLine height="2" color="black" row="3" column="0" rowSpan="1" columnSpan="3"/>
+    <projectorControl                                   row="4" column="0" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="4" column="1" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="4" column="2" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="5" column="0" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="5" column="1" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="5" column="2" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="6" column="0" rowSpan="1" columnSpan="1"/>
+    <textLabel text="球瓣后部" color="black"            row="6" column="1" rowSpan="1" columnSpan="1"/>
+    <projectorControl                                   row="6" column="2" rowSpan="1" columnSpan="1"/>
     
   </componentBox>
   <componentBox title="声音设备" row="0" column="1" rowSpan="1" columnSpan="1">

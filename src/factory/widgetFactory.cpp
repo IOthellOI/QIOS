@@ -7,6 +7,8 @@
 #include "controlButton.h"
 #include "faultDisplay.h"
 #include "computerTable.h"
+#include "projectorControl.h"
+#include "separatorLine.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -21,6 +23,8 @@ static QWidget * creatTitleButton(const QDomElement & element);
 static QWidget * creatControlButton(const QDomElement & element);
 static QWidget * creatFaultDisplay(const QDomElement & element);
 static QWidget * creatComputerTable(const QDomElement & element);
+static QWidget * creatProjectorControl(const QDomElement & element);
+static QWidget * creatSeparatorLine(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -59,6 +63,14 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "COMPUTERTABLE")
 	{
 		return creatComputerTable(element);
+	}
+	else if (element.nodeName().toUpper() == "PROJECTORCONTROL")
+	{
+		return creatProjectorControl(element);
+	}
+	else if (element.nodeName().toUpper() == "SEPARATORLINE")
+	{
+		return creatSeparatorLine(element);
 	}
 	else
 	{
@@ -125,10 +137,8 @@ QWidget * creatLoginButton(const QDomElement & element)
 QWidget * creatTextLabel(const QDomElement & element)
 {
 	TextLabel * label = new TextLabel;
-	if (element.hasAttribute("text"))
-	{
-		label->setText(element.attribute("text"));
-	}
+	label->setText(element.attribute("text"));
+	label->setColor(element.attribute("color"));
 	return label;
 }
 
@@ -167,4 +177,25 @@ QWidget * creatComputerTable(const QDomElement & element)
 	ComputerTable * table = new ComputerTable;
 	table->loadConfig(element.attribute("path"));
 	return table;
+}
+
+QWidget * creatProjectorControl(const QDomElement & element)
+{
+	ProjectorControl * group = new ProjectorControl;
+	return group;
+}
+
+QWidget * creatSeparatorLine(const QDomElement & element)
+{
+	SeparatorLine * label = new SeparatorLine;
+	if (element.hasAttribute("width"))
+	{
+		label->setFixedWidth(element.attribute("width").toInt());
+	}
+	if (element.hasAttribute("height"))
+	{
+		label->setFixedHeight(element.attribute("height").toInt());
+	}
+	label->setColor(element.attribute("color"));
+	return label;
 }

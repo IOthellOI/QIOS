@@ -2,6 +2,7 @@
 #include "switchButton.h"
 
 #include <QLabel>
+#include <QLayout>
 
 struct ProjectorControl::ProjectorControlPrivate
 {
@@ -15,15 +16,24 @@ ProjectorControl::ProjectorControl(QWidget * _parent) :
 {
 	setObjectName("ProjectorControl");
 	
-	data->state = new QLabel;
-	data->state->setObjectName("ProjectorControlState");
+	data->state = new QLabel(u8"Î´Æô¶¯");
+	data->state->setAlignment(Qt::AlignCenter);
+	data->state->setObjectName("ProjectorControl");
 
 	data->button = new SwitchButton;
-	data->button->setObjectName("ProjectorControlButton");
 
-	
+	QGridLayout * layout = new QGridLayout(this);
+	layout->setMargin(5);
+	layout->addWidget(data->state, 0, 0, 1, 2);
+	layout->addWidget(data->button, 1, 1, 1, 1);
 }
 
 ProjectorControl::~ProjectorControl()
 {
+	delete data;
+}
+
+void ProjectorControl::setState(const QString & _state)
+{
+	data->state->setText(_state);
 }

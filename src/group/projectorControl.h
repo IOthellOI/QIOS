@@ -12,6 +12,9 @@ public:
 	explicit ProjectorControl(QWidget * _parent = nullptr);
 	~ProjectorControl();
 
+public:
+	void setState(const QString & _state);
+
 private:
 	struct ProjectorControlPrivate;
 	ProjectorControlPrivate * data;

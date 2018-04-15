@@ -26,12 +26,14 @@ SwitchButton::SwitchButton(QWidget * _parent) :
 	QWidget(_parent),
 	data(new SwitchButtonPrivate)
 {
+	setObjectName("SwitchButton");
+
 	data->checked = false;
-	data->backgroundColorOff = QColor(210, 210, 210);
-	data->backgroundColorOn = QColor(245, 245, 245);
-	data->sliderColorOff = QColor(100, 100, 100);
-	data->sliderColorOn = QColor(100, 240, 139);
-	data->textColorOff = QColor(0, 0, 0);
+	data->backgroundColorOff = QColor(70, 70, 70);
+	data->backgroundColorOn = QColor(100, 240, 139);
+	data->sliderColorOff = QColor(255, 255, 255);
+	data->sliderColorOn = QColor(255, 255, 255);
+	data->textColorOff = QColor(255, 255, 255);
 	data->textColorOn = QColor(0, 0, 0);
 	data->textOff = u8"´ò¿ª";
 	data->textOn = u8"¹Ø±Õ";
@@ -93,22 +95,6 @@ void SwitchButton::mousePressEvent(QMouseEvent *)
 	}
 
 	data->timer->start();
-}
-
-void SwitchButton::resizeEvent(QResizeEvent *)
-{
-	data->step = width() / 50;
-
-	if (data->checked)
-	{
-		data->endX = width() - width() / 2;
-	}
-	else
-	{
-		data->endX = 0;
-	}
-
-	update();
 }
 
 void SwitchButton::paintEvent(QPaintEvent *)

@@ -3,17 +3,17 @@
   <layout alignment="left">
     <emptyWidget width="30"/>
     <pictureLabel icon="./res/ico/person.png" width="25" height="25"/>
-    <textLabel text="管理员"/>
+    <textLabel text="管理员" color="white"/>
     <emptyWidget width="40"/>
-    <textLabel text="教员："/>
-    <textLabel text="教员1"/>
+    <textLabel text="教员：" color="white"/>
+    <textLabel text="教员1" color="white"/>
     <emptyWidget width="40"/>
-    <textLabel text="学员："/>
-    <textLabel text="学员1"/>
+    <textLabel text="学员：" color="white"/>
+    <textLabel text="学员1" color="white"/>
   </layout>
   <space/>
   <layout alignment="left">
-    <textLabel text="2018-01-01    00:00:00"/>
+    <textLabel text="2018-01-01    00:00:00" color="white"/>
     <emptyWidget width="300"/>
   </layout>
   <space/>

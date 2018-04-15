@@ -21,14 +21,20 @@ ComponentBox::ComponentBox(QWidget * _parent) :
 	data->title = new QLabel;
 	data->title->setObjectName("ComponentBox");
 	layout->addWidget(data->title);
+
 	data->title->setMinimumWidth(width());
 	QSizePolicy policy = data->title->sizePolicy();
 	policy.setHorizontalPolicy(QSizePolicy::Expanding);
 	data->title->setSizePolicy(policy);
 
-	data->layout = new QGridLayout;
+	QWidget * widget = new QWidget;
+	data->layout = new QGridLayout(widget);
+	policy = widget->sizePolicy();
+	policy.setHorizontalPolicy(QSizePolicy::Expanding);
+	policy.setVerticalPolicy(QSizePolicy::Expanding);
+	widget->setSizePolicy(policy);
 	data->layout->setMargin(10);
-	layout->addLayout(data->layout);
+	layout->addWidget(widget);
 
 	layout->setAlignment(Qt::AlignTop);
 }
@@ -45,5 +51,5 @@ void ComponentBox::setTitle(const QString & _title)
 
 void ComponentBox::addWidget(QWidget * _widget, int _row, int _column, int _rowSpan, int _columnSpan)
 {
-	data->layout->addWidget(_widget, _row, _column, _rowSpan, _column);
+	data->layout->addWidget(_widget, _row, _column, _rowSpan, _columnSpan);
 }

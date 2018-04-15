@@ -32,8 +32,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>src\;src\button;src\label;src\window;src\xml;src\data;src\ini;src\page;src\factory;src\edit;src\box;src\table;$(IncludePath)</IncludePath>
-    <SourcePath>src\;src\button;src\label;src\window;src\xml;src\data;src\ini;src\page;src\factory;src\edit;src\box;src\table;$(SourcePath)</SourcePath>
+    <IncludePath>src\;src\button;src\label;src\window;src\xml;src\data;src\ini;src\page;src\factory;src\edit;src\box;src\table;src\group;$(IncludePath)</IncludePath>
+    <SourcePath>src\;src\button;src\label;src\window;src\xml;src\data;src\ini;src\page;src\factory;src\edit;src\box;src\table;src\group;$(SourcePath)</SourcePath>
     <ExcludePath>res\qss;$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -102,10 +102,12 @@
     <ClCompile Include="src\ini\iniRead.cpp" />
     <ClCompile Include="src\label\faultDisplay.cpp" />
     <ClCompile Include="src\label\pictureLabel.cpp" />
+    <ClCompile Include="src\label\separatorLine.cpp" />
     <ClCompile Include="src\label\textLabel.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\page\page.cpp" />
     <ClCompile Include="src\table\computerTable.cpp" />
+    <ClCompile Include="src\table\soundTable.cpp" />
     <ClCompile Include="src\window\loginForm.cpp" />
     <ClCompile Include="src\window\navigationBar.cpp" />
     <ClCompile Include="src\window\pageBar.cpp" />
@@ -134,6 +136,7 @@
     <ClCompile Include="tmp\moc\moc_pictureLabel.cpp" />
     <ClCompile Include="tmp\moc\moc_projectorControl.cpp" />
     <ClCompile Include="tmp\moc\moc_radioButton.cpp" />
+    <ClCompile Include="tmp\moc\moc_soundTable.cpp" />
     <ClCompile Include="tmp\moc\moc_statusBar.cpp" />
     <ClCompile Include="tmp\moc\moc_switchButton.cpp" />
     <ClCompile Include="tmp\moc\moc_textLabel.cpp" />
@@ -328,6 +331,21 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\label\separatorLine.h" />
+    <CustomBuild Include="src\table\soundTable.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
     <CustomBuild Include="src\group\projectorControl.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>

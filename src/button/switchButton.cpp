@@ -27,14 +27,14 @@ SwitchButton::SwitchButton(QWidget * _parent) :
 	data(new SwitchButtonPrivate)
 {
 	data->checked = false;
-	data->backgroundColorOff = QColor(225, 225, 225);
-	data->backgroundColorOn = QColor(250, 250, 250);
+	data->backgroundColorOff = QColor(210, 210, 210);
+	data->backgroundColorOn = QColor(245, 245, 245);
 	data->sliderColorOff = QColor(100, 100, 100);
-	data->sliderColorOn = QColor(100, 184, 255);
-	data->textColorOff = QColor(255, 255, 255);
-	data->textColorOn = QColor(10, 10, 10);
-	data->textOff = u8"关闭";
-	data->textOn = u8"开启";
+	data->sliderColorOn = QColor(100, 240, 139);
+	data->textColorOff = QColor(0, 0, 0);
+	data->textColorOn = QColor(0, 0, 0);
+	data->textOff = u8"打开";
+	data->textOn = u8"关闭";
 
 	data->space = 2;
 	data->rectRadius = 5;

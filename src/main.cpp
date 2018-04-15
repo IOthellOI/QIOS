@@ -25,6 +25,7 @@ int main(int argc, char * argv[])
 	//w.show();
 
 	SwitchButton b;
+	b.setFixedSize(40, 50);
 	b.show();
 	
 	return a.exec();

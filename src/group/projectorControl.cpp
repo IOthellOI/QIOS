@@ -1,13 +1,12 @@
 #include "projectorControl.h"
+#include "switchButton.h"
 
 #include <QLabel>
-#include <QCheckBox>
 
 struct ProjectorControl::ProjectorControlPrivate
 {
-	QLabel * name;
 	QLabel * state;
-	QCheckBox * button;
+	SwitchButton * button;
 };
 
 ProjectorControl::ProjectorControl(QWidget * _parent) :
@@ -15,7 +14,14 @@ ProjectorControl::ProjectorControl(QWidget * _parent) :
 	data(new ProjectorControlPrivate)
 {
 	setObjectName("ProjectorControl");
+	
+	data->state = new QLabel;
+	data->state->setObjectName("ProjectorControlState");
 
+	data->button = new SwitchButton;
+	data->button->setObjectName("ProjectorControlButton");
+
+	
 }
 
 ProjectorControl::~ProjectorControl()

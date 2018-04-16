@@ -53,7 +53,10 @@
 
   </componentBox>
   <componentBox title="任务选择" row="0" column="6" rowSpan="1" columnSpan="1">
-
+   <missionButton name="大纲任务"   row="0" column="0" rowSpan="1" columnSpan="1"/>
+   <missionButton name="专项任务"   row="1" column="0" rowSpan="1" columnSpan="1"/>
+   <missionButton name="联网任务"   row="2" column="0" rowSpan="1" columnSpan="1"/>
+   <missionButton name="自定义任务"   row="3" column="0" rowSpan="1" columnSpan="1"/>
   </componentBox>
   <componentBox title="任务设置" row="1" column="6" rowSpan="1" columnSpan="1">
 

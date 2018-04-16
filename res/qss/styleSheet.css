@@ -385,3 +385,26 @@ QLabel#DataLabel {
     font-family: 'Microsoft YaHei UI';
     font-size: 12px;
 }
+
+QPushButton#MissionButton {
+    min-width: 80px;
+    min-height: 40px;
+    max-width: 80px;
+    max-height: 40px;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+    QPushButton#MissionButton:enabled {
+        background-color: rgb(181, 187, 242);
+    }
+
+    QPushButton#MissionButton:hover {
+        background-color: rgb(193, 197, 234);
+    }
+
+    QPushButton#MissionButton:pressed {
+        background-color: rgb(158, 166, 242);
+    }

@@ -17,7 +17,7 @@ InternalData::InternalData(QObject * _parent) :
 
 InternalData::~InternalData()
 {
-	deletea data;
+	delete data;
 }
 
 void InternalData::setName(const QString & _name)

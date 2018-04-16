@@ -4,10 +4,10 @@
 
 #include <QPushButton>
 
-class MissionButton
+class MissionButton : public QPushButton
 {
 public:
-	MissionButton();
+	explicit MissionButton(QWidget * _parent = nullptr);
 	virtual ~MissionButton();
 };
 

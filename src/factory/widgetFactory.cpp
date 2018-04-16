@@ -13,6 +13,7 @@
 #include "soundTable.h"
 #include "inputButton.h"
 #include "dataLabel.h"
+#include "missionButton.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -32,6 +33,7 @@ static QWidget * creatSeparatorLine(const QDomElement & element);
 static QWidget * creatSoundTable(const QDomElement & element);
 static QWidget * creatInputButton(const QDomElement & element);
 static QWidget * creatDataLabel(const QDomElement & element);
+static QWidget * creatMissionButton(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -90,6 +92,10 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "DATALABEL")
 	{
 		return creatDataLabel(element);
+	}
+	else if (element.nodeName().toUpper() == "MISSIONBUTTON")
+	{
+		return creatMissionButton(element);
 	}
 	else
 	{
@@ -240,4 +246,11 @@ QWidget * creatDataLabel(const QDomElement & element)
 	label->setName(element.attribute("name"));
 	label->setData(DataPool::externalDataMap()->value(element.attribute("data")));
 	return label;
+}
+
+QWidget * creatMissionButton(const QDomElement & element)
+{
+	MissionButton * button = new MissionButton;
+	button->setText(element.attribute("name"));
+	return button;
 }

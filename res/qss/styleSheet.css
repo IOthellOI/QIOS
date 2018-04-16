@@ -6,11 +6,13 @@ QFrame#TitleBar {
 
 QFrame#NavigationBar {
     max-width: 100px;
+    min-width: 100px;
     background-color: rgb(47, 50, 59);
 }
 
 QFrame#PaginationBar {
     max-width: 100px;
+    min-width: 100px;
     background-color: rgb(88, 88, 88);
     border-top: 15px solid rgb(88, 88, 88);
 }
@@ -41,7 +43,7 @@ QToolButton#NavigationButton {
     }
 
     QToolButton#NavigationButton:hover {
-        background-color: rgb(80, 80, 80);
+        background-color: rgb(70, 70, 70);
     }
 
     QToolButton#NavigationButton:pressed {
@@ -277,13 +279,9 @@ QTableWidget QHeaderView#ComputerTable {
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
     min-height: 40px;
-    background-color: aqua;
 }
 
 QGroupBox#ProjectorControl {
-    background-color: rgb(71, 120, 199);
-    border: 2px inset rgb(0, 0, 0);
-    margin-top: 1ex;
     min-width: 120px;
     min-height: 100px;
     max-width: 120px;
@@ -291,6 +289,8 @@ QGroupBox#ProjectorControl {
 }
 
 QLabel#ProjectorControl {
+    background-color: rgb(71, 120, 199);
+    border: 2px inset rgb(0, 0, 0);
     color: white;
     font-family: 'Microsoft YaHei UI';
     font-size: 16px;
@@ -302,4 +302,86 @@ QWidget#SwitchButton {
     min-height: 30px;
     max-width: 70px;
     max-height: 30px;
+}
+
+QTableWidget#SoundTable {
+}
+
+    QTableWidget#SoundTable::item:alternate:!selected {
+        background-color: white;
+    }
+
+    QTableWidget#SoundTable::item:!alternate:!selected {
+        background-color: rgb(245, 245, 245);
+    }
+
+QTableWidget QHeaderView#SoundTable {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+    min-height: 40px;
+}
+
+QLabel#SoundTableLabel {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QSlider#SoundTableSlider {
+    min-height: 30px;
+    max-height: 30px;
+}
+
+    QSlider#SoundTableSlider::sub-page:horizontal {
+        background-color: rgb(67, 211, 45);
+    }
+
+
+    QSlider#SoundTableSlider::groove:horizontal {
+        height: 5px;
+        left: 5px;
+        right: 5px;
+        background-color: rgb(152, 146, 146);
+    }
+
+
+    QSlider#SoundTableSlider::handle:horizontal {
+        width: 8px;
+        border-radius: 3px;
+        margin: -10px -1px;
+        background-color: rgb(67, 211, 45);
+    }
+
+QPushButton#InputButton {
+    width: 54px;
+    height: 54px;
+    icon-size: 32px 32px;
+    border-radius: 24px;
+}
+
+    QPushButton#InputButton:enabled {
+        background-color: rgb(71, 120, 199);
+    }
+
+    QPushButton#InputButton:hover {
+        background-color: rgb(98, 140, 208);
+    }
+
+    QPushButton#InputButton:pressed {
+        background-color: rgb(61, 112, 194);
+    }
+    
+QLabel#InputButton {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QLabel#DataLabel {
+    color: black;
+    max-height: 15px;
+    max-width: 60px;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 12px;
 }

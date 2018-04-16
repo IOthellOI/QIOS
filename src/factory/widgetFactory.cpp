@@ -1,4 +1,5 @@
 #include "widgetFactory.h"
+#include "dataPool.h"
 #include "pictureLabel.h"
 #include "loginEdit.h"
 #include "loginButton.h"
@@ -9,6 +10,9 @@
 #include "computerTable.h"
 #include "projectorControl.h"
 #include "separatorLine.h"
+#include "soundTable.h"
+#include "inputButton.h"
+#include "dataLabel.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -25,6 +29,9 @@ static QWidget * creatFaultDisplay(const QDomElement & element);
 static QWidget * creatComputerTable(const QDomElement & element);
 static QWidget * creatProjectorControl(const QDomElement & element);
 static QWidget * creatSeparatorLine(const QDomElement & element);
+static QWidget * creatSoundTable(const QDomElement & element);
+static QWidget * creatInputButton(const QDomElement & element);
+static QWidget * creatDataLabel(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -71,6 +78,18 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "SEPARATORLINE")
 	{
 		return creatSeparatorLine(element);
+	}
+	else if (element.nodeName().toUpper() == "SOUNDTABLE")
+	{
+		return creatSoundTable(element);
+	}
+	else if (element.nodeName().toUpper() == "INPUTBUTTON")
+	{
+		return creatInputButton(element);
+	}
+	else if (element.nodeName().toUpper() == "DATALABEL")
+	{
+		return creatDataLabel(element);
 	}
 	else
 	{
@@ -197,5 +216,28 @@ QWidget * creatSeparatorLine(const QDomElement & element)
 		label->setFixedHeight(element.attribute("height").toInt());
 	}
 	label->setColor(element.attribute("color"));
+	return label;
+}
+
+QWidget * creatSoundTable(const QDomElement & element)
+{
+	SoundTable * table = new SoundTable;
+	table->loadConfig(element.attribute("path"));
+	return table;
+}
+
+QWidget * creatInputButton(const QDomElement & element)
+{
+	InputButton * button = new InputButton;
+	button->setName(element.attribute("name"));
+	button->setData(DataPool::externalDataMap()->value(element.attribute("data")));
+	return button;
+}
+
+QWidget * creatDataLabel(const QDomElement & element)
+{
+	DataLabel * label = new DataLabel;
+	label->setName(element.attribute("name"));
+	label->setData(DataPool::externalDataMap()->value(element.attribute("data")));
 	return label;
 }

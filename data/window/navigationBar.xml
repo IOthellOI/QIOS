@@ -7,7 +7,7 @@
   </oneLevel>
   <oneLevel text="任务" icon="./res/ico/mission.png" paginationData="missionPageData">
     <twoLevel text="任务设置" bindPage="missionSetting"/>
-    <twoLevel text="初始化设置" bindPage="initialSetting"/>
+    <twoLevel text="飞行设置" bindPage="flightSetting"/>
     <twoLevel text="环境设置" bindPage="environmentSetting"/>
     <twoLevel text="联网设置" bindPage="networkSetting"/>
   </oneLevel>

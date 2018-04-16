@@ -13,7 +13,7 @@ public:
 
 public:
 	void loadConfig(const QString  & _path);
-
+	
 private:
 	struct SoundTablePrivate;
 	SoundTablePrivate * data;

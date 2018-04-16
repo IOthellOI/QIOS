@@ -4,57 +4,54 @@
 
 struct InternalData::InternalDataPrivate
 {
-	QString * name;
-	QString * type;
-	QString * value;
+	QString name;
+	QString type;
+	QString value;
 };
 
 InternalData::InternalData(QObject * _parent) :
 	QObject(_parent),
 	data(new InternalDataPrivate)
 {
-	data->name = new QString;
-	data->type = new QString;
-	data->value = new QString;
 }
 
 InternalData::~InternalData()
 {
-	
+	deletea data;
 }
 
 void InternalData::setName(const QString & _name)
 {
-	*data->name = _name;
+	data->name = _name;
 }
 
-const QString & InternalData::name()
+QString InternalData::name()
 {
-	return *data->name;
+	return data->name;
 }
 
 void InternalData::setType(const QString & _type)
 {
-	*data->type = _type;
+	data->type = _type;
 }
 
-const QString & InternalData::type()
+QString InternalData::type()
 {
-	return *data->type;
+	return data->type;
 }
 
 void InternalData::setValue(const QString & _value)
 {
-	*data->value = _value;
+	data->value = _value;
 }
 
-const QString & InternalData::value()
+QString InternalData::value()
 {
-	return *data->value;
+	return data->value;
 }
 
 void InternalData::slotDataUpdate(const QString & _value)
 {
-	*data->value = _value;
-	emit signalDataUpdata(_value);
+	data->value = _value;
+	emit signalDataUpdate(_value);
 }

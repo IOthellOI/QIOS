@@ -9,62 +9,16 @@
 #include <QVector>
 #include <QLayout>
 
-class ComputerTableLabel : public QLabel
-{
-public:
-	ComputerTableLabel(QWidget * _parent = nullptr) :
-		QLabel(_parent)
-	{
-		setObjectName("ComputerTableLabel");
-	}
-
-	virtual ~ComputerTableLabel() {};
-};
-
-class ComputerTableButton : public QPushButton
-{
-public:
-	ComputerTableButton(QWidget * _parent = nullptr) :
-		QPushButton(_parent)
-	{
-		setObjectName("ComputerTableButton");
-	}
-
-	virtual ~ComputerTableButton() {};
-};
-
-class ComputerTableRestartButton : public ComputerTableButton
-{
-public:
-	ComputerTableRestartButton(QWidget * _parent = nullptr) :
-		ComputerTableButton(_parent)
-	{
-		setObjectName("ComputerTableRestartButton");
-	}
-	~ComputerTableRestartButton() {};
-};
-
-class ComputerTableShutdownButton : public ComputerTableButton
-{
-public:
-	ComputerTableShutdownButton(QWidget * _parent = nullptr) :
-		ComputerTableButton(_parent)
-	{
-		setObjectName("ComputerTableShutdownButton");
-	}
-	~ComputerTableShutdownButton() {};
-};
-
 struct ComputerTableItem
 {
-	ComputerTableLabel identifier;
-	ComputerTableLabel name;
-	ComputerTableLabel ethernetState;
-	ComputerTableLabel realtimeState;
-	ComputerTableRestartButton computerRestart;
-	ComputerTableShutdownButton computerShutdown;
-	ComputerTableLabel programState;
-	ComputerTableRestartButton programRestart;
+	QLabel identifier;
+	QLabel name;
+	QLabel ethernetState;
+	QLabel realtimeState;
+	QPushButton computerRestart;
+	QPushButton computerShutdown;
+	QLabel programState;
+	QPushButton programRestart;
 };
 
 struct ComputerTable::ComputerTablePrivate
@@ -78,20 +32,16 @@ ComputerTable::ComputerTable(QWidget * _parent) :
 {
 	setObjectName("ComputerTable");
 	horizontalHeader()->setObjectName("ComputerTable");
-
 	verticalHeader()->setVisible(false);
-
 	horizontalHeader()->setSectionsClickable(false);
-
 	setEditTriggers(QAbstractItemView::NoEditTriggers);
+	horizontalHeader()->setStretchLastSection(true);
+	setShowGrid(false);
+	setAlternatingRowColors(true);
+	setSelectionMode(QAbstractItemView::NoSelection);
+	setFocusPolicy(Qt::NoFocus);
 
 	data->vector = new QVector<ComputerTableItem *>;
-
-	horizontalHeader()->setStretchLastSection(true);
-
-	setShowGrid(false);
-
-	setAlternatingRowColors(true);
 }
 
 ComputerTable::~ComputerTable()
@@ -114,7 +64,7 @@ void ComputerTable::loadConfig(const QString & _path)
 
 	for (int i = 0; !node.isNull(); i++)
 	{
-		header << node.attribute("value");
+		header << node.attribute("item");
 		setColumnWidth(i, node.attribute("width").toInt());
 		node = node.nextSiblingElement();
 	}
@@ -136,20 +86,24 @@ void ComputerTable::loadConfig(const QString & _path)
 
 		item = new ComputerTableItem;
 
+		item->identifier.setObjectName("ComputerTableLabel");
 		item->identifier.setAlignment(Qt::AlignCenter);
-		item->identifier.setText(QString("") + node.attribute("identifier") + "");
+		item->identifier.setText(node.attribute("identifier"));
 		setCellWidget(row, column++, &item->identifier);
 
+		item->name.setObjectName("ComputerTableLabel");
 		item->name.setAlignment(Qt::AlignCenter);
-		item->name.setText(QString("") + node.attribute("name") + "");
+		item->name.setText(node.attribute("name"));
 		setCellWidget(row, column++, &item->name);
 
+		item->ethernetState.setObjectName("ComputerTableLabel");
 		item->ethernetState.setAlignment(Qt::AlignCenter);
-		item->ethernetState.setText(QString("") + u8"未接通" + "");
+		item->ethernetState.setText(u8"未接通");
 		setCellWidget(row, column++, &item->ethernetState);
 
+		item->realtimeState.setObjectName("ComputerTableLabel");
 		item->realtimeState.setAlignment(Qt::AlignCenter);
-		item->realtimeState.setText(QString("") + u8"未接通" + "");
+		item->realtimeState.setText(u8"未接通");
 		setCellWidget(row, column++, &item->realtimeState);
 
 		QWidget * widget = new QWidget;
@@ -157,20 +111,24 @@ void ComputerTable::loadConfig(const QString & _path)
 		QHBoxLayout * layout = new QHBoxLayout(widget);
 		layout->setMargin(0);
 		layout->setSpacing(30);
+		item->computerRestart.setObjectName("ComputerTableRestartButton");
+		item->computerShutdown.setObjectName("ComputerTableShutdownButton");
 		layout->addWidget(&item->computerRestart);
 		layout->addWidget(&item->computerShutdown);
 		item->computerRestart.setText(u8"重启");
 		item->computerShutdown.setText(u8"关机");
 		setCellWidget(row, column++, widget);
 
+		item->programState.setObjectName("ComputerTableLabel");
 		item->programState.setAlignment(Qt::AlignCenter);
-		item->programState.setText(QString("") + u8"未连通" + "");
+		item->programState.setText(u8"未连通");
 		setCellWidget(row, column++, &item->programState);
 
 		widget = new QWidget;
 		widget->setContentsMargins(50, 0, 50, 0);
 		layout = new QHBoxLayout(widget);
 		layout->setMargin(0);
+		item->programRestart.setObjectName("ComputerTableRestartButton");
 		layout->addWidget(&item->programRestart);
 		item->programRestart.setText(u8"重启");
 		setCellWidget(row, column++, widget);
@@ -179,5 +137,4 @@ void ComputerTable::loadConfig(const QString & _path)
 		column = 0;
 		node = node.nextSiblingElement();
 	}
-
 }

@@ -34,7 +34,7 @@ SwitchButton::SwitchButton(QWidget * _parent) :
 	data->sliderColorOff = QColor(255, 255, 255);
 	data->sliderColorOn = QColor(255, 255, 255);
 	data->textColorOff = QColor(255, 255, 255);
-	data->textColorOn = QColor(0, 0, 0);
+	data->textColorOn = QColor(100, 100, 100);
 	data->textOff = u8"´ò¿ª";
 	data->textOn = u8"¹Ø±Õ";
 

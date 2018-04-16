@@ -41,7 +41,7 @@ void PageBar::loadConfig(const QString & _path)
 	QDomElement root = xmlRead.rootElement();
 
 	connect(DataPool::internalDataMap()->value(root.attribute("pageData")),
-		SIGNAL(signalDataUpdata(const QString &)),
+		SIGNAL(signalDataUpdate(const QString &)),
 		this,
 		SLOT(slotPageChange(const QString &)));
 

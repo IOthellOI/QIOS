@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <componentBox title="任务设置" row="0" column="0" rowSpan="1" columnSpan="1">
+  <componentBox title="飞行参数" row="0" column="0" rowSpan="1" columnSpan="2">
+    <dataLabel name="经度"       data="longitude"        row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="纬度"       data="latitude"         row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="马赫数"     data="mach"             row="2" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="气压高度"   data="barometricHeight" row="3" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="海拔高度"   data="seaLevelHeight"   row="4" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="无线电高度" data="radioHeight "     row="5" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="总温"       data="totalTemperature" row="6" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="总压"       data="totalPressure"    row="7" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="动压"       data="dynamicPressure " row="8" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="静压"       data="staticPressure"   row="9" column="0" rowSpan="1" columnSpan="1"/>
     
+    <dataLabel name="X坐标"      data="xCoordinate" row="0" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="Y坐标"      data="yCoordinate" row="1" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="Z坐标"      data="zCoordinate" row="2" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="攻角"       data="attackAngle" row="3" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="俯仰角"     data="pitchAngle"  row="4" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="滚转角"     data="rollAngle"   row="5" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="偏航角"     data="yawAngle"    row="6" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="X速度"      data="xVelocity"   row="7" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="Y速度"      data="yVelocity"   row="8" column="1" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="Z速度"      data="xVelocity"   row="9" column="1" rowSpan="1" columnSpan="1"/>
+    
+    <dataLabel name="X角速度"    data="xPalstance"        row="0" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="Y角速度"    data="yPalstance"        row="1" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="Z角速度"    data="zPalstance"        row="2" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="侧滑角"     data="sideslipAngle"     row="3" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="真空速"     data="trueAirspeed"      row="4" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="指示空速"   data="indicatedAirspeed" row="5" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="地速"       data="groundSpeed "      row="6" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="升降速度"   data="verticalSpeed"     row="7" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="法向过载"   data="normalOverload"    row="8" column="2" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="飞机重量"   data="aircraftWeight"    row="9" column="2" rowSpan="1" columnSpan="1"/>
+  </componentBox>
+  <componentBox title="挂载参数" row="0" column="2" rowSpan="1" columnSpan="2">
+
+  </componentBox>
+  <componentBox title="操纵参数" row="0" column="4" rowSpan="1" columnSpan="2">
+
+  </componentBox>
+  <componentBox title="轨迹曲线" row="1" column="0" rowSpan="2" columnSpan="3">
+
+  </componentBox>
+  <componentBox title="高程曲线" row="1" column="3" rowSpan="2" columnSpan="3">
+
+  </componentBox>
+  <componentBox title="任务描述" row="3" column="0" rowSpan="1" columnSpan="3">
+
+  </componentBox>
+  <componentBox title="任务点评" row="3" column="3" rowSpan="1" columnSpan="3">
+
+  </componentBox>
+  <componentBox title="任务选择" row="0" column="6" rowSpan="1" columnSpan="1">
+
+  </componentBox>
+  <componentBox title="任务设置" row="1" column="6" rowSpan="1" columnSpan="1">
+
+  </componentBox>
+  <componentBox title="快捷操作" row="3" column="6" rowSpan="1" columnSpan="1">
+
   </componentBox>
 </root>

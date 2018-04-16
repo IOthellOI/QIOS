@@ -4,7 +4,7 @@
   <page name="soundDevice" path="./data/page/soundDevice.xml"/>
   <page name="cockpitDevice" path="./data/page/cockpitDevice.xml"/>
   <page name="missionSetting" path="./data/page/missionSetting.xml"/>
-  <page name="initialSetting" path="./data/page/initialSetting.xml"/>
+  <page name="flightSetting" path="./data/page/flightSetting.xml"/>
   <page name="environmentSetting" path="./data/page/environmentSetting.xml"/>
   <page name="networkSetting" path="./data/page/networkSetting.xml"/>
   <page name="commonFault" path="./data/page/commonFault.xml"/>

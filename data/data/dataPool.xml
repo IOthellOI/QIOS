@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <InternalData path="./data/data/internalData.xml"/>
+  <ExternalData path="./data/data/externalData.xml"/>
 </root>

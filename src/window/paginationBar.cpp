@@ -43,7 +43,7 @@ void PaginationBar::loadConfig(const QString & _path)
 	QDomElement root = xmlRead.rootElement();
 
 	connect(DataPool::internalDataMap()->value(root.attribute("navigationData")),
-		SIGNAL(signalDataUpdata(const QString &)),
+		SIGNAL(signalDataUpdate(const QString &)),
 		this,
 		SLOT(slotNavigationChange(const QString &)));
 

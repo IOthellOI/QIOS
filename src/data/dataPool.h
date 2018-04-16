@@ -16,6 +16,7 @@
 #include <QMap>
 
 #include "internalData.h"
+#include "externalData.h"
 
 class DataPool : public QObject
 {
@@ -27,9 +28,11 @@ public:
 public:
 	void loadConfig(const QString & _path);
 	static const QMap<QString, InternalData *> * internalDataMap();
+	static const QMap<QString, ExternalData *> * externalDataMap();
 
 private:
 	void loadInternalData(const QString & _path);
+	void loadExternalData(const QString & _path);
 
 private:
 	struct DataPoolPrivate;

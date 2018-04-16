@@ -23,14 +23,14 @@ public:
 
 public:
 	void setName(const QString & _name);
-	const QString & name();
+	QString name();
 	void setType(const QString & _type);
-	const QString & type();
+	QString type();
 	void setValue(const QString & _value);
-	const QString & value();
+	QString value();
 
 signals:
-	void signalDataUpdata(const QString & _value);
+	void signalDataUpdate(const QString & _value);
 
 public slots:
 	void slotDataUpdate(const QString & _value);

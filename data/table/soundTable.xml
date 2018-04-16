@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <definition item="名称" width="100"/>
+    <definition item="控制" width="610"/>
+    <definition item="音量" width="100"/>
+  </header>
+  <item height="60">
+    <sound name="声音设备1" data="sound1"/>
+    <sound name="声音设备2" data="sound2"/>
+    <sound name="声音设备3" data="sound3"/>
+    <sound name="声音设备4" data="sound4"/>
+    <sound name="声音设备5" data="sound5"/>
+    <sound name="声音设备6" data="sound6"/>
+    <sound name="声音设备7" data="sound7"/>
+    <sound name="声音设备8" data="sound8"/>
+    <sound name="声音设备9" data="sound9"/>
+  </item>
+</root>

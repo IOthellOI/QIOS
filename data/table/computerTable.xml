@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <header>
-    <definition value="标识" width="100"/>
-    <definition value="名称" width="300"/>
-    <definition value="以太网状态" width="250"/>
-    <definition value="实时网状态" width="250"/>
-    <definition value="计算机控制" width="300"/>
-    <definition value="程序状态" width="250"/>
-    <definition value="程序控制" width="200"/>
+    <definition item="标识" width="100"/>
+    <definition item="名称" width="300"/>
+    <definition item="以太网状态" width="250"/>
+    <definition item="实时网状态" width="250"/>
+    <definition item="计算机控制" width="300"/>
+    <definition item="程序状态" width="250"/>
+    <definition item="程序控制" width="200"/>
   </header>
   <item height="60">
     <computer identifier="AESA" name="雷达仿真计算机"/>

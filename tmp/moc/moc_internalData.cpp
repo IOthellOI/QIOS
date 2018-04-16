@@ -32,13 +32,13 @@ struct qt_meta_stringdata_InternalData_t {
 static const qt_meta_stringdata_InternalData_t qt_meta_stringdata_InternalData = {
     {
 QT_MOC_LITERAL(0, 0, 12), // "InternalData"
-QT_MOC_LITERAL(1, 13, 16), // "signalDataUpdata"
+QT_MOC_LITERAL(1, 13, 16), // "signalDataUpdate"
 QT_MOC_LITERAL(2, 30, 0), // ""
 QT_MOC_LITERAL(3, 31, 6), // "_value"
 QT_MOC_LITERAL(4, 38, 14) // "slotDataUpdate"
 
     },
-    "InternalData\0signalDataUpdata\0\0_value\0"
+    "InternalData\0signalDataUpdate\0\0_value\0"
     "slotDataUpdate"
 };
 #undef QT_MOC_LITERAL
@@ -77,7 +77,7 @@ void InternalData::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         InternalData *_t = static_cast<InternalData *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->signalDataUpdata((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 0: _t->signalDataUpdate((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 1: _t->slotDataUpdate((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         default: ;
         }
@@ -85,7 +85,7 @@ void InternalData::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             typedef void (InternalData::*_t)(const QString & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&InternalData::signalDataUpdata)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&InternalData::signalDataUpdate)) {
                 *result = 0;
                 return;
             }
@@ -130,7 +130,7 @@ int InternalData::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void InternalData::signalDataUpdata(const QString & _t1)
+void InternalData::signalDataUpdate(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

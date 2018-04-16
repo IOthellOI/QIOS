@@ -86,9 +86,6 @@
     <Filter Include="Source Files\edit">
       <UniqueIdentifier>{8e716a9c-263d-4451-b7f8-1bb2b5690607}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Config Files\page">
-      <UniqueIdentifier>{d585e7c5-29b6-4c6a-b9e2-1bcab9660225}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\page">
       <UniqueIdentifier>{909bd7c2-a33b-41ec-928f-6234f5754e6a}</UniqueIdentifier>
     </Filter>
@@ -116,13 +113,13 @@
     <Filter Include="Source Files\group">
       <UniqueIdentifier>{f93135fd-f511-4726-93b0-cff7c363f2e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Config Files\page">
+      <UniqueIdentifier>{d585e7c5-29b6-4c6a-b9e2-1bcab9660225}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="src\button\clickButton.h">
-      <Filter>Header Files\button</Filter>
     </CustomBuild>
     <CustomBuild Include="src\button\navigationButton.h">
       <Filter>Header Files\button</Filter>
@@ -184,9 +181,6 @@
     <CustomBuild Include="src\box\componentBox.h">
       <Filter>Header Files\box</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\table\computerTable.h">
-      <Filter>Header Files\table</Filter>
-    </CustomBuild>
     <CustomBuild Include="src\label\faultDisplay.h">
       <Filter>Header Files\label</Filter>
     </CustomBuild>
@@ -205,16 +199,22 @@
     <CustomBuild Include="src\table\soundTable.h">
       <Filter>Header Files\table</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\table\computerTable.h">
+      <Filter>Header Files\table</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\data\externalData.h">
+      <Filter>Header Files\data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\inputButton.h">
+      <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\label\dataLabel.h">
+      <Filter>Header Files\label</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
       <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_clickButton.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\button\clickButton.cpp">
-      <Filter>Source Files\button</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
@@ -348,12 +348,6 @@
     <ClCompile Include="tmp\moc\moc_componentBox.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\table\computerTable.cpp">
-      <Filter>Source Files\table</Filter>
-    </ClCompile>
-    <ClCompile Include="tmp\moc\moc_computerTable.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="tmp\moc\moc_faultDisplay.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
@@ -381,11 +375,38 @@
     <ClCompile Include="src\label\separatorLine.cpp">
       <Filter>Source Files\label</Filter>
     </ClCompile>
-    <ClCompile Include="src\table\soundTable.cpp">
-      <Filter>Source Files\table</Filter>
+    <ClCompile Include="tmp\moc\moc_computerTable.cpp">
+      <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="tmp\moc\moc_soundTable.cpp">
       <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table\soundTable.cpp">
+      <Filter>Source Files\table</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table\computerTable.cpp">
+      <Filter>Source Files\table</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_externalData.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\externalData.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_inputButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\inputButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label\dataLabel.cpp">
+      <Filter>Source Files\label</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_dataLabel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\missionButton.cpp">
+      <Filter>Source Files\button</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -434,9 +455,6 @@
     <Xml Include="data\page\faultIndex.xml">
       <Filter>Config Files\page</Filter>
     </Xml>
-    <Xml Include="data\page\initialSetting.xml">
-      <Filter>Config Files\page</Filter>
-    </Xml>
     <Xml Include="data\page\missionSetting.xml">
       <Filter>Config Files\page</Filter>
     </Xml>
@@ -458,6 +476,15 @@
     <Xml Include="data\table\computerTable.xml">
       <Filter>Config Files\table</Filter>
     </Xml>
+    <Xml Include="data\table\soundTable.xml">
+      <Filter>Config Files\table</Filter>
+    </Xml>
+    <Xml Include="data\page\flightSetting.xml">
+      <Filter>Config Files\page</Filter>
+    </Xml>
+    <Xml Include="data\data\externalData.xml">
+      <Filter>Config Files\data</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\factory\widgetFactory.h">
@@ -465,6 +492,9 @@
     </ClInclude>
     <ClInclude Include="src\label\separatorLine.h">
       <Filter>Header Files\label</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\missionButton.h">
+      <Filter>Header Files\button</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

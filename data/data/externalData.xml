@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <!--声音控制数据-->
+  <ExternalData name="sound1" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound2" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound3" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound4" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound5" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound6" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound7" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound8" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound9" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  
+  <!--飞行设置数据-->
+  <ExternalData name="data1" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="data2" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="data3" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="data4" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="data5" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
+
+  <!--任务显示数据-->
+  <ExternalData name="longitude"         type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="latitude"          type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="mach"              type="int" init="0.00" unit="ma" min="0" max="100" address="0x00"/>
+  <ExternalData name="barometricHeight"  type="int" init="0.00" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="seaLevelHeight"    type="int" init="0.00" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="radioHeight "      type="int" init="0.00" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="totalTemperature"  type="int" init="0.00" unit="℃" min="0" max="100" address="0x00"/>
+  <ExternalData name="totalPressure"     type="int" init="0.00" unit="kg/m2" min="0" max="100" address="0x00"/>
+  <ExternalData name="dynamicPressure "  type="int" init="0.00" unit="kg/m2" min="0" max="100" address="0x00"/>
+  <ExternalData name="staticPressure"    type="int" init="0.00" unit="kg/m2" min="0" max="100" address="0x00"/>
+  <ExternalData name="xCoordinate"       type="int" init="0.00" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="yCoordinate"       type="int" init="0.00" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="zCoordinate"       type="int" init="0.00" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="attackAngle"       type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="pitchAngle"        type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="rollAngle"         type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="yawAngle"          type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="xVelocity"         type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="yVelocity"         type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="xVelocity"         type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="xPalstance"        type="int" init="0.00" unit="rad/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="yPalstance"        type="int" init="0.00" unit="rad/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="zPalstance"        type="int" init="0.00" unit="rad/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="sideslipAngle"     type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="trueAirspeed"      type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="indicatedAirspeed" type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="groundSpeed "      type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="verticalSpeed"     type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
+  <ExternalData name="normalOverload"    type="int" init="0.00" unit="g" min="0" max="100" address="0x00"/>
+  <ExternalData name="aircraftWeight"    type="int" init="0.00" unit="kg" min="0" max="100" address="0x00"/>
+</root> 

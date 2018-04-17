@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <componentBox title="飞行参数" row="0" column="0" rowSpan="1" columnSpan="2">
+  <componentBox title="飞行参数" max-height="310" row="0" column="0" rowSpan="2" columnSpan="2">
     <dataLabel name="经度"       data="longitude"        row="0" column="0" rowSpan="1" columnSpan="1"/>
     <dataLabel name="纬度"       data="latitude"         row="1" column="0" rowSpan="1" columnSpan="1"/>
     <dataLabel name="马赫数"     data="mach"             row="2" column="0" rowSpan="1" columnSpan="1"/>
@@ -11,7 +11,7 @@
     <dataLabel name="总压"       data="totalPressure"    row="7" column="0" rowSpan="1" columnSpan="1"/>
     <dataLabel name="动压"       data="dynamicPressure " row="8" column="0" rowSpan="1" columnSpan="1"/>
     <dataLabel name="静压"       data="staticPressure"   row="9" column="0" rowSpan="1" columnSpan="1"/>
-    
+
     <dataLabel name="X坐标"      data="xCoordinate" row="0" column="1" rowSpan="1" columnSpan="1"/>
     <dataLabel name="Y坐标"      data="yCoordinate" row="1" column="1" rowSpan="1" columnSpan="1"/>
     <dataLabel name="Z坐标"      data="zCoordinate" row="2" column="1" rowSpan="1" columnSpan="1"/>
@@ -22,7 +22,7 @@
     <dataLabel name="X速度"      data="xVelocity"   row="7" column="1" rowSpan="1" columnSpan="1"/>
     <dataLabel name="Y速度"      data="yVelocity"   row="8" column="1" rowSpan="1" columnSpan="1"/>
     <dataLabel name="Z速度"      data="xVelocity"   row="9" column="1" rowSpan="1" columnSpan="1"/>
-    
+
     <dataLabel name="X角速度"    data="xPalstance"        row="0" column="2" rowSpan="1" columnSpan="1"/>
     <dataLabel name="Y角速度"    data="yPalstance"        row="1" column="2" rowSpan="1" columnSpan="1"/>
     <dataLabel name="Z角速度"    data="zPalstance"        row="2" column="2" rowSpan="1" columnSpan="1"/>
@@ -34,34 +34,52 @@
     <dataLabel name="法向过载"   data="normalOverload"    row="8" column="2" rowSpan="1" columnSpan="1"/>
     <dataLabel name="飞机重量"   data="aircraftWeight"    row="9" column="2" rowSpan="1" columnSpan="1"/>
   </componentBox>
-  <componentBox title="挂载参数" row="0" column="2" rowSpan="1" columnSpan="2">
+  <componentBox title="挂载参数" max-height="310" row="0" column="2" rowSpan="2" columnSpan="2">
+    <pictureLabel icon="./res/img/aircraftMount.png" width="450" height="200" row="0" column="0" rowSpan="1" columnSpan="1"/>
+  </componentBox>
+  <componentBox title="操纵参数" max-height="310" row="0" column="4" rowSpan="2" columnSpan="2">
 
   </componentBox>
-  <componentBox title="操纵参数" row="0" column="4" rowSpan="1" columnSpan="2">
+  <componentBox title="轨迹曲线" row="2" column="0" rowSpan="1" columnSpan="3">
+  </componentBox>
+  <componentBox title="高程曲线" row="2" column="3" rowSpan="1" columnSpan="3">
 
   </componentBox>
-  <componentBox title="轨迹曲线" row="1" column="0" rowSpan="2" columnSpan="3">
-
+  <componentBox title="任务描述" max-height="160" row="3" column="0" rowSpan="1" columnSpan="3">
+    <textLabel text="未选择任务" color="black" alignment="left" row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <textEdit  text="任务描述加载中..."                         row="1" column="0" rowSpan="1" columnSpan="1"/>
   </componentBox>
-  <componentBox title="高程曲线" row="1" column="3" rowSpan="2" columnSpan="3">
-
+  <componentBox title="任务点评" max-height="160" row="3" column="3" rowSpan="1" columnSpan="3">
+    <textLabel text="评语" color="black" alignment="left" row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <textEdit  text="请输入评语..."                       row="1" column="0" rowSpan="2" columnSpan="1"/>
+    <textLabel text="评分" color="black" alignment="left" row="0" column="1" rowSpan="1" columnSpan="1"/>
+    <spinEdit                                             row="1" column="1" rowSpan="1" columnSpan="1"/>
+    <missionButton name="确认"                            row="2" column="1" rowSpan="1" columnSpan="1"/>
   </componentBox>
-  <componentBox title="任务描述" row="3" column="0" rowSpan="1" columnSpan="3">
-
+  <componentBox title="任务选择" max-height="150" row="0" column="6" rowSpan="1" columnSpan="1">
+    <missionButton name="大纲任务"   row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <missionButton name="专项任务"   row="0" column="1" rowSpan="1" columnSpan="1"/>
+    <missionButton name="联网任务"   row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <missionButton name="自定义任务" row="1" column="1" rowSpan="1" columnSpan="1"/>
   </componentBox>
-  <componentBox title="任务点评" row="3" column="3" rowSpan="1" columnSpan="3">
-
+  <componentBox title="任务设置" max-height="150" row="1" column="6" rowSpan="1" columnSpan="1">
+    <missionButton name="战场环境"   row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <missionButton name="任务目标"   row="0" column="1" rowSpan="1" columnSpan="1"/>
+    <missionButton name="航点数据"   row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <missionButton name="计划任务"   row="1" column="1" rowSpan="1" columnSpan="1"/>    
   </componentBox>
-  <componentBox title="任务选择" row="0" column="6" rowSpan="1" columnSpan="1">
-   <missionButton name="大纲任务"   row="0" column="0" rowSpan="1" columnSpan="1"/>
-   <missionButton name="专项任务"   row="1" column="0" rowSpan="1" columnSpan="1"/>
-   <missionButton name="联网任务"   row="2" column="0" rowSpan="1" columnSpan="1"/>
-   <missionButton name="自定义任务"   row="3" column="0" rowSpan="1" columnSpan="1"/>
-  </componentBox>
-  <componentBox title="任务设置" row="1" column="6" rowSpan="1" columnSpan="1">
-
-  </componentBox>
-  <componentBox title="快捷操作" row="3" column="6" rowSpan="1" columnSpan="1">
-
+  <componentBox title="快捷操作" row="2"  column="6" rowSpan="2" columnSpan="1">
+    <toggleButton name="数据记录"     row="0"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="禁止毁坏"     row="1"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="快速启动"     row="2"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="燃油冻结"     row="3"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="飞行冻结"     row="4"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="位置冻结"     row="5"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="燃油复位"     row="6"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="受油碳管复位" row="7"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="起落架复位"   row="8"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="蓄电池复位"   row="9"  column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="油量重置"     row="10" column="0" rowSpan="1" columnSpan="1"/>
+    <toggleButton name="地面电源重置" row="11" column="0" rowSpan="1" columnSpan="1"/>
   </componentBox>
 </root>

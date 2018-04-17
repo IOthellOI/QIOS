@@ -7,7 +7,6 @@ struct DataLabel::DataLabelPrivate
 {
 	QLabel * name;
 	QLabel * value;
-	ExternalData * data;
 };
 
 DataLabel::DataLabel(QWidget * _parent) :
@@ -39,6 +38,5 @@ void DataLabel::setName(const QString & _name)
 
 void DataLabel::setData(ExternalData * _data)
 {
-	data->data = _data;
 	data->value->setText(_data->value() + _data->unit());
 }

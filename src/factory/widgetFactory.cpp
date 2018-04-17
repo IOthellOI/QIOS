@@ -14,6 +14,10 @@
 #include "inputButton.h"
 #include "dataLabel.h"
 #include "missionButton.h"
+#include "dataSlider.h"
+#include "toggleButton.h"
+#include "textEdit.h"
+#include "spinEdit.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -34,6 +38,10 @@ static QWidget * creatSoundTable(const QDomElement & element);
 static QWidget * creatInputButton(const QDomElement & element);
 static QWidget * creatDataLabel(const QDomElement & element);
 static QWidget * creatMissionButton(const QDomElement & element);
+static QWidget * creatDataSlider(const QDomElement & element);
+static QWidget * creatToggleButton(const QDomElement & element);
+static QWidget * creatTextEdit(const QDomElement & element);
+static QWidget * creatSpinEdit(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -96,6 +104,22 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "MISSIONBUTTON")
 	{
 		return creatMissionButton(element);
+	}
+	else if (element.nodeName().toUpper() == "DATASLIDER")
+	{
+		return creatDataSlider(element);
+	}
+	else if (element.nodeName().toUpper() == "TOGGLEBUTTON")
+	{
+		return creatToggleButton(element);
+	}
+	else if (element.nodeName().toUpper() == "TEXTEDIT")
+	{
+		return creatTextEdit(element);
+	}
+	else if (element.nodeName().toUpper() == "SPINEDIT")
+	{
+		return creatSpinEdit(element);
 	}
 	else
 	{
@@ -164,6 +188,21 @@ QWidget * creatTextLabel(const QDomElement & element)
 	TextLabel * label = new TextLabel;
 	label->setText(element.attribute("text"));
 	label->setColor(element.attribute("color"));
+	if (element.hasAttribute("alignment"))
+	{
+		if (element.attribute("alignment") == "left")
+		{
+			label->setAlignment(Qt::AlignLeft);
+		}		
+		else if (element.attribute("alignment") == "center")
+		{
+			label->setAlignment(Qt::AlignCenter);
+		}		
+		else if (element.attribute("alignment") == "right")
+		{
+			label->setAlignment(Qt::AlignRight);
+		}
+	}
 	return label;
 }
 
@@ -253,4 +292,33 @@ QWidget * creatMissionButton(const QDomElement & element)
 	MissionButton * button = new MissionButton;
 	button->setText(element.attribute("name"));
 	return button;
+}
+
+QWidget * creatDataSlider(const QDomElement & element)
+{
+	DataSlider * slider = new DataSlider;
+	slider->setName(element.attribute("name"));
+	slider->setData(DataPool::externalDataMap()->value(element.attribute("data")));
+	return slider;
+}
+
+QWidget * creatToggleButton(const QDomElement & element)
+{
+	ToggleButton * button = new ToggleButton;
+	button->setName(element.attribute("name"));
+	return button;
+}
+
+QWidget * creatTextEdit(const QDomElement & element)
+{
+	TextEdit * edit = new TextEdit;
+	edit->setPlaceholderText(element.attribute("text"));
+	return edit;
+}
+
+QWidget * creatSpinEdit(const QDomElement & element)
+{
+	SpinEdit * edit = new SpinEdit;
+	//edit->setRange(element.attribute("minValue").toInt(), element.attribute("maxValue").toInt());
+	return edit;
 }

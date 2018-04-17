@@ -21,6 +21,7 @@ ProjectorControl::ProjectorControl(QWidget * _parent) :
 	data->state->setObjectName("ProjectorControl");
 
 	data->button = new SwitchButton;
+	data->button->setObjectName("ProjectorControl");
 
 	QGridLayout * layout = new QGridLayout(this);
 	layout->setMargin(5);

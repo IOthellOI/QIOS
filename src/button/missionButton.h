@@ -6,6 +6,7 @@
 
 class MissionButton : public QPushButton
 {
+	Q_OBJECT
 public:
 	explicit MissionButton(QWidget * _parent = nullptr);
 	virtual ~MissionButton();

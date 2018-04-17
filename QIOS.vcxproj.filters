@@ -10,10 +10,6 @@
       <Extensions>qrc;*</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
       <Extensions>qrc;*</Extensions>
@@ -116,6 +112,12 @@
     <Filter Include="Config Files\page">
       <UniqueIdentifier>{d585e7c5-29b6-4c6a-b9e2-1bcab9660225}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\slider">
+      <UniqueIdentifier>{7e654ca2-2b3d-4153-9cb2-d06e02227dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\slider">
+      <UniqueIdentifier>{ed49c51c-1523-4617-9ac3-ed404418977d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -210,6 +212,15 @@
     </CustomBuild>
     <CustomBuild Include="src\label\dataLabel.h">
       <Filter>Header Files\label</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\slider\dataSlider.h">
+      <Filter>Header Files\slider</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\weaponButton.h">
+      <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\button\missionButton.h">
+      <Filter>Header Files\button</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -408,6 +419,30 @@
     <ClCompile Include="src\button\missionButton.cpp">
       <Filter>Source Files\button</Filter>
     </ClCompile>
+    <ClCompile Include="src\slider\dataSlider.cpp">
+      <Filter>Source Files\slider</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_dataSlider.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\toggleButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\edit\textEdit.cpp">
+      <Filter>Source Files\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\edit\spinEdit.cpp">
+      <Filter>Source Files\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\weaponButton.cpp">
+      <Filter>Source Files\button</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_weaponButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_missionButton.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -493,8 +528,14 @@
     <ClInclude Include="src\label\separatorLine.h">
       <Filter>Header Files\label</Filter>
     </ClInclude>
-    <ClInclude Include="src\button\missionButton.h">
+    <ClInclude Include="src\button\toggleButton.h">
       <Filter>Header Files\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\edit\textEdit.h">
+      <Filter>Header Files\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\edit\spinEdit.h">
+      <Filter>Header Files\edit</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

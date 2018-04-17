@@ -50,6 +50,22 @@ void Page::loadConfig(const QString & _path)
 		box = new ComponentBox;
 
 		box->setTitle(QString("    ") + element.attribute("title"));
+		if (element.hasAttribute("min-width"))
+		{
+			box->setMinimumWidth(element.attribute("min-width").toInt());
+		}
+		if (element.hasAttribute("min-height"))
+		{
+			box->setMinimumHeight(element.attribute("min-height").toInt());
+		}
+		if (element.hasAttribute("max-width"))
+		{
+			box->setMaximumWidth(element.attribute("max-width").toInt());
+		}
+		if (element.hasAttribute("max-height"))
+		{
+			box->setMaximumHeight(element.attribute("max-height").toInt());
+		}
 
 		data->layout->addWidget(box,
 			element.attribute("row").toInt(), element.attribute("column").toInt(),

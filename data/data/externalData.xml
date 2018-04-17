@@ -49,4 +49,14 @@
   <ExternalData name="verticalSpeed"     type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
   <ExternalData name="normalOverload"    type="int" init="0.00" unit="g" min="0" max="100" address="0x00"/>
   <ExternalData name="aircraftWeight"    type="int" init="0.00" unit="kg" min="0" max="100" address="0x00"/>
+
+  <!--环境设置数据-->
+  <ExternalData name="currentYear"         type="int" init="2010" unit="year"  min="2009" max="2109" address="0x00"/>
+  <ExternalData name="currentMonth"        type="int" init="1"    unit="month" min="1"    max="12" address="0x00"/>
+  <ExternalData name="currentDay"          type="int" init="1"    unit="dat"   min="1"    max="31" address="0x00"/>
+  <ExternalData name="currentHour"         type="int" init="12"   unit="hour"  min="0"    max="23" address="0x00"/>
+  
+  <ExternalData name="airfieldTemperature" type="int" init="15"   unit="℃"    min="-35"  max="65" address="0x00"/>
+  <ExternalData name="airfieldPressure"    type="int" init="1"    unit="kg/m2" min="8150" max="12258" address="0x00"/>
+  <ExternalData name="magneticDeviatio"    type="int" init="0"    unit="deg"   min="-30"  max="30" address="0x00"/>
 </root> 

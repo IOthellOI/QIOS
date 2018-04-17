@@ -1,13 +1,3 @@
-//////////////////////////////////////////////////
-/// COPYRIGHT NOTICE
-/// Copyright (c) 2018 IOThellOI
-/// All rights reserved.
-/// 
-/// @brief   NavigationButton
-/// @version 1.0
-/// @author  Yang Wang
-/// @date    Mar 20,2018
-//////////////////////////////////////////////////
 #pragma once
 #ifndef NAVIGATIONBUTTON_H
 #define NAVIGATIONBUTTON_H

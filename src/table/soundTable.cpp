@@ -97,10 +97,12 @@ void SoundTable::loadConfig(const QString & _path)
 		item->slider.setRange(
 			DataPool::externalDataMap()->value(node.attribute("data"))->minValue().toInt(),
 			DataPool::externalDataMap()->value(node.attribute("data"))->maxValue().toInt());
+		item->slider.setValue(DataPool::externalDataMap()->value(node.attribute("data"))->value().toInt());
 		connect(&item->slider,
 			SIGNAL(valueChanged(int)),
 			DataPool::externalDataMap()->value(node.attribute("data")),
 			SLOT(slotDataUpdate(int)));
+
 		setCellWidget(row, column++, widget);
 
 		item->value.setObjectName("SoundTableLabel");

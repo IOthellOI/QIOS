@@ -297,7 +297,7 @@ QLabel#ProjectorControl {
 }
 
 
-QWidget#SwitchButton {
+SwitchButton#ProjectorControl {
     min-width: 70px;
     min-height: 30px;
     max-width: 70px;
@@ -336,15 +336,13 @@ QSlider#SoundTableSlider {
     QSlider#SoundTableSlider::sub-page:horizontal {
         background-color: rgb(67, 211, 45);
     }
-
-
+    
     QSlider#SoundTableSlider::groove:horizontal {
         height: 5px;
         left: 5px;
         right: 5px;
         background-color: rgb(152, 146, 146);
     }
-
 
     QSlider#SoundTableSlider::handle:horizontal {
         width: 8px;
@@ -381,7 +379,7 @@ QLabel#InputButton {
 QLabel#DataLabel {
     color: black;
     max-height: 15px;
-    max-width: 60px;
+    max-width: 65px;
     font-family: 'Microsoft YaHei UI';
     font-size: 12px;
 }
@@ -408,3 +406,64 @@ QPushButton#MissionButton {
     QPushButton#MissionButton:pressed {
         background-color: rgb(158, 166, 242);
     }
+
+QLabel#DataSlider {
+    color: black;
+    max-width: 90px;
+    min-width: 90px;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QSlider#DataSlider {
+    min-height: 20px;
+    max-height: 20px;
+    min-width: 160px;
+    max-width: 160px;
+}
+
+    QSlider#DataSlider::sub-page:horizontal {
+        background-color: rgb(67, 211, 45);
+    }
+
+    QSlider#DataSlider::groove:horizontal {
+        height: 5px;
+        left: 5px;
+        right: 5px;
+        background-color: rgb(152, 146, 146);
+    }
+
+    QSlider#DataSlider::handle:horizontal {
+        width: 8px;
+        border-radius: 3px;
+        margin: -10px -1px;
+        background-color: rgb(67, 211, 45);
+    }
+
+SwitchButton#ToggleButtonButton {
+    min-width: 50px;
+    min-height: 22px;
+    max-width: 50px;
+    max-height: 22px;
+}
+
+QLabel#ToggleButtonName {
+    color: black;
+    max-width: 90px;
+    min-width: 90px;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QTextEdit#TextEdit {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QSpinBox#SpinEdit {
+    min-height: 25px;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}

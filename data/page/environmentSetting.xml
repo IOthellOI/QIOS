@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <componentBox title="环境设置" row="0" column="0" rowSpan="1" columnSpan="1">
-    
+  <componentBox title="时间设置" row="0" column="0" rowSpan="1" columnSpan="1">
+    <dataSlider name="当前年" data="currentYear"  row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <dataSlider name="当前月" data="currentMonth" row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <dataSlider name="当前日" data="currentDay"   row="2" column="0" rowSpan="1" columnSpan="1"/>
+    <dataSlider name="当前时" data="currentHour"  row="3" column="0" rowSpan="1" columnSpan="1"/>
   </componentBox>
+  <componentBox title="本地环境" row="1" column="0" rowSpan="1" columnSpan="1">
+    <dataSlider name="本地场温" data="airfieldTemperature" row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <dataSlider name="本地场压" data="airfieldPressure"    row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <dataSlider name="本地磁差" data="magneticDeviatio"    row="2" column="0" rowSpan="1" columnSpan="1"/>
+  </componentBox>  
 </root>

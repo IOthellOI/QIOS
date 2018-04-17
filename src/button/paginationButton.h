@@ -1,13 +1,3 @@
-//////////////////////////////////////////////////
-/// COPYRIGHT NOTICE
-/// Copyright (c) 2018 IOThellOI
-/// All rights reserved.
-/// 
-/// @brief   PaginationButton
-/// @version 1.0
-/// @author  Yang Wang
-/// @date    Mar 20,2018
-//////////////////////////////////////////////////
 #pragma once
 #ifndef PAGINATIONBUTTON_H
 #define PAGINATIONBUTTON_H

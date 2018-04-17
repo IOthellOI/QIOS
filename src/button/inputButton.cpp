@@ -9,7 +9,6 @@ struct InputButton::InputButtonPrivate
 	QPushButton * button;
 	QLabel * name;
 	QLabel * value;
-	ExternalData * data;
 };
 
 InputButton::InputButton(QWidget * _parent) :
@@ -47,6 +46,5 @@ void InputButton::setName(const QString & _name)
 
 void InputButton::setData(ExternalData * _data)
 {
-	data->data = _data;
 	data->value->setText(_data->value() + _data->unit());
 }

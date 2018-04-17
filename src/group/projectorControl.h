@@ -1,5 +1,4 @@
 #pragma once
-
 #ifndef PROJECTORCONTROL_H
 #define PROJECTORCONTROL_H
 

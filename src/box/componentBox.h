@@ -13,6 +13,7 @@ public:
 
 public:
 	void setTitle(const QString & _title);
+	void setSpacing(int _space);
 	void addWidget(QWidget * _widget, int _row, int _column, int _rowSpan, int _columnSpan);
 
 private:

@@ -49,6 +49,11 @@ void ComponentBox::setTitle(const QString & _title)
 	data->title->setText(_title);
 }
 
+void ComponentBox::setSpacing(int _space)
+{
+	data->layout->setSpacing(_space);
+}
+
 void ComponentBox::addWidget(QWidget * _widget, int _row, int _column, int _rowSpan, int _columnSpan)
 {
 	data->layout->addWidget(_widget, _row, _column, _rowSpan, _columnSpan);

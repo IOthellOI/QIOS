@@ -11,6 +11,10 @@ public:
 	explicit WeaponButton(QWidget * _parent = nullptr);
 	virtual ~WeaponButton();
 
+public:
+	void setName(const QString & _name);
+	void setNumber(int _number);
+
 private:
 	struct WeaponButtonPrivate;
 	WeaponButtonPrivate * data;

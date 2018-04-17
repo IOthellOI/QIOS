@@ -18,6 +18,7 @@
 #include "toggleButton.h"
 #include "textEdit.h"
 #include "spinEdit.h"
+#include "weaponButton.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -42,6 +43,7 @@ static QWidget * creatDataSlider(const QDomElement & element);
 static QWidget * creatToggleButton(const QDomElement & element);
 static QWidget * creatTextEdit(const QDomElement & element);
 static QWidget * creatSpinEdit(const QDomElement & element);
+static QWidget * creatWeaponButton(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -121,9 +123,13 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	{
 		return creatSpinEdit(element);
 	}
+	else if (element.nodeName().toUpper() == "WEAPONBUTTON")
+	{
+		return creatWeaponButton(element);
+	}
 	else
 	{
-		return nullptr;
+		return nullptr; 
 	}
 }
 
@@ -321,4 +327,12 @@ QWidget * creatSpinEdit(const QDomElement & element)
 	SpinEdit * edit = new SpinEdit;
 	//edit->setRange(element.attribute("minValue").toInt(), element.attribute("maxValue").toInt());
 	return edit;
+}
+
+QWidget * creatWeaponButton(const QDomElement & element)
+{
+	WeaponButton * button = new WeaponButton;
+	button->setName(element.attribute("name"));
+	button->setNumber(element.attribute("number").toInt());	
+	return button;
 }

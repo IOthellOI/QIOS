@@ -66,6 +66,10 @@ void Page::loadConfig(const QString & _path)
 		{
 			box->setMaximumHeight(element.attribute("max-height").toInt());
 		}
+		if (element.hasAttribute("spacing"))
+		{
+			box->setSpacing(element.attribute("spacing").toInt());
+		}
 
 		data->layout->addWidget(box,
 			element.attribute("row").toInt(), element.attribute("column").toInt(),

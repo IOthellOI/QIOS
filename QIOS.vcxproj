@@ -281,6 +281,7 @@
     <Xml Include="data\page\trainInformation.xml" />
     <Xml Include="data\page\userManagement.xml" />
     <Xml Include="data\page\workInformation.xml" />
+    <Xml Include="data\table\commonFaultTable.xml" />
     <Xml Include="data\table\computerTable.xml">
       <SubType>Designer</SubType>
     </Xml>

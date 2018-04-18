@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <definition item="状态"           width="140"/>
+    <definition item="名称"           width="340"/>
+    <definition item="描述"           width="740"/>
+    <definition item="设置"           width="220"/>
+    <definition item="移除常用特情"   width="220"/>
+  </header>
+  <item height="60">
+    <falut name="应急备份失效" describe="暂无描述"/>
+    <falut name="应急备份失效" describe="暂无描述"/>
+    <falut name="应急备份失效" describe="暂无描述"/>
+    <falut name="应急备份失效" describe="暂无描述"/>
+    <falut name="应急备份失效" describe="暂无描述"/>
+    <falut name="应急备份失效" describe="暂无描述"/>
+    <falut name="应急备份失效" describe="暂无描述"/>
+  </item>
+</root>

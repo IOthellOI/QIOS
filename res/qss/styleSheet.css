@@ -525,15 +525,15 @@ QPushButton#FaultIndexButton {
 }
 
     QPushButton#FaultIndexButton:enabled {
-        background-color: rgb(203, 211, 234);
+        background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(203, 211, 234, 255), stop:0.89 rgba(203, 211, 234, 255), stop:0.9 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
     }
 
     QPushButton#FaultIndexButton:hover {
-        background-color: rgb(154, 166, 211);
+        background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(154, 166, 211, 255), stop:0.89 rgba(154, 166, 211, 255), stop:0.9 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
     }
 
     QPushButton#FaultIndexButton:pressed {
-        background-color: rgb(130, 126, 207);
+        background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(154, 166, 211, 255), stop:0.89 rgba(154, 166, 211, 255), stop:0.9 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
     }
 
     QPushButton#FaultIndexButton:checked {

@@ -556,6 +556,9 @@
     <Xml Include="data\table\faultIndexTable.xml">
       <Filter>Config Files\table</Filter>
     </Xml>
+    <Xml Include="data\table\commonFaultTable.xml">
+      <Filter>Config Files\table</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\factory\widgetFactory.h">

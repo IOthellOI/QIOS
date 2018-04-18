@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/dataSlider.h"
+#include "../../../src/slider/dataSlider.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -20,28 +20,28 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_ios__DataSlider_t {
+struct qt_meta_stringdata_DataSlider_t {
     QByteArrayData data[4];
     char stringdata0[34];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ios__DataSlider_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_DataSlider_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_ios__DataSlider_t qt_meta_stringdata_ios__DataSlider = {
+static const qt_meta_stringdata_DataSlider_t qt_meta_stringdata_DataSlider = {
     {
-QT_MOC_LITERAL(0, 0, 15), // "ios::DataSlider"
-QT_MOC_LITERAL(1, 16, 9), // "slotSilde"
+QT_MOC_LITERAL(0, 0, 10), // "DataSlider"
+QT_MOC_LITERAL(1, 11, 14), // "slotDataUpdate"
 QT_MOC_LITERAL(2, 26, 0), // ""
 QT_MOC_LITERAL(3, 27, 6) // "_value"
 
     },
-    "ios::DataSlider\0slotSilde\0\0_value"
+    "DataSlider\0slotDataUpdate\0\0_value"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_ios__DataSlider[] = {
+static const uint qt_meta_data_DataSlider[] = {
 
  // content:
        7,       // revision
@@ -63,40 +63,40 @@ static const uint qt_meta_data_ios__DataSlider[] = {
        0        // eod
 };
 
-void ios::DataSlider::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void DataSlider::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         DataSlider *_t = static_cast<DataSlider *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->slotSilde((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->slotDataUpdate((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }
 }
 
-const QMetaObject ios::DataSlider::staticMetaObject = {
-    { &BaseWidget::staticMetaObject, qt_meta_stringdata_ios__DataSlider.data,
-      qt_meta_data_ios__DataSlider,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject DataSlider::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_DataSlider.data,
+      qt_meta_data_DataSlider,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *ios::DataSlider::metaObject() const
+const QMetaObject *DataSlider::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ios::DataSlider::qt_metacast(const char *_clname)
+void *DataSlider::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_ios__DataSlider.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_DataSlider.stringdata0))
         return static_cast<void*>(this);
-    return BaseWidget::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
-int ios::DataSlider::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int DataSlider::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = BaseWidget::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

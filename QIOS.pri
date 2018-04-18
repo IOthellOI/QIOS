@@ -7,28 +7,62 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-HEADERS += ./src/button/clickButton.h \
+HEADERS += ./src/button/toggleButton.h \
+    ./src/button/inputButton.h \
     ./src/button/navigationButton.h \
     ./src/button/paginationButton.h \
-    ./src/label/pictureLabel.h \
+    ./src/button/missionButton.h \
+    ./src/button/weaponButton.h \
+    ./src/button/radioButton.h \
+    ./src/button/loginButton.h \
+    ./src/button/titleButton.h \
+    ./src/button/controlButton.h \
+    ./src/button/switchButton.h \
+    ./src/label/separatorLine.h \
     ./src/label/textLabel.h \
+    ./src/label/dataLabel.h \
+    ./src/label/faultDisplay.h \
+    ./src/label/pictureLabel.h \
     ./src/window/navigationBar.h \
     ./src/window/titleBar.h \
     ./src/window/statusBar.h \
     ./src/window/pageBar.h \
     ./src/window/paginationBar.h \
+    ./src/window/loginForm.h \
     ./src/window/windowForm.h \
     ./src/xml/xmlRead.h \
     ./src/data/internalData.h \
     ./src/data/dataPool.h \
+    ./src/data/externalData.h \
     ./src/ini/iniRead.h \
-    ./src/factory/widgetFactory.h
+    ./src/factory/widgetFactory.h \
+    ./src/edit/spinEdit.h \
+    ./src/edit/textEdit.h \
+    ./src/edit/loginEdit.h \
+    ./src/page/page.h \
+    ./src/box/componentBox.h \
+    ./src/table/soundTable.h \
+    ./src/table/computerTable.h \
+    ./src/group/projectorControl.h \
+    ./src/slider/dataSlider.h
 SOURCES += ./src/main.cpp \
-    ./src/button/clickButton.cpp \
+    ./src/button/inputButton.cpp \
+    ./src/button/controlButton.cpp \
+    ./src/button/loginButton.cpp \
+    ./src/button/missionButton.cpp \
     ./src/button/navigationButton.cpp \
     ./src/button/paginationButton.cpp \
+    ./src/button/radioButton.cpp \
+    ./src/button/switchButton.cpp \
+    ./src/button/titleButton.cpp \
+    ./src/button/toggleButton.cpp \
+    ./src/button/weaponButton.cpp \
+    ./src/label/dataLabel.cpp \
+    ./src/label/faultDisplay.cpp \
     ./src/label/pictureLabel.cpp \
+    ./src/label/separatorLine.cpp \
     ./src/label/textLabel.cpp \
+    ./src/window/loginForm.cpp \
     ./src/window/navigationBar.cpp \
     ./src/window/pageBar.cpp \
     ./src/window/paginationBar.cpp \
@@ -37,7 +71,17 @@ SOURCES += ./src/main.cpp \
     ./src/window/windowForm.cpp \
     ./src/xml/xmlRead.cpp \
     ./src/data/dataPool.cpp \
+    ./src/data/externalData.cpp \
     ./src/data/internalData.cpp \
     ./src/ini/iniRead.cpp \
-    ./src/factory/widgetFactory.cpp
+    ./src/factory/widgetFactory.cpp \
+    ./src/edit/loginEdit.cpp \
+    ./src/edit/spinEdit.cpp \
+    ./src/edit/textEdit.cpp \
+    ./src/page/page.cpp \
+    ./src/box/componentBox.cpp \
+    ./src/table/computerTable.cpp \
+    ./src/table/soundTable.cpp \
+    ./src/group/projectorControl.cpp \
+    ./src/slider/dataSlider.cpp
 RESOURCES += QIOS.qrc

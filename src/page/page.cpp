@@ -70,6 +70,10 @@ void Page::loadConfig(const QString & _path)
 		{
 			box->setSpacing(element.attribute("spacing").toInt());
 		}
+		if (element.hasAttribute("alignment"))
+		{
+			box->setAlignmnet(element.attribute("alignment"));
+		}
 
 		data->layout->addWidget(box,
 			element.attribute("row").toInt(), element.attribute("column").toInt(),

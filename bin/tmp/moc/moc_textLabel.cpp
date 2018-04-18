@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/textLabel.h"
+#include "../../../src/label/textLabel.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -20,25 +20,25 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_ios__TextLabel_t {
+struct qt_meta_stringdata_TextLabel_t {
     QByteArrayData data[1];
-    char stringdata0[15];
+    char stringdata0[10];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ios__TextLabel_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_TextLabel_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_ios__TextLabel_t qt_meta_stringdata_ios__TextLabel = {
+static const qt_meta_stringdata_TextLabel_t qt_meta_stringdata_TextLabel = {
     {
-QT_MOC_LITERAL(0, 0, 14) // "ios::TextLabel"
+QT_MOC_LITERAL(0, 0, 9) // "TextLabel"
 
     },
-    "ios::TextLabel"
+    "TextLabel"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_ios__TextLabel[] = {
+static const uint qt_meta_data_TextLabel[] = {
 
  // content:
        7,       // revision
@@ -54,7 +54,7 @@ static const uint qt_meta_data_ios__TextLabel[] = {
        0        // eod
 };
 
-void ios::TextLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void TextLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -62,28 +62,28 @@ void ios::TextLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-const QMetaObject ios::TextLabel::staticMetaObject = {
-    { &BaseWidget::staticMetaObject, qt_meta_stringdata_ios__TextLabel.data,
-      qt_meta_data_ios__TextLabel,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject TextLabel::staticMetaObject = {
+    { &QLabel::staticMetaObject, qt_meta_stringdata_TextLabel.data,
+      qt_meta_data_TextLabel,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *ios::TextLabel::metaObject() const
+const QMetaObject *TextLabel::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ios::TextLabel::qt_metacast(const char *_clname)
+void *TextLabel::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_ios__TextLabel.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_TextLabel.stringdata0))
         return static_cast<void*>(this);
-    return BaseWidget::qt_metacast(_clname);
+    return QLabel::qt_metacast(_clname);
 }
 
-int ios::TextLabel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int TextLabel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = BaseWidget::qt_metacall(_c, _id, _a);
+    _id = QLabel::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <componentBox title="飞行设置" row="0" column="0" rowSpan="1" columnSpan="1">
-    <inputButton name="数据1" data="data1" row="0" column="0" rowSpan="1" columnSpan="1"/>
-    <inputButton name="数据2" data="data2" row="0" column="1" rowSpan="1" columnSpan="1"/>
-    <inputButton name="数据3" data="data3" row="0" column="2" rowSpan="1" columnSpan="1"/>
-    <inputButton name="数据4" data="data4" row="0" column="3" rowSpan="1" columnSpan="1"/>
-    <inputButton name="数据5" data="data5" row="0" column="4" rowSpan="1" columnSpan="1"/>
+    <dataEdit name="数据1" data="data1" row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <dataEdit name="数据2" data="data2" row="1" column="1" rowSpan="1" columnSpan="1"/>
+    <dataEdit name="数据3" data="data3" row="2" column="2" rowSpan="1" columnSpan="1"/>
+    <dataEdit name="数据4" data="data4" row="3" column="3" rowSpan="1" columnSpan="1"/>
+    <dataEdit name="数据5" data="data5" row="4" column="4" rowSpan="1" columnSpan="1"/>
   </componentBox>
 </root>

@@ -379,7 +379,7 @@ QLabel#InputButton {
 QLabel#DataLabel {
     color: black;
     max-height: 15px;
-    max-width: 65px;
+    max-width: 72px;
     font-family: 'Microsoft YaHei UI';
     font-size: 12px;
 }
@@ -474,6 +474,7 @@ QPushButton#WeaponButton {
     max-width: 24px;
     max-height: 24px;
     border-radius: 12px;
+    border: 1px solid rgb(181, 187, 242);
     color: black;
     font-family: 'Microsoft YaHei UI';
     font-size: 12px;
@@ -487,3 +488,101 @@ QLabel#WeaponButton {
     font-family: 'Microsoft YaHei UI';
     font-size: 12px;
 }
+
+QLabel#DataEdit {
+    color: black;
+    max-width: 60px;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QDoubleSpinBox#DataEdit {
+    padding-right: 0px;
+    border: 1px solid black;
+    max-width: 80px;
+    min-width: 80px;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+    QDoubleSpinBox#DataEdit::up-button {
+        width: 0;
+        height: 0;
+    }
+    QDoubleSpinBox#DataEdit::down-button {
+        width: 0;
+        height: 0;
+    }
+
+QPushButton#FaultIndexButton {
+    width: 180px;
+    height: 120px;
+    border-style: solid;
+    text-align: center;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+    QPushButton#FaultIndexButton:enabled {
+        background-color: rgb(203, 211, 234);
+    }
+
+    QPushButton#FaultIndexButton:hover {
+        background-color: rgb(154, 166, 211);
+    }
+
+    QPushButton#FaultIndexButton:pressed {
+        background-color: rgb(130, 126, 207);
+    }
+
+    QPushButton#FaultIndexButton:checked {
+        background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(154, 166, 211, 255), stop:0.89 rgba(154, 166, 211, 255), stop:0.9 rgba(44, 83, 229, 255), stop:1 rgba(44, 83, 229, 255));
+    }
+
+QTableWidget#FaultIndexTable {
+}
+
+    QTableWidget#FaultIndexTable::item:alternate:!selected {
+        background-color: white;
+    }
+
+    QTableWidget#FaultIndexTable::item:!alternate:!selected {
+        background-color: rgb(245, 245, 245);
+    }
+
+QTableWidget QHeaderView#FaultIndexTable {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+    min-height: 40px;
+}
+
+QLabel#FaultIndexTableLabel {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QPushButton#FaultIndexTableButton {
+    min-width: 80px;
+    min-height: 40px;
+    max-width: 80px;
+    max-height: 40px;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+    QPushButton#FaultIndexTableButton:enabled {
+        background-color: rgb(181, 187, 242);
+    }
+
+    QPushButton#FaultIndexTableButton:hover {
+        background-color: rgb(193, 197, 234);
+    }
+
+    QPushButton#FaultIndexTableButton:pressed {
+        background-color: rgb(158, 166, 242);
+    }

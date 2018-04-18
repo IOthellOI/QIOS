@@ -54,6 +54,30 @@ void ComponentBox::setSpacing(int _space)
 	data->layout->setSpacing(_space);
 }
 
+void ComponentBox::setAlignmnet(const QString & _alignment)
+{
+	if (_alignment == "center")
+	{
+		data->layout->setAlignment(Qt::AlignCenter);
+	}
+	else if (_alignment == "top")
+	{
+		data->layout->setAlignment(Qt::AlignTop);
+	}
+	else if (_alignment == "bottom")
+	{
+		data->layout->setAlignment(Qt::AlignBottom);
+	}
+	else if (_alignment == "left")
+	{
+		data->layout->setAlignment(Qt::AlignLeft);
+	}
+	else if (_alignment == "right")
+	{
+		data->layout->setAlignment(Qt::AlignRight);
+	}
+}
+
 void ComponentBox::addWidget(QWidget * _widget, int _row, int _column, int _rowSpan, int _columnSpan)
 {
 	data->layout->addWidget(_widget, _row, _column, _rowSpan, _columnSpan);

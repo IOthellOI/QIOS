@@ -34,23 +34,33 @@
     <dataLabel name="法向过载"   data="normalOverload"    row="8" column="2" rowSpan="1" columnSpan="1"/>
     <dataLabel name="飞机重量"   data="aircraftWeight"    row="9" column="2" rowSpan="1" columnSpan="1"/>
   </componentBox>
-  <componentBox title="挂载参数" max-height="310" spacing="0" row="0" column="2" rowSpan="2" columnSpan="2">
-    <pictureLabel icon="./res/img/aircraftMount.png" width="460" height="200" row="0" column="0" rowSpan="1" columnSpan="12"/>
-    <weaponButton name="AA" number="1"  row="1" column="0"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="BB" number="2"  row="1" column="1"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="CC" number="3"  row="1" column="2"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="DD" number="4"  row="1" column="3"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="EE" number="5"  row="1" column="4"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="FF" number="6"  row="1" column="5"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="GG" number="7"  row="1" column="6"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="HH" number="8"  row="1" column="7"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="II" number="9"  row="1" column="8"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="JJ" number="10" row="1" column="9"  rowSpan="1" columnSpan="1"/>
-    <weaponButton name="KK" number="11" row="1" column="10" rowSpan="1" columnSpan="1"/>
-    <weaponButton name="LL" number="12" row="1" column="11" rowSpan="1" columnSpan="1"/>
+  <componentBox title="武器挂载" max-height="310" alignment="center" spacing="0" row="0" column="2" rowSpan="2" columnSpan="2">
+    <pictureLabel icon="./res/img/aircraftMount.png" width="460" height="147" row="0" column="0" rowSpan="1" columnSpan="12"/>
+    <weaponButton name="A" number="7"  row="1" column="0"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="B" number="5"  row="1" column="1"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="C" number="3"  row="1" column="2"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="D" number="11" row="1" column="3"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="E" number="9"  row="1" column="4"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="F" number="1"  row="1" column="5"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="G" number="2"  row="1" column="6"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="H" number="10" row="1" column="7"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="I" number="12" row="1" column="8"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="J" number="4"  row="1" column="9"  rowSpan="1" columnSpan="1"/>
+    <weaponButton name="K" number="6"  row="1" column="10" rowSpan="1" columnSpan="1"/>
+    <weaponButton name="L" number="8"  row="1" column="11" rowSpan="1" columnSpan="1"/>
   </componentBox>
-  <componentBox title="操纵参数" max-height="310" row="0" column="4" rowSpan="2" columnSpan="2">
-
+  <componentBox title="操纵参数" max-height="310" row="0" column="4" rowSpan="2" columnSpan="2">    
+    <dataLabel name="左平尾位置"   data="leftHorizontalDeflection"  row="0" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="右平尾位置"   data="rightHorizontalDeflection" row="1" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="左襟副翼位置" data="leftFlaperonDeflection"    row="2" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="右襟副翼位置" data="rightFlaperonDeflection"   row="3" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="前缘襟翼位置" data="leadingEdgeFlapDeflection" row="4" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="方向舵位置"   data="rudderDeflection"          row="5" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="升降舵位置"   data="elevatorDeflection"        row="6" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="油量"         data="fuelWeight"                row="7" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="仿真时间"     data="simulationTime"            row="8" column="0" rowSpan="1" columnSpan="1"/>
+    <dataLabel name="节拍数"       data="beatNumber"                row="9" column="0" rowSpan="1" columnSpan="1"/>
+    <emptyWidget width="250" row="0" column="1" rowSpan="10" columnSpan="1"/>
   </componentBox>
   <componentBox title="轨迹曲线" row="2" column="0" rowSpan="1" columnSpan="3">
   </componentBox>

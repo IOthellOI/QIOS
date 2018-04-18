@@ -1,4 +1,4 @@
-#include "loginForm.h"
+﻿#include "loginForm.h"
 #include "xmlRead.h"
 #include "widgetFactory.h"
 #include "dataPool.h"

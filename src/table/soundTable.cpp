@@ -57,10 +57,10 @@ void SoundTable::loadConfig(const QString & _path)
 
 	QStringList header;
 
-	setColumnCount(3);
 
 	for (int i = 0; !node.isNull(); i++)
 	{
+		setColumnCount(i + 1);
 		header << node.attribute("item");
 		setColumnWidth(i, node.attribute("width").toInt());
 		node = node.nextSiblingElement();

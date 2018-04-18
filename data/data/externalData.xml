@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!--声音控制数据-->
-  <ExternalData name="sound1" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound2" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound3" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound4" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound5" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound6" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound7" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound8" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
-  <ExternalData name="sound9" type="int" init="0" unit="N/A" min="0" max="100" address="0x00"/>
+  <ExternalData name="sound1" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound2" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound3" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound4" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound5" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound6" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound7" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound8" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
+  <ExternalData name="sound9" type="int" init="0" unit="N/A" min="0" max="100" address="0x00" effect="normal"/>
   
   <!--飞行设置数据-->
-  <ExternalData name="data1" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
-  <ExternalData name="data2" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
-  <ExternalData name="data3" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
-  <ExternalData name="data4" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
-  <ExternalData name="data5" type="int" init="0" unit="m" min="0" max="100" address="0x00"/>
+  <ExternalData name="data1" type="int" init="0" unit="m" min="0" max="9999" address="0x00" effect="normal"/>
+  <ExternalData name="data2" type="int" init="0" unit="m" min="0" max="9999" address="0x00" effect="normal"/>
+  <ExternalData name="data3" type="int" init="0" unit="m" min="0" max="9999" address="0x00" effect="normal"/>
+  <ExternalData name="data4" type="int" init="0" unit="m" min="0" max="9999" address="0x00" effect="normal"/>
+  <ExternalData name="data5" type="int" init="0" unit="m" min="0" max="9999" address="0x00" effect="normal"/>
 
   <!--任务显示数据-->
   <ExternalData name="longitude"         type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
@@ -49,6 +49,17 @@
   <ExternalData name="verticalSpeed"     type="int" init="0.00" unit="m/s" min="0" max="100" address="0x00"/>
   <ExternalData name="normalOverload"    type="int" init="0.00" unit="g" min="0" max="100" address="0x00"/>
   <ExternalData name="aircraftWeight"    type="int" init="0.00" unit="kg" min="0" max="100" address="0x00"/>
+
+  <ExternalData name="leftHorizontalDeflection"  type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="rightHorizontalDeflection" type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="leftFlaperonDeflection"    type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="rightFlaperonDeflection"   type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="leadingEdgeFlapDeflection" type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="rudderDeflection"          type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="elevatorDeflection"        type="int" init="0.00" unit="deg" min="0" max="100" address="0x00"/>
+  <ExternalData name="fuelWeight"                type="int" init="0.00" unit="kg"  min="0" max="100" address="0x00"/>
+  <ExternalData name="simulationTime"            type="int" init="0.00" unit="s"   min="0" max="100" address="0x00"/>
+  <ExternalData name="beatNumber"                type="int" init="0.00" unit=""    min="0" max="100" address="0x00"/>
 
   <!--环境设置数据-->
   <ExternalData name="currentYear"         type="int" init="2010" unit="year"  min="2009" max="2109" address="0x00"/>

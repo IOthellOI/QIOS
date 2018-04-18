@@ -14,6 +14,7 @@ public:
 public:
 	void setTitle(const QString & _title);
 	void setSpacing(int _space);
+	void setAlignmnet(const QString & _alignment);
 	void addWidget(QWidget * _widget, int _row, int _column, int _rowSpan, int _columnSpan);
 
 private:

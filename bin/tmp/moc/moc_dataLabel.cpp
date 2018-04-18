@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/dataLabel.h"
+#include "../../../src/label/dataLabel.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -20,25 +20,25 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_ios__DataLabel_t {
+struct qt_meta_stringdata_DataLabel_t {
     QByteArrayData data[1];
-    char stringdata0[15];
+    char stringdata0[10];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ios__DataLabel_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_DataLabel_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_ios__DataLabel_t qt_meta_stringdata_ios__DataLabel = {
+static const qt_meta_stringdata_DataLabel_t qt_meta_stringdata_DataLabel = {
     {
-QT_MOC_LITERAL(0, 0, 14) // "ios::DataLabel"
+QT_MOC_LITERAL(0, 0, 9) // "DataLabel"
 
     },
-    "ios::DataLabel"
+    "DataLabel"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_ios__DataLabel[] = {
+static const uint qt_meta_data_DataLabel[] = {
 
  // content:
        7,       // revision
@@ -54,7 +54,7 @@ static const uint qt_meta_data_ios__DataLabel[] = {
        0        // eod
 };
 
-void ios::DataLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void DataLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -62,28 +62,28 @@ void ios::DataLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-const QMetaObject ios::DataLabel::staticMetaObject = {
-    { &BaseWidget::staticMetaObject, qt_meta_stringdata_ios__DataLabel.data,
-      qt_meta_data_ios__DataLabel,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject DataLabel::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_DataLabel.data,
+      qt_meta_data_DataLabel,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *ios::DataLabel::metaObject() const
+const QMetaObject *DataLabel::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ios::DataLabel::qt_metacast(const char *_clname)
+void *DataLabel::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_ios__DataLabel.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_DataLabel.stringdata0))
         return static_cast<void*>(this);
-    return BaseWidget::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
-int ios::DataLabel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int DataLabel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = BaseWidget::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

@@ -118,6 +118,12 @@
     <Filter Include="Source Files\slider">
       <UniqueIdentifier>{ed49c51c-1523-4617-9ac3-ed404418977d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\timer">
+      <UniqueIdentifier>{bdde9e14-304c-421d-a086-360270ad5173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\timer">
+      <UniqueIdentifier>{e561c5bb-0405-4f8e-b350-0194fed8ef98}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QIOS.qrc">
@@ -221,6 +227,15 @@
     </CustomBuild>
     <CustomBuild Include="src\button\missionButton.h">
       <Filter>Header Files\button</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\edit\dataEdit.h">
+      <Filter>Header Files\edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\timer\systemTimer.h">
+      <Filter>Header Files\timer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\group\faultIndex.h">
+      <Filter>Header Files\group</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -443,6 +458,24 @@
     <ClCompile Include="tmp\moc\moc_missionButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\edit\dataEdit.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_dataEdit.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timer\systemTimer.cpp">
+      <Filter>Source Files\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_systemTimer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\group\faultIndex.cpp">
+      <Filter>Source Files\group</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_faultIndex.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -519,6 +552,9 @@
     </Xml>
     <Xml Include="data\data\externalData.xml">
       <Filter>Config Files\data</Filter>
+    </Xml>
+    <Xml Include="data\table\faultIndexTable.xml">
+      <Filter>Config Files\table</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

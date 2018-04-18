@@ -11,7 +11,21 @@ DEFINES += _UNICODE WIN64 QT_DLL QT_NETWORK_LIB QT_SQL_LIB QT_WIDGETS_LIB QT_XML
 INCLUDEPATH += . \
     ./tmp/moc \
     ./tmp/uic \
-    ./tmp/rcc
+    ./tmp/rcc \
+    ./src/box \
+    ./src/button \
+    ./src/data \
+    ./src/edit \
+    ./src/factory \
+    ./src/group \
+    ./src/ini \
+    ./src/label \
+    ./src/page \
+    ./src/slider \
+    ./src/table \
+    ./src/window \
+    ./src/xml \
+    ./src
 DEPENDPATH += .
 MOC_DIR += ./tmp/moc
 OBJECTS_DIR += debug

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <definition item="状态"           width="100"/>
+    <definition item="名称"           width="300"/>
+    <definition item="描述"           width="700"/>
+    <definition item="设置"           width="190"/>
+    <definition item="加入常用特情"   width="180"/>
+  </header>
+  <table>
+    <item name="电传系统" height="60" checked="true">
+      <falut name="应急备份失效" describe="暂无描述"/>
+    </item>
+    <item name="自动飞行控制系统" height="60">
+    </item>
+    <item name="液压系统" height="60">
+      <falut name="应急备份失效" describe="暂无描述"/>
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+    <item name="ok系统" height="60">
+    </item>
+  </table>
+</root>

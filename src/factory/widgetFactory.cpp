@@ -19,6 +19,8 @@
 #include "textEdit.h"
 #include "spinEdit.h"
 #include "weaponButton.h"
+#include "dataEdit.h"
+#include "faultIndex.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -44,6 +46,8 @@ static QWidget * creatToggleButton(const QDomElement & element);
 static QWidget * creatTextEdit(const QDomElement & element);
 static QWidget * creatSpinEdit(const QDomElement & element);
 static QWidget * creatWeaponButton(const QDomElement & element);
+static QWidget * creatDataEdit(const QDomElement & element);
+static QWidget * creatFaultIndex(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -126,6 +130,14 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "WEAPONBUTTON")
 	{
 		return creatWeaponButton(element);
+	}
+	else if (element.nodeName().toUpper() == "DATAEDIT")
+	{
+		return creatDataEdit(element);
+	}
+	else if (element.nodeName().toUpper() == "FAULTINDEX")
+	{
+		return creatFaultIndex(element);
 	}
 	else
 	{
@@ -325,7 +337,7 @@ QWidget * creatTextEdit(const QDomElement & element)
 QWidget * creatSpinEdit(const QDomElement & element)
 {
 	SpinEdit * edit = new SpinEdit;
-	//edit->setRange(element.attribute("minValue").toInt(), element.attribute("maxValue").toInt());
+	edit->setRange(element.attribute("minValue").toInt(), element.attribute("maxValue").toInt());
 	return edit;
 }
 
@@ -335,4 +347,19 @@ QWidget * creatWeaponButton(const QDomElement & element)
 	button->setName(element.attribute("name"));
 	button->setNumber(element.attribute("number").toInt());	
 	return button;
+}
+
+QWidget * creatDataEdit(const QDomElement & element)
+{
+	DataEdit * edit = new DataEdit;
+	edit->setName(element.attribute("name"));
+	edit->setData(DataPool::externalDataMap()->value(element.attribute("data")));
+	return edit;
+}
+
+QWidget * creatFaultIndex(const QDomElement & element)
+{
+	FaultIndex * table = new FaultIndex;
+	table->loadConfig(element.attribute("path"));
+	return table;
 }

@@ -237,6 +237,15 @@
     <CustomBuild Include="src\group\faultIndex.h">
       <Filter>Header Files\group</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\table\faultBrowseTable.h">
+      <Filter>Header Files\table</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\table\commonFaultTable.h">
+      <Filter>Header Files\table</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\page\faultSettingPage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
@@ -470,10 +479,28 @@
     <ClCompile Include="tmp\moc\moc_systemTimer.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\table\commonFaultTable.cpp">
+      <Filter>Source Files\table</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_faultIndex.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
     <ClCompile Include="src\group\faultIndex.cpp">
       <Filter>Source Files\group</Filter>
     </ClCompile>
-    <ClCompile Include="tmp\moc\moc_faultIndex.cpp">
+    <ClCompile Include="src\table\faultBrowseTable.cpp">
+      <Filter>Source Files\table</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_faultBrowseTable.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_commonFaultTable.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\page\faultSettingPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_faultSettingPage.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -558,6 +585,12 @@
     </Xml>
     <Xml Include="data\table\commonFaultTable.xml">
       <Filter>Config Files\table</Filter>
+    </Xml>
+    <Xml Include="data\table\faultBrowseTable.xml">
+      <Filter>Config Files\table</Filter>
+    </Xml>
+    <Xml Include="data\page\faultSettingPage.xml">
+      <Filter>Config Files\page</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

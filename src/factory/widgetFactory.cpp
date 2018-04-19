@@ -21,6 +21,8 @@
 #include "weaponButton.h"
 #include "dataEdit.h"
 #include "faultIndex.h"
+#include "commonFaultTable.h"
+#include "faultBrowseTable.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -48,6 +50,8 @@ static QWidget * creatSpinEdit(const QDomElement & element);
 static QWidget * creatWeaponButton(const QDomElement & element);
 static QWidget * creatDataEdit(const QDomElement & element);
 static QWidget * creatFaultIndex(const QDomElement & element);
+static QWidget * creatCommonFaultTable(const QDomElement & element);
+static QWidget * creatFaultBrowseTable(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -138,6 +142,14 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	else if (element.nodeName().toUpper() == "FAULTINDEX")
 	{
 		return creatFaultIndex(element);
+	}
+	else if (element.nodeName().toUpper() == "COMMONFAULTTABLE")
+	{
+		return creatCommonFaultTable(element);
+	}
+	else if (element.nodeName().toUpper() == "FAULTBROWSETABLE")
+	{
+		return creatFaultBrowseTable(element);
 	}
 	else
 	{
@@ -360,6 +372,20 @@ QWidget * creatDataEdit(const QDomElement & element)
 QWidget * creatFaultIndex(const QDomElement & element)
 {
 	FaultIndex * table = new FaultIndex;
+	table->loadConfig(element.attribute("path"));
+	return table;
+}
+
+QWidget * creatCommonFaultTable(const QDomElement & element)
+{
+	CommonFaultTable * table = new CommonFaultTable;
+	table->loadConfig(element.attribute("path"));
+	return table;
+}
+
+QWidget * creatFaultBrowseTable(const QDomElement & element)
+{
+	FaultBrowseTable * table = new FaultBrowseTable;
 	table->loadConfig(element.attribute("path"));
 	return table;
 }

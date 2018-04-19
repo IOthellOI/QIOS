@@ -1,34 +1,40 @@
-#include "soundTable.h"
+#include "faultBrowseTable.h"
 #include "xmlRead.h"
 #include "dataPool.h"
 
 #include <cassert>
+#include <QTableWidget>
 #include <QTableWidgetItem>
 #include <QHeaderView>
 #include <QPushButton>
-#include <QLabel>
-#include <QSlider>
-#include <QVector>
+#include <QButtonGroup>
+#include <QStackedWidget>
+#include <QFrame>
 #include <QLayout>
+#include <QLabel>
+#include <QVector>
+#include <QVariant>
+#include <QTextEdit>
 
-struct SoundTableItem
+struct FaultBrowseItem
 {
+	QLabel state;
 	QLabel name;
-	QSlider slider;
-	QLabel value;
+	QTextEdit describe;
+	QPushButton clean;
 };
 
-struct SoundTable::SoundTablePrivate
+struct FaultBrowseTable::FaultBrowseTablePrivate
 {
-	QVector<SoundTableItem *> * vector;
+	QVector<FaultBrowseItem *> * vector;
 };
 
-SoundTable::SoundTable(QWidget * _parent) :
+FaultBrowseTable::FaultBrowseTable(QWidget * _parent) :
 	QTableWidget(_parent),
-	data(new SoundTablePrivate)
+	data(new FaultBrowseTablePrivate)
 {
-	setObjectName("SoundTable");
-	horizontalHeader()->setObjectName("SoundTable");
+	setObjectName("FaultBrowseTable");
+	horizontalHeader()->setObjectName("FaultBrowseTable");
 	verticalHeader()->setVisible(false);
 	horizontalHeader()->setSectionsClickable(false);
 	setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -38,15 +44,15 @@ SoundTable::SoundTable(QWidget * _parent) :
 	setSelectionMode(QAbstractItemView::NoSelection);
 	setFocusPolicy(Qt::NoFocus);
 
-	data->vector = new QVector<SoundTableItem *>;
+	data->vector = new QVector<FaultBrowseItem *>;
 }
 
-SoundTable::~SoundTable()
+FaultBrowseTable::~FaultBrowseTable()
 {
 	delete data;
 }
 
-void SoundTable::loadConfig(const QString & _path)
+void FaultBrowseTable::loadConfig(const QString & _path)
 {
 	assert(!_path.isEmpty());
 	XmlRead xmlRead;
@@ -72,46 +78,38 @@ void SoundTable::loadConfig(const QString & _path)
 
 	verticalHeader()->setDefaultSectionSize(element.attribute("height").toInt());
 
-	SoundTableItem * item = nullptr;
+	FaultBrowseItem * item = nullptr;
 
 	int row = 0;
 	int column = 0;
+
 	while (!node.isNull())
 	{
 		setRowCount(row + 1);
 
-		item = new SoundTableItem;
-		item->name.setObjectName("SoundTableLabel");
+		item = new FaultBrowseItem;
+
+		item->state.setObjectName("FaultBrowseTableLabel");
+		item->state.setAlignment(Qt::AlignCenter);
+		item->state.setText(u8"Î´´¥·¢");
+		setCellWidget(row, column++, &item->state);
+
+		item->name.setObjectName("FaultBrowseTableLabel");
 		item->name.setAlignment(Qt::AlignCenter);
 		item->name.setText(node.attribute("name"));
 		setCellWidget(row, column++, &item->name);
 
+		item->describe.setObjectName("FaultBrowseTableTextEdit");
+		item->describe.setReadOnly(true);
+		item->describe.setText(node.attribute("describe"));
+		setCellWidget(row, column++, &item->describe);
+
 		QWidget * widget = new QWidget;
 		QHBoxLayout * layout = new QHBoxLayout(widget);
-		layout->setAlignment(Qt::AlignCenter);
-		layout->setMargin(0);
-		layout->addWidget(&item->slider);
-		item->slider.setObjectName("SoundTableSlider");
-		item->slider.setOrientation(Qt::Horizontal);
-		item->slider.setRange(
-			DataPool::externalDataMap()->value(node.attribute("data"))->minValue().toInt(),
-			DataPool::externalDataMap()->value(node.attribute("data"))->maxValue().toInt());
-		item->slider.setValue(DataPool::externalDataMap()->value(node.attribute("data"))->value().toInt());
-		connect(&item->slider,
-			SIGNAL(valueChanged(int)),
-			DataPool::externalDataMap()->value(node.attribute("data")),
-			SLOT(slotDataUpdate(int)));
-
+		layout->addWidget(&item->clean);
+		item->clean.setObjectName("FaultBrowseTableButton");
+		item->clean.setText(u8"ÉèÖÃ");
 		setCellWidget(row, column++, widget);
-
-		item->value.setObjectName("SoundTableLabel");
-		item->value.setAlignment(Qt::AlignCenter);
-		item->value.setText("0");
-		connect(DataPool::externalDataMap()->value(node.attribute("data")),
-			SIGNAL(signalDataUpdate(int)),
-			&item->value,
-			SLOT(setNum(int)));
-		setCellWidget(row, column++, &item->value);
 
 		++row;
 		column = 0;

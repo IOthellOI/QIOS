@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <componentBox title="常用故障" row="0" column="0" rowSpan="1" columnSpan="1">
-    
+    <CommonFaultTable path="./data//table/commonFaultTable.xml"/>
   </componentBox>
 </root>

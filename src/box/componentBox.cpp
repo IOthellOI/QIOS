@@ -49,6 +49,11 @@ void ComponentBox::setTitle(const QString & _title)
 	data->title->setText(_title);
 }
 
+QString ComponentBox::title()
+{
+	return data->title->text();
+}
+
 void ComponentBox::setSpacing(int _space)
 {
 	data->layout->setSpacing(_space);

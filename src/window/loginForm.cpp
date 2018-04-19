@@ -58,11 +58,6 @@ void LoginForm::loadConfig(const QString & _path)
 
 	setWindowTitle(root.attribute("title"));
 
-	//QLabel * label = new QLabel(root.attribute("title"));
-	//label->setFont(QFont("HEITI", 18));
-	//label->setAlignment(Qt::AlignCenter);
-	//data->layout->addWidget(label);
-
 	QDomElement element = root.firstChildElement();
 
 	QWidget * widget = nullptr;

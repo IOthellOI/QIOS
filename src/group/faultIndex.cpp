@@ -104,7 +104,7 @@ void FaultIndex::loadConfig(const QString & _path)
 		table->setObjectName("FaultIndexTable");
 
 		table->setObjectName("FaultIndexTable");
-		table->horizontalHeader()->setObjectName("FaultIndex");
+		table->horizontalHeader()->setObjectName("FaultIndexTable");
 		table->verticalHeader()->setVisible(false);
 		table->horizontalHeader()->setSectionsClickable(false);
 		table->setEditTriggers(QAbstractItemView::NoEditTriggers);

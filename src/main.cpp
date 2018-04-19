@@ -3,6 +3,7 @@
 #include <QIcon>
 
 #include "loginForm.h"
+#include "faultSettingPage.h"
 
 #pragma execution_character_set("utf-8")
 
@@ -20,8 +21,11 @@ int main(int argc, char * argv[])
 		file.close();
 	}
 
-	LoginForm w;
-	w.show();
+	//LoginForm w;
+	//w.show();
+
+	FaultSettingPage f;
+	f.show();
 
 	return a.exec();
 }

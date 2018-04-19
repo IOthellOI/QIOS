@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <checkButton name="请输入用户名"/>
+  <checkButton type="password"/>
+  <emptyWidget height="10"/>
+  <loginButton text="登  录" />
+</root>

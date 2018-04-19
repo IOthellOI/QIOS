@@ -520,6 +520,7 @@ QPushButton#FaultIndexButton {
     border-style: solid;
     text-align: center;
     color: black;
+    
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
 }
@@ -540,7 +541,7 @@ QPushButton#FaultIndexButton {
         background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(154, 166, 211, 255), stop:0.89 rgba(154, 166, 211, 255), stop:0.9 rgba(44, 83, 229, 255), stop:1 rgba(44, 83, 229, 255));
     }
 
-QTableWidget#FaultIndexTable {
+QTableWidget#FaultIndexTable, QTableWidget#CommonFaultTable {
 }
 
     QTableWidget#FaultIndexTable::item:alternate:!selected {
@@ -551,20 +552,21 @@ QTableWidget#FaultIndexTable {
         background-color: rgb(245, 245, 245);
     }
 
-QTableWidget QHeaderView#FaultIndexTable {
+QTableWidget QHeaderView#FaultIndexTable, QTableWidget QHeaderView#CommonFaultTable {
     color: black;
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
     min-height: 40px;
 }
 
-QLabel#FaultIndexTableLabel {
+QLabel#FaultIndexTableLabel, QLabel#CommonFaultTableLabel {
     color: black;
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
 }
 
-QPushButton#FaultIndexTableButton {
+QPushButton#FaultIndexTableButton, 
+QPushButton#CommonFaultTableButton {
     min-width: 80px;
     min-height: 40px;
     max-width: 80px;
@@ -575,14 +577,30 @@ QPushButton#FaultIndexTableButton {
     font-size: 14px;
 }
 
-    QPushButton#FaultIndexTableButton:enabled {
+    QPushButton#FaultIndexTableButton:enabled, 
+    QPushButton#CommonFaultTableButton:enabled {
         background-color: rgb(181, 187, 242);
     }
 
-    QPushButton#FaultIndexTableButton:hover {
+    QPushButton#FaultIndexTableButton:hover, 
+    QPushButton#CommonFaultTableButton:hover {
         background-color: rgb(193, 197, 234);
     }
 
-    QPushButton#FaultIndexTableButton:pressed {
+    QPushButton#FaultIndexTableButton:pressed
+    QPushButton#CommonFaultTableButton:pressed {
         background-color: rgb(158, 166, 242);
     }
+    QPushButton#FaultIndexTableButton:disabled, 
+    QPushButton#CommonFaultTableButton:disabled {
+        background-color: rgb(156, 157, 163);
+    }
+
+QTextEdit#FaultIndexTableTextEdit, 
+QTextEdit#CommonFaultTableTextEdit {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}

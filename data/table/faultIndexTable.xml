@@ -10,27 +10,46 @@
   <table>
     <item name="电传系统" height="60" checked="true">
       <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
+      <falut name="应急备份失效" describe="暂无描述"/>
     </item>
     <item name="自动飞行控制系统" height="60">
     </item>
     <item name="液压系统" height="60">
       <falut name="应急备份失效" describe="暂无描述"/>
     </item>
-    <item name="ok系统" height="60">
+    <item name="燃油系统" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="电源系统" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="机电管理分系统" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="起飞着陆装置" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="动力装置系统" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="显示控制分系统" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="信息感知分系统" height="60">
     </item>
-    <item name="ok系统" height="60">
+    <item name="外挂物管理分系统" height="60">
+    </item>
+    <item name="电子对抗分系统" height="60">
+    </item>
+    <item name="环控氧气系统" height="60">
     </item>
   </table>
 </root>

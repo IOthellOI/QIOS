@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <definition item="状态"           width="140"/>
+    <definition item="名称"           width="340"/>
+    <definition item="描述"           width="740"/>
+    <definition item="清除特情"       width="220"/>
+  </header>
+  <item height="60">
+  </item>
+</root>

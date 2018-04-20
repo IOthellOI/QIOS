@@ -4,6 +4,7 @@
 #include "dataPool.h"
 #include "windowForm.h"
 #include "iniRead.h"
+#include "database.h"
 
 #include <QLayout>
 #include <QFrame>
@@ -84,6 +85,8 @@ void LoginForm::slotLogin()
 		DataPool d;
 
 		IniRead i;
+
+		Database b;
 
 		WindowForm * w = new WindowForm;
 		w->show();

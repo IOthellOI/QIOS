@@ -244,7 +244,10 @@
       <Filter>Header Files\table</Filter>
     </CustomBuild>
     <CustomBuild Include="src\page\faultSettingPage.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\data\database.h">
+      <Filter>Header Files\data</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -467,9 +470,6 @@
     <ClCompile Include="tmp\moc\moc_missionButton.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\edit\dataEdit.cpp">
-      <Filter>Source Files\data</Filter>
-    </ClCompile>
     <ClCompile Include="tmp\moc\moc_dataEdit.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
@@ -497,11 +497,20 @@
     <ClCompile Include="tmp\moc\moc_commonFaultTable.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\page\faultSettingPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="tmp\moc\moc_faultSettingPage.cpp">
       <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\page\faultSettingPage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+    <ClCompile Include="src\edit\dataEdit.cpp">
+      <Filter>Source Files\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_database.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\database.cpp">
+      <Filter>Source Files\data</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

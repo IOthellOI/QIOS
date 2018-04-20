@@ -97,6 +97,7 @@
     <ClCompile Include="src\button\titleButton.cpp" />
     <ClCompile Include="src\button\toggleButton.cpp" />
     <ClCompile Include="src\button\weaponButton.cpp" />
+    <ClCompile Include="src\data\database.cpp" />
     <ClCompile Include="src\data\dataPool.cpp" />
     <ClCompile Include="src\data\externalData.cpp" />
     <ClCompile Include="src\data\internalData.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="tmp\moc\moc_componentBox.cpp" />
     <ClCompile Include="tmp\moc\moc_computerTable.cpp" />
     <ClCompile Include="tmp\moc\moc_controlButton.cpp" />
+    <ClCompile Include="tmp\moc\moc_database.cpp" />
     <ClCompile Include="tmp\moc\moc_dataEdit.cpp" />
     <ClCompile Include="tmp\moc\moc_dataLabel.cpp" />
     <ClCompile Include="tmp\moc\moc_dataPool.cpp" />
@@ -466,6 +468,16 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\tmp\moc\moc_%(Filename).cpp"  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB "-I." "-I$(QTDIR)\include" "-I.\tmp\moc" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I.\tmp\uic" "-I.\tmp\rcc"</Command>
     </CustomBuild>
     <CustomBuild Include="src\edit\dataEdit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\tmp\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\tmp\moc\moc_%(Filename).cpp"  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB "-I." "-I$(QTDIR)\include" "-I.\tmp\moc" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I.\tmp\uic" "-I.\tmp\rcc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\tmp\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\tmp\moc\moc_%(Filename).cpp"  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB "-I." "-I$(QTDIR)\include" "-I.\tmp\moc" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I.\tmp\uic" "-I.\tmp\rcc"</Command>
+    </CustomBuild>
+    <CustomBuild Include="src\data\database.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\tmp\moc\moc_%(Filename).cpp</Outputs>

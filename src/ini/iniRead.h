@@ -16,6 +16,8 @@ public:
 	void loadIni(const QString & _path);
 	static QSize windowFormSize();
 
+	static QStringList dabaBaseMessage();
+
 	struct IniReadPrivate;
 	static IniReadPrivate * data;
 };

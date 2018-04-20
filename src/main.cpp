@@ -21,11 +21,11 @@ int main(int argc, char * argv[])
 		file.close();
 	}
 
-	//LoginForm w;
-	//w.show();
+	LoginForm w;
+	w.show();
 
-	FaultSettingPage f;
-	f.show();
+	//FaultSettingPage f;
+	//f.show();
 
 	return a.exec();
 }

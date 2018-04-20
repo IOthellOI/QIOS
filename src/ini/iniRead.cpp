@@ -39,3 +39,12 @@ QSize IniRead::windowFormSize()
 	return QSize(data->iniRead->value("/windowFormSize/width").toInt(),
 		data->iniRead->value("/windowFormSize/height").toInt());
 }
+
+QStringList IniRead::dabaBaseMessage()
+{
+	return QStringList() << data->iniRead->value("/sqlDatabase/hostName").toString()
+		<< data->iniRead->value("/sqlDatabase/port").toString()
+		<< data->iniRead->value("/sqlDatabase/databaseName").toString()
+		<< data->iniRead->value("/sqlDatabase/userName").toString()
+		<< data->iniRead->value("/sqlDatabase/password").toString();
+}

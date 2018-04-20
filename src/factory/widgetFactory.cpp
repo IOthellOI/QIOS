@@ -1,4 +1,4 @@
-#include "widgetFactory.h"
+﻿#include "widgetFactory.h"
 #include "dataPool.h"
 #include "pictureLabel.h"
 #include "loginEdit.h"
@@ -238,11 +238,9 @@ QWidget * creatTextLabel(const QDomElement & element)
 
 QWidget * creatTitleButton(const QDomElement & element)
 {
-	TitleButton * button = new TitleButton;
-	if (element.hasAttribute("text"))
-	{
-		button->setText(element.attribute("text"));
-	}
+    TitleButton * button = new TitleButton;
+    button->setText(element.attribute("text"));
+
 	return button;
 }
 
@@ -260,7 +258,7 @@ QWidget * creatControlButton(const QDomElement & element)
 	return button;
 }
 
-QWidget * creatFaultDisplay(const QDomElement & element)
+QWidget * creatFaultDisplay(const QDomElement &)
 {
 	FaultDisplay * display = new FaultDisplay;
 	return display;

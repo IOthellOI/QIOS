@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <InternalData name="navigationData" type="int"    init="0"/>
-  <InternalData name="pageData"       type="string" init="0"/>
+  <InternalData name="pageData"       type="string" init=""/>
+  <InternalData name="titleCommand"   type="string" init=""/>
 </root> 

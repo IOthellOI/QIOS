@@ -249,6 +249,12 @@
     <CustomBuild Include="src\data\database.h">
       <Filter>Header Files\data</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\edit\textEdit.h">
+      <Filter>Header Files\edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\label\separatorLine.h">
+      <Filter>Header Files\label</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tmp\rcc\qrc_QIOS.cpp">
@@ -512,6 +518,12 @@
     <ClCompile Include="src\data\database.cpp">
       <Filter>Source Files\data</Filter>
     </ClCompile>
+    <ClCompile Include="tmp\moc\moc_textEdit.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\moc\moc_separatorLine.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="data\window\navigationBar.xml">
@@ -606,14 +618,8 @@
     <ClInclude Include="src\factory\widgetFactory.h">
       <Filter>Header Files\factory</Filter>
     </ClInclude>
-    <ClInclude Include="src\label\separatorLine.h">
-      <Filter>Header Files\label</Filter>
-    </ClInclude>
     <ClInclude Include="src\button\toggleButton.h">
       <Filter>Header Files\button</Filter>
-    </ClInclude>
-    <ClInclude Include="src\edit\textEdit.h">
-      <Filter>Header Files\edit</Filter>
     </ClInclude>
     <ClInclude Include="src\edit\spinEdit.h">
       <Filter>Header Files\edit</Filter>

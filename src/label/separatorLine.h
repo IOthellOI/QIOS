@@ -6,6 +6,7 @@
 
 class SeparatorLine : public QLabel
 {
+	Q_OBJECT
 public:
 	explicit SeparatorLine(QWidget * _parent = nullptr);
 	virtual ~SeparatorLine();

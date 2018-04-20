@@ -1,4 +1,4 @@
-#include "dataPool.h"
+﻿#include "dataPool.h"
 #include "xmlRead.h"
 
 #include <QString>
@@ -16,8 +16,7 @@ DataPool::DataPool(QObject * _parent) :
 	QObject(_parent)
 {
 	data->internalMap = new QMap<QString, InternalData *>;
-	data->externalMap = new QMap<QString, ExternalData *>;
-	loadConfig("./data/data/dataPool.xml");
+    data->externalMap = new QMap<QString, ExternalData *>;
 }
 
 DataPool::~DataPool()

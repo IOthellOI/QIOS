@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'windowForm.h'
+** Meta object code from reading C++ file 'faultSettingPage.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.10.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/window/windowForm.h"
+#include "../../../src/page/faultSettingPage.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'windowForm.h' doesn't include <QObject>."
+#error "The header file 'faultSettingPage.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.10.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -20,28 +20,28 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_WindowForm_t {
+struct qt_meta_stringdata_FaultSettingPage_t {
     QByteArrayData data[4];
-    char stringdata0[36];
+    char stringdata0[38];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_WindowForm_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_FaultSettingPage_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_WindowForm_t qt_meta_stringdata_WindowForm = {
+static const qt_meta_stringdata_FaultSettingPage_t qt_meta_stringdata_FaultSettingPage = {
     {
-QT_MOC_LITERAL(0, 0, 10), // "WindowForm"
-QT_MOC_LITERAL(1, 11, 17), // "slotTitleConmmond"
-QT_MOC_LITERAL(2, 29, 0), // ""
-QT_MOC_LITERAL(3, 30, 5) // "_text"
+QT_MOC_LITERAL(0, 0, 16), // "FaultSettingPage"
+QT_MOC_LITERAL(1, 17, 13), // "slotFrameShow"
+QT_MOC_LITERAL(2, 31, 0), // ""
+QT_MOC_LITERAL(3, 32, 5) // "_show"
 
     },
-    "WindowForm\0slotTitleConmmond\0\0_text"
+    "FaultSettingPage\0slotFrameShow\0\0_show"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_WindowForm[] = {
+static const uint qt_meta_data_FaultSettingPage[] = {
 
  // content:
        7,       // revision
@@ -55,46 +55,46 @@ static const uint qt_meta_data_WindowForm[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   19,    2, 0x0a /* Public */,
+       1,    1,   19,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::Bool,    3,
 
        0        // eod
 };
 
-void WindowForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void FaultSettingPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        WindowForm *_t = static_cast<WindowForm *>(_o);
+        FaultSettingPage *_t = static_cast<FaultSettingPage *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->slotTitleConmmond((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 0: _t->slotFrameShow((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     }
 }
 
-const QMetaObject WindowForm::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_WindowForm.data,
-      qt_meta_data_WindowForm,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject FaultSettingPage::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_FaultSettingPage.data,
+      qt_meta_data_FaultSettingPage,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *WindowForm::metaObject() const
+const QMetaObject *FaultSettingPage::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *WindowForm::qt_metacast(const char *_clname)
+void *FaultSettingPage::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_WindowForm.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_FaultSettingPage.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int WindowForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int FaultSettingPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)

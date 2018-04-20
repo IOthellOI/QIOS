@@ -18,9 +18,9 @@ HEADERS += ./src/button/toggleButton.h \
     ./src/button/titleButton.h \
     ./src/button/controlButton.h \
     ./src/button/switchButton.h \
-    ./src/label/separatorLine.h \
     ./src/label/textLabel.h \
     ./src/label/dataLabel.h \
+    ./src/label/separatorLine.h \
     ./src/label/faultDisplay.h \
     ./src/label/pictureLabel.h \
     ./src/window/navigationBar.h \
@@ -34,17 +34,24 @@ HEADERS += ./src/button/toggleButton.h \
     ./src/data/internalData.h \
     ./src/data/dataPool.h \
     ./src/data/externalData.h \
+    ./src/data/database.h \
     ./src/ini/iniRead.h \
     ./src/factory/widgetFactory.h \
     ./src/edit/spinEdit.h \
+    ./src/edit/dataEdit.h \
     ./src/edit/textEdit.h \
     ./src/edit/loginEdit.h \
+    ./src/page/faultSettingPage.h \
     ./src/page/page.h \
     ./src/box/componentBox.h \
+    ./src/table/faultBrowseTable.h \
+    ./src/table/commonFaultTable.h \
     ./src/table/soundTable.h \
     ./src/table/computerTable.h \
+    ./src/group/faultIndex.h \
     ./src/group/projectorControl.h \
-    ./src/slider/dataSlider.h
+    ./src/slider/dataSlider.h \
+    ./src/timer/systemTimer.h
 SOURCES += ./src/main.cpp \
     ./src/button/inputButton.cpp \
     ./src/button/controlButton.cpp \
@@ -70,18 +77,25 @@ SOURCES += ./src/main.cpp \
     ./src/window/titleBar.cpp \
     ./src/window/windowForm.cpp \
     ./src/xml/xmlRead.cpp \
+    ./src/data/database.cpp \
     ./src/data/dataPool.cpp \
     ./src/data/externalData.cpp \
     ./src/data/internalData.cpp \
     ./src/ini/iniRead.cpp \
     ./src/factory/widgetFactory.cpp \
+    ./src/edit/dataEdit.cpp \
     ./src/edit/loginEdit.cpp \
     ./src/edit/spinEdit.cpp \
     ./src/edit/textEdit.cpp \
+    ./src/page/faultSettingPage.cpp \
     ./src/page/page.cpp \
     ./src/box/componentBox.cpp \
+    ./src/table/commonFaultTable.cpp \
     ./src/table/computerTable.cpp \
+    ./src/table/faultBrowseTable.cpp \
     ./src/table/soundTable.cpp \
+    ./src/group/faultIndex.cpp \
     ./src/group/projectorControl.cpp \
-    ./src/slider/dataSlider.cpp
+    ./src/slider/dataSlider.cpp \
+    ./src/timer/systemTimer.cpp
 RESOURCES += QIOS.qrc

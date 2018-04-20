@@ -1,10 +1,7 @@
 ﻿#include "loginForm.h"
 #include "xmlRead.h"
 #include "widgetFactory.h"
-#include "dataPool.h"
 #include "windowForm.h"
-#include "iniRead.h"
-#include "database.h"
 
 #include <QLayout>
 #include <QFrame>
@@ -74,20 +71,14 @@ void LoginForm::loadConfig(const QString & _path)
 		if (widget->objectName() == "LoginButton")
 		{
 			connect(widget, SIGNAL(clicked()), this, SLOT(slotLogin()));
-		}
+        }
 	}
 }
 
 void LoginForm::slotLogin()
 {
 	if (true)
-	{
-		DataPool d;
-
-		IniRead i;
-
-		Database b;
-
+    {
 		WindowForm * w = new WindowForm;
 		w->show();
 

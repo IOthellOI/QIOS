@@ -1,7 +1,6 @@
 #include "database.h"
 #include "iniRead.h"
 
-//#include <QSqlDatabase>
 #include <QtSql>
 #include <QMessageBox>
 

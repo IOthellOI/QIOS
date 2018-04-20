@@ -1,19 +1,34 @@
-#include "windowForm.h"
+﻿#include "windowForm.h"
 #include "titleBar.h"
 #include "navigationBar.h"
 #include "paginationBar.h"
 #include "pageBar.h"
 #include "statusBar.h"
 #include "iniRead.h"
+#include "dataPool.h"
+#include "database.h"
 
 #include <QLayout>
 
-WindowForm::WindowForm(QWidget * _parent) :
-	QWidget(_parent)
+struct WindowForm::WindowFormPrivate
 {
-	setObjectName("WindowForm");
+    DataPool * pool;
+    IniRead * ini;
+    Database * base;
+};
 
-	setWindowFlags(Qt::FramelessWindowHint);
+WindowForm::WindowForm(QWidget * _parent) :
+    QWidget(_parent),
+    data(new WindowFormPrivate)
+{
+    setObjectName("WindowForm");
+    setWindowFlags(Qt::FramelessWindowHint);
+
+    data->pool = new DataPool;
+    data->pool->loadConfig("./data/data/dataPool.xml");
+    data->ini = new IniRead;
+    data->ini->loadIni("./data/config.ini");
+    data->base = new Database;
 
 	TitleBar * titleBar = new TitleBar;
 	titleBar->loadConfig("./data/window/titleBar.xml");
@@ -38,9 +53,23 @@ WindowForm::WindowForm(QWidget * _parent) :
 	setMinimumSize(IniRead::windowFormSize());
 	setMaximumSize(IniRead::windowFormSize());
 
+    connect(DataPool::internalDataMap()->value("titleCommand"), SIGNAL(signalDataUpdate(QString)), this, SLOT(slotTitleConmmond(QString)));
+
 	setLayout(layout);
 }
 
 WindowForm::~WindowForm()
 {
+}
+
+void WindowForm::slotTitleConmmond(const QString &_text)
+{
+    if(_text == "close")
+    {
+        close();
+    }
+    else if(_text == "minimize")
+    {
+        showMinimized();
+    }
 }

@@ -1,4 +1,4 @@
-#ifndef WINDOWFORM_H
+﻿#ifndef WINDOWFORM_H
 #define WINDOWFORM_H
 #pragma once
 
@@ -10,6 +10,13 @@ class WindowForm : public  QWidget
 public:
 	explicit WindowForm(QWidget * _parent = nullptr);
 	virtual ~WindowForm();
+
+public slots:
+    void slotTitleConmmond(const QString & _text);
+
+private:
+    struct WindowFormPrivate;
+    WindowFormPrivate * data;
 };
 
 #endif // !WINDOWFORM_H

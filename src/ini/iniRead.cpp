@@ -1,4 +1,4 @@
-#include "iniRead.h"
+﻿#include "iniRead.h"
 
 #include <QSettings>
 #include <QString>
@@ -14,7 +14,6 @@ IniRead::IniRead(QObject * _prent) :
 	QObject(_prent)
 {
 	data->iniRead = nullptr;
-	loadIni("./data/config.ini");
 }
 
 IniRead::~IniRead()

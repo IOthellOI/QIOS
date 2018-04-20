@@ -1,4 +1,4 @@
-#include "paginationBar.h"
+﻿#include "paginationBar.h"
 #include "paginationButton.h"
 #include "xmlRead.h"
 #include "dataPool.h"

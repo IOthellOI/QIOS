@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifndef TITLEBUTTON_H
 #define TITLEBUTTON_H
 
@@ -10,6 +10,13 @@ class TitleButton : public QPushButton
 public:
 	explicit TitleButton(QWidget * _parent = nullptr);
 	virtual ~TitleButton();
+
+signals:
+    void signalTitleCommand(const QString & _command);
+
+private slots:
+    void slotButtonClick();
+
 };
 
 #endif // !TITLEBUTTON_H

@@ -12,20 +12,21 @@ INCLUDEPATH += . \
     ./tmp/moc \
     ./tmp/uic \
     ./tmp/rcc \
-    ./src/box \
-    ./src/button \
-    ./src/data \
-    ./src/edit \
-    ./src/factory \
-    ./src/group \
-    ./src/ini \
-    ./src/label \
-    ./src/page \
-    ./src/slider \
-    ./src/table \
-    ./src/window \
-    ./src/xml \
-    ./src
+	./src \
+	./src/box \
+	./src/button \
+	./src/data \
+	./src/edit \
+	./src/factory \
+	./src/group \
+	./src/ini \
+	./src/label \
+	./src/page \
+	./src/slider \
+	./src/table \
+	./src/timer \
+	./src/window \
+	./src/xml
 DEPENDPATH += .
 MOC_DIR += ./tmp/moc
 OBJECTS_DIR += debug

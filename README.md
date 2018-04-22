@@ -22,6 +22,6 @@ Support Windows or Linux systems.
 # Technology
 Using Xml configuration file to implement the layout and management of the interface.
 ---
-Using SQLite as the database backend.
+Using MySql as the database backend.
 ---
 Specific techniques can be seen in the description of the document in the project.

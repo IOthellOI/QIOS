@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <header>
+    <definition item="用户类型"     width="400"/>
+    <definition item="用户姓名"     width="400"/>
+    <definition item="用户所属部队" width="400"/>
+    <definition item="用户密码"     width="400"/>
+  </header>
+  <item height="60">
+  </item>
+</root>

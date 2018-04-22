@@ -33,3 +33,7 @@ OBJECTS_DIR += debug
 UI_DIR += ./tmp/uic
 RCC_DIR += ./tmp/rcc
 include(QIOS.pri)
+
+HEADERS +=
+
+SOURCES +=

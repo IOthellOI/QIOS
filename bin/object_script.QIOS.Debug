@@ -45,6 +45,8 @@ INPUT(
 ./debug\projectorControl.o
 ./debug\dataSlider.o
 ./debug\systemTimer.o
+./debug\userManage.o
+./debug\findEdit.o
 ./debug\qrc_QIOS.o
 ./debug\moc_inputButton.o
 ./debug\moc_navigationButton.o
@@ -88,4 +90,6 @@ INPUT(
 ./debug\moc_projectorControl.o
 ./debug\moc_dataSlider.o
 ./debug\moc_systemTimer.o
+./debug\moc_userManage.o
+./debug\moc_findEdit.o
 );

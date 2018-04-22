@@ -51,7 +51,9 @@ HEADERS += ./src/button/toggleButton.h \
     ./src/group/faultIndex.h \
     ./src/group/projectorControl.h \
     ./src/slider/dataSlider.h \
-    ./src/timer/systemTimer.h
+    ./src/timer/systemTimer.h \
+    $$PWD/src/group/userManage.h \
+    $$PWD/src/edit/findEdit.h
 SOURCES += ./src/main.cpp \
     ./src/button/inputButton.cpp \
     ./src/button/controlButton.cpp \
@@ -97,5 +99,7 @@ SOURCES += ./src/main.cpp \
     ./src/group/faultIndex.cpp \
     ./src/group/projectorControl.cpp \
     ./src/slider/dataSlider.cpp \
-    ./src/timer/systemTimer.cpp
+    ./src/timer/systemTimer.cpp \
+    $$PWD/src/group/userManage.cpp \
+    $$PWD/src/edit/findEdit.cpp
 RESOURCES += QIOS.qrc

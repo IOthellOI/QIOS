@@ -98,12 +98,12 @@ void ComputerTable::loadConfig(const QString & _path)
 
 		item->ethernetState.setObjectName("ComputerTableLabel");
 		item->ethernetState.setAlignment(Qt::AlignCenter);
-		item->ethernetState.setText(u8"未接通");
+        item->ethernetState.setText(QString::fromLocal8Bit("未接通"));
 		setCellWidget(row, column++, &item->ethernetState);
 
 		item->realtimeState.setObjectName("ComputerTableLabel");
 		item->realtimeState.setAlignment(Qt::AlignCenter);
-		item->realtimeState.setText(u8"未接通");
+        item->realtimeState.setText(QString::fromLocal8Bit("未接通"));
 		setCellWidget(row, column++, &item->realtimeState);
 
 		QWidget * widget = new QWidget;
@@ -115,13 +115,13 @@ void ComputerTable::loadConfig(const QString & _path)
 		item->computerShutdown.setObjectName("ComputerTableShutdownButton");
 		layout->addWidget(&item->computerRestart);
 		layout->addWidget(&item->computerShutdown);
-		item->computerRestart.setText(u8"重启");
-		item->computerShutdown.setText(u8"关机");
+        item->computerRestart.setText(QString::fromLocal8Bit("重启"));
+        item->computerShutdown.setText(QString::fromLocal8Bit(u8"关机"));
 		setCellWidget(row, column++, widget);
 
 		item->programState.setObjectName("ComputerTableLabel");
 		item->programState.setAlignment(Qt::AlignCenter);
-		item->programState.setText(u8"未连通");
+        item->programState.setText(QString::fromLocal8Bit("未连通"));
 		setCellWidget(row, column++, &item->programState);
 
 		widget = new QWidget;
@@ -130,7 +130,7 @@ void ComputerTable::loadConfig(const QString & _path)
 		layout->setMargin(0);
 		item->programRestart.setObjectName("ComputerTableRestartButton");
 		layout->addWidget(&item->programRestart);
-		item->programRestart.setText(u8"重启");
+        item->programRestart.setText(QString::fromLocal8Bit("重启"));
 		setCellWidget(row, column++, widget);
 		
 		++row;

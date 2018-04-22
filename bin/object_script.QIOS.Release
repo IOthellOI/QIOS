@@ -45,6 +45,8 @@ INPUT(
 ./release\projectorControl.o
 ./release\dataSlider.o
 ./release\systemTimer.o
+./release\userManage.o
+./release\findEdit.o
 ./release\qrc_QIOS.o
 ./release\moc_inputButton.o
 ./release\moc_navigationButton.o
@@ -88,4 +90,6 @@ INPUT(
 ./release\moc_projectorControl.o
 ./release\moc_dataSlider.o
 ./release\moc_systemTimer.o
+./release\moc_userManage.o
+./release\moc_findEdit.o
 );

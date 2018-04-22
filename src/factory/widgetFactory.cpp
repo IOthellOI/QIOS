@@ -23,6 +23,7 @@
 #include "faultIndex.h"
 #include "commonFaultTable.h"
 #include "faultBrowseTable.h"
+#include "userManage.h"
 
 #include <QPixmap>
 #include <QImage>
@@ -52,6 +53,7 @@ static QWidget * creatDataEdit(const QDomElement & element);
 static QWidget * creatFaultIndex(const QDomElement & element);
 static QWidget * creatCommonFaultTable(const QDomElement & element);
 static QWidget * creatFaultBrowseTable(const QDomElement & element);
+static QWidget * creatUserManage(const QDomElement & element);
 
 QWidget * WidgetFactory::creat(const QDomElement & element)
 {
@@ -151,6 +153,10 @@ QWidget * WidgetFactory::creat(const QDomElement & element)
 	{
 		return creatFaultBrowseTable(element);
 	}
+    else if (element.nodeName().toUpper() == "USERMANAGE")
+    {
+        return creatUserManage(element);
+    }
 	else
 	{
 		return nullptr; 
@@ -387,3 +393,12 @@ QWidget * creatFaultBrowseTable(const QDomElement & element)
 	table->loadConfig(element.attribute("path"));
 	return table;
 }
+
+
+QWidget * creatUserManage(const QDomElement & element)
+{
+    UserManage * group = new UserManage;
+    group->loadConfig(element.attribute("path"));
+    return group;
+}
+

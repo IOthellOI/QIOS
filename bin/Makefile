@@ -196,6 +196,7 @@ Makefile: ../QIOS.pro ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/win32
 		../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/qt_config.prf \
 		../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/toolchain.prf \
 		../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/default_pre.prf \
@@ -363,6 +364,7 @@ Makefile: ../QIOS.pro ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/win32
 ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/qt_config.prf:
 ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/win32-g++/qmake.conf:
 ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/exclusive_builds.prf:
 ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/toolchain.prf:
 ../../../Software/Qt5.10.0/5.10.0/mingw53_32/mkspecs/features/default_pre.prf:

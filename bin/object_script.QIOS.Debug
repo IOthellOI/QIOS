@@ -47,6 +47,8 @@ INPUT(
 ./debug\systemTimer.o
 ./debug\userManage.o
 ./debug\findEdit.o
+./debug\databaseTableModel.o
+./debug\userEditForm.o
 ./debug\qrc_QIOS.o
 ./debug\moc_inputButton.o
 ./debug\moc_navigationButton.o
@@ -92,4 +94,6 @@ INPUT(
 ./debug\moc_systemTimer.o
 ./debug\moc_userManage.o
 ./debug\moc_findEdit.o
+./debug\moc_databaseTableModel.o
+./debug\moc_userEditForm.o
 );

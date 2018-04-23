@@ -1,7 +1,7 @@
 ﻿#include <QApplication>
 #include <QFile>
 #include <QIcon>
-#include "findEdit.h"
+#include "userEditForm.h"
 
 #include "loginForm.h"
 #include "faultSettingPage.h"
@@ -22,12 +22,6 @@ int main(int argc, char * argv[])
 
     LoginForm w;
     w.show();
-
-    //FaultSettingPage f;
-    //f.show();
-
-    //FindEdit e;
-    //e.show();
 
 	return a.exec();
 }

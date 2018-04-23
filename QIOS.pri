@@ -53,7 +53,9 @@ HEADERS += ./src/button/toggleButton.h \
     ./src/slider/dataSlider.h \
     ./src/timer/systemTimer.h \
     $$PWD/src/group/userManage.h \
-    $$PWD/src/edit/findEdit.h
+    $$PWD/src/edit/findEdit.h \
+    $$PWD/src/data/databaseTableModel.h \
+    $$PWD/src/page/userEditForm.h
 SOURCES += ./src/main.cpp \
     ./src/button/inputButton.cpp \
     ./src/button/controlButton.cpp \
@@ -101,5 +103,7 @@ SOURCES += ./src/main.cpp \
     ./src/slider/dataSlider.cpp \
     ./src/timer/systemTimer.cpp \
     $$PWD/src/group/userManage.cpp \
-    $$PWD/src/edit/findEdit.cpp
+    $$PWD/src/edit/findEdit.cpp \
+    $$PWD/src/data/databaseTableModel.cpp \
+    $$PWD/src/page/userEditForm.cpp
 RESOURCES += QIOS.qrc

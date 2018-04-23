@@ -13,6 +13,13 @@ public:
 public:
     void loadConfig(const QString & _path);
 
+public slots:
+    void slotInstructorSelected();
+    void slotStudentSelected();
+    void slotTotalSelected();
+    void slotAddSelected();
+    void slotAddUser(QStringList _list);
+
 private:
     struct UserManagePrivate;
     UserManagePrivate * data;

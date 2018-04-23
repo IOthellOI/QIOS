@@ -541,25 +541,38 @@ QPushButton#FaultIndexButton {
         background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(154, 166, 211, 255), stop:0.89 rgba(154, 166, 211, 255), stop:0.9 rgba(44, 83, 229, 255), stop:1 rgba(44, 83, 229, 255));
     }
 
-QTableWidget#FaultIndexTable, QTableWidget#CommonFaultTable {
+QTableWidget#FaultIndexTable,
+QTableWidget#CommonFaultTable,
+QTableView#UserManageTable {
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
 }
-
-    QTableWidget#FaultIndexTable::item:alternate:!selected {
+    QTableWidget#FaultIndexTable::item:alternate:!selected,
+    QTableWidget#CommonFaultTable::item:alternate:!selected,
+    QTableView#UserManageTable::item:alternate:!selected {
         background-color: white;
     }
 
-    QTableWidget#FaultIndexTable::item:!alternate:!selected {
+    QTableWidget#FaultIndexTable::item:!alternate:!selected,
+	QTableWidget#CommonFaultTable::item:!alternate:!selected,
+	QTableView#UserManageTable::item:!alternate:!selected {
         background-color: rgb(245, 245, 245);
     }
 
-QTableWidget QHeaderView#FaultIndexTable, QTableWidget QHeaderView#CommonFaultTable {
+QTableWidget QHeaderView#FaultIndexTable,
+QTableWidget QHeaderView#CommonFaultTable 
+QTableWidget QHeaderView#UserManageTable {
     color: black;
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
     min-height: 40px;
 }
 
-QLabel#FaultIndexTableLabel, QLabel#CommonFaultTableLabel {
+QLabel#FaultIndexTableLabel, 
+QLabel#CommonFaultTableLabel, 
+QLabel#UserManageTableLabel,
+QLabel#UserEditFormLabel {
     color: black;
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
@@ -567,7 +580,8 @@ QLabel#FaultIndexTableLabel, QLabel#CommonFaultTableLabel {
 
 QPushButton#FaultIndexTableButton, 
 QPushButton#CommonFaultTableButton,
-QPushButton#UserManageTableButton
+QPushButton#UserManageTableButton,
+QPushButton#UserEditFormOkButton
  {
     min-width: 80px;
     min-height: 40px;
@@ -581,24 +595,28 @@ QPushButton#UserManageTableButton
 
     QPushButton#FaultIndexTableButton:enabled,
 	QPushButton#UserManageTableButton:enabled,
-    QPushButton#CommonFaultTableButton:enabled {
+    QPushButton#CommonFaultTableButton:enabled,
+	QPushButton#UserEditFormOkButton:enabled {
         background-color: rgb(181, 187, 242);
     }
 
     QPushButton#FaultIndexTableButton:hover, 
 	QPushButton#UserManageTableButton:hover,
-    QPushButton#CommonFaultTableButton:hover {
+    QPushButton#CommonFaultTableButton:hover,
+	QPushButton#UserEditFormOkButton:hover {
         background-color: rgb(193, 197, 234);
     }
 
     QPushButton#FaultIndexTableButton:pressed
 	QPushButton#UserManageTableButton:pressed,
-    QPushButton#CommonFaultTableButton:pressed {
+    QPushButton#CommonFaultTableButton:pressed,
+	QPushButton#UserEditFormOkButton:pressed {
         background-color: rgb(158, 166, 242);
     }
     QPushButton#FaultIndexTableButton:disabled,
 	QPushButton#UserManageTableButton:disabled, 
-    QPushButton#CommonFaultTableButton:disabled {
+    QPushButton#CommonFaultTableButton:disabled,
+	QPushButton#UserEditFormOkButton:disabled {
         background-color: rgb(156, 157, 163);
     }
 
@@ -643,3 +661,46 @@ QLineEdit#FindEdit {
     font-family: 'Microsoft YaHei UI';
     font-size: 14px;
 }
+
+QComboBox#UserEditFormCombo {
+    min-width: 200px;
+    min-height: 30px;
+    max-width: 200px;
+    max-height: 30px;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QLineEdit#UserEditFormEdit {
+    min-width: 200px;
+    min-height: 30px;
+    max-width: 200px;
+    max-height: 30px;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+QPushButton#UserEditFormCancelButton {
+    min-width: 80px;
+    min-height: 40px;
+    max-width: 80px;
+    max-height: 40px;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 14px;
+}
+
+    QPushButton#UserEditFormCancelButton:enabled {
+        background-color: rgb(190, 190, 190)
+    }
+
+    QPushButton#UserEditFormCancelButton:hover {
+        background-color: rgb(150, 150, 150);
+    }
+
+    QPushButton#UserEditFormCancelButton:pressed {
+        background-color: rgb(120, 120, 120);
+    }	

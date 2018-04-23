@@ -3,6 +3,7 @@
 #define DATABASE_H
 
 #include <QObject>
+#include <QtSql>
 
 class Database : public QObject
 {
@@ -11,9 +12,11 @@ public:
 	explicit Database(QObject * _parent = nullptr);
 	virtual ~Database();
 
-private:
+public:
+    static QSqlTableModel * userDatabase();
+
 	struct DatabasePrivate;
-	DatabasePrivate * data;
+    static DatabasePrivate * data;
 };
 
 #endif // !DATABASE_H

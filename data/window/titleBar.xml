@@ -5,11 +5,11 @@
     <pictureLabel icon="./res/ico/person.png" width="25" height="25"/>
     <textLabel text="管理员" color="white"/>
     <emptyWidget width="40"/>
-    <textLabel text="教员：" color="white"/>
-    <textLabel text="教员1" color="white"/>
+    <textLabel text="教员" color="white"/>
+    <textLabel text="张三" color="white"/>
     <emptyWidget width="40"/>
-    <textLabel text="学员：" color="white"/>
-    <textLabel text="学员1" color="white"/>
+    <textLabel text="学员" color="white"/>
+    <textLabel text="李四" color="white"/>
   </layout>
   <space/>
   <layout alignment="left">

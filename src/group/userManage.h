@@ -19,6 +19,8 @@ public slots:
     void slotTotalSelected();
     void slotAddSelected();
     void slotAddUser(QStringList _list);
+    void slotEditSelected();
+    void slotEditUser(QStringList _list);
 
 private:
     struct UserManagePrivate;

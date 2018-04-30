@@ -90,4 +90,5 @@ void UserEditForm::slotOkbuttonClicked()
          << data->army->text()
          << data->password->text();
     emit signalUserEdit(list);
+    close();
 }

@@ -11275,6 +11275,7 @@ debug/userManage.o: ../src/group/userManage.cpp ../src/group/userManage.h \
 		../../../../Software/Qt5.10.0/5.10.0/mingw53_32/include/QtSql/qsqltablemodel.h \
 		../../../../Software/Qt5.10.0/5.10.0/mingw53_32/include/QtSql/qsqlresult.h \
 		../../../../Software/Qt5.10.0/5.10.0/mingw53_32/include/QtSql/qtsqlversion.h \
+		../src/page/userEditForm.h \
 		../../../../Software/Qt5.10.0/5.10.0/mingw53_32/include/QtWidgets/QLayout \
 		../../../../Software/Qt5.10.0/5.10.0/mingw53_32/include/QtWidgets/qlayout.h \
 		../../../../Software/Qt5.10.0/5.10.0/mingw53_32/include/QtWidgets/qlayoutitem.h \

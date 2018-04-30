@@ -5,7 +5,7 @@
 struct SystemTimer::SystemTimerPrivate
 {
 	QTimer * timer100ms;
-	QTimer * timer1000ms;
+    QTimer * timer1000ms;
 };
 
 SystemTimer::SystemTimerPrivate *  SystemTimer::data = new SystemTimerPrivate;

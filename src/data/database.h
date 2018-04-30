@@ -14,6 +14,7 @@ public:
 
 public:
     static QSqlTableModel * userDatabase();
+    static void close();
 
 	struct DatabasePrivate;
     static DatabasePrivate * data;

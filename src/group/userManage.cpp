@@ -84,6 +84,7 @@ UserManage::UserManage(QWidget * _parent)
     connect(data->student, SIGNAL(clicked()), this, SLOT(slotStudentSelected()));
     connect(data->totle, SIGNAL(clicked()), this, SLOT(slotTotalSelected()));
     connect(data->add, SIGNAL(clicked()), this, SLOT(slotAddSelected()));
+    connect(data->edit, SIGNAL(clicked()), this, SLOT(slotEditSelected()));
 }
 
 UserManage::~UserManage()
@@ -101,7 +102,10 @@ void UserManage::loadConfig(const QString &_path)
     QDomElement node = element.firstChildElement();
 
     data->model = Database::userDatabase();
-
+    data->model->setEditStrategy(QSqlTableModel::OnFieldChange);
+//    data->model = new QSqlTableModel;
+//    data->model->setTable("user");
+//    auto a = data->model->select();
     data->table->setModel(data->model);
 
     for (int i = 0; !node.isNull(); i++)
@@ -110,10 +114,7 @@ void UserManage::loadConfig(const QString &_path)
         data->table->setColumnWidth(i, node.attribute("width").toInt());
         node = node.nextSiblingElement();
     }
-
     element = element.nextSiblingElement();
-    node = element.firstChildElement();
-
     data->table->verticalHeader()->setDefaultSectionSize(element.attribute("height").toInt());
 }
 
@@ -145,5 +146,40 @@ void UserManage::slotAddSelected()
 
 void UserManage::slotAddUser(QStringList _list)
 {
+    int rowCout = data->model->rowCount();
+    data->model->insertRow(rowCout);
+    data->model->setData(data->model->index(rowCout, 0), _list.at(0));
+    data->model->setData(data->model->index(rowCout, 1), _list.at(1));
+    data->model->setData(data->model->index(rowCout, 2), _list.at(2));
+    data->model->setData(data->model->index(rowCout, 3), _list.at(3));
+    data->model->submitAll();
+    data->model->select();
+}
 
+void UserManage::slotEditSelected()
+{
+    if (data->table->currentIndex().row() != -1)
+    {
+        int row = data->table->currentIndex().row();
+        QStringList list;
+        list << data->model->index(row, 0).data().toString()
+             << data->model->index(row, 1).data().toString()
+             << data->model->index(row, 2).data().toString()
+             << data->model->index(row, 3).data().toString();
+        UserEditForm * form = new UserEditForm(&list);
+        form->setWindowTitle(QString::fromLocal8Bit("±à¼­ÓÃ»§"));
+        form->show();
+        connect(form, SIGNAL(signalUserEdit(QStringList)), this, SLOT(slotEditUser(QStringList)));
+    }
+}
+
+void UserManage::slotEditUser(QStringList _list)
+{
+    int rowCout = data->table->currentIndex().row();
+    data->model->setData(data->model->index(rowCout, 0), _list.at(0));
+    data->model->setData(data->model->index(rowCout, 1), _list.at(1));
+    data->model->setData(data->model->index(rowCout, 2), _list.at(2));
+    data->model->setData(data->model->index(rowCout, 3), _list.at(3));
+    data->model->submitAll();
+    data->model->select();
 }

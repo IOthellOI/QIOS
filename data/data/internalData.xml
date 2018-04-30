@@ -3,4 +3,5 @@
   <InternalData name="navigationData" type="int"    init="0"/>
   <InternalData name="pageData"       type="string" init=""/>
   <InternalData name="titleCommand"   type="string" init=""/>
+  <InternalData name="locolTime"      type="string" init=""/>
 </root> 

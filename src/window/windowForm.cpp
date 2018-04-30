@@ -14,7 +14,7 @@ struct WindowForm::WindowFormPrivate
 {
     DataPool * pool;
     IniRead * ini;
-    Database * base;
+    Database * db;
 };
 
 WindowForm::WindowForm(QWidget * _parent) :
@@ -28,7 +28,7 @@ WindowForm::WindowForm(QWidget * _parent) :
     data->pool->loadConfig("./data/data/dataPool.xml");
     data->ini = new IniRead;
     data->ini->loadIni("./data/config.ini");
-    data->base = new Database;
+    data->db = new Database;
 
 	TitleBar * titleBar = new TitleBar;
 	titleBar->loadConfig("./data/window/titleBar.xml");
@@ -66,6 +66,7 @@ void WindowForm::slotTitleConmmond(const QString &_text)
 {
     if(_text == "close")
     {
+        data->db->close();
         close();
     }
     else if(_text == "minimize")

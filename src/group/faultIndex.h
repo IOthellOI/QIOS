@@ -14,6 +14,9 @@ public:
 public:
 	void loadConfig(const QString & _path);
 
+private slots:
+
+
 private:
 	struct FaultIndexPrivate;
 	FaultIndexPrivate * data;

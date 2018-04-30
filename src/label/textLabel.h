@@ -3,6 +3,7 @@
 #define TEXTLABEL_H
 
 #include <QLabel>
+#include <internalData.h>
 
 class TextLabel : public QLabel
 {
@@ -13,6 +14,10 @@ public:
 
 public:
 	void setColor(const QString & _color);
+    void setData(InternalData * _data);
+
+public slots:
+    void slotTextUpdate(const QString & _text);
 
 protected:
 };

@@ -20,5 +20,15 @@ void TextLabel::setColor(const QString & _color)
 	else if (_color == "black")
 	{
 		setStyleSheet("color: " + _color);
-	}
+    }
+}
+
+void TextLabel::setData(InternalData *_data)
+{
+    connect(_data, SIGNAL(signalDataUpdate(QString)), this, SLOT(slotTextUpdate(QString)));
+}
+
+void TextLabel::slotTextUpdate(const QString &_text)
+{
+    setText(_text);
 }
